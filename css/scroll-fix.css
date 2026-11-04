@@ -1,0 +1,48 @@
+/*
+ * Dedicated mobile scrolling fix.
+ * The document itself was not a reliable scroll container on some Android browsers.
+ * Keep the header and bottom navigation in place, and make #main the one vertical
+ * scroll container. This preserves the existing layout and app navigation.
+ */
+
+html {
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  overscroll-behavior-y: none;
+  touch-action: pan-y pinch-zoom;
+}
+
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-height: 0 !important;
+  max-height: 100% !important;
+  overflow: hidden !important;
+  overscroll-behavior-y: none;
+  touch-action: pan-y pinch-zoom;
+}
+
+.topbar {
+  flex: 0 0 auto !important;
+}
+
+main#main {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+  touch-action: pan-y pinch-zoom;
+  scroll-behavior: auto;
+}
+
+.tabbar {
+  z-index: 60;
+}
