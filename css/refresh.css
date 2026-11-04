@@ -1,0 +1,93 @@
+/* Bytewise refresh layer. Loaded last. Uses theme variables only, so every palette and custom colour still works. */
+
+/* ---- one header style for every screen ---- */
+.topbar .tb-ic, .topbar .tb-sub, body[data-screen] .topbar .tb-ic, body[data-screen] .topbar .tb-sub { display: none !important; }
+/* ---- bottom dock: solid bar + fade so page content never shows through or collides ---- */
+.tabbar { z-index: 60; background: var(--surface); -webkit-backdrop-filter: none; backdrop-filter: none; border: 1px solid var(--line); box-shadow: 0 14px 36px rgba(0, 0, 0, .32); }
+body::after { content: ""; position: fixed; left: 0; right: 0; bottom: 0; z-index: 55; height: calc(var(--nav-h, 72px) + 38px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to top, var(--bg) 56%, color-mix(in srgb, var(--bg) 0%, transparent)); pointer-events: none; }
+main { padding-bottom: calc(var(--nav-h, 72px) + 64px + env(safe-area-inset-bottom, 0px)); }
+.tabbar a { font-size: .68rem; letter-spacing: -.01em; transition: color .2s ease, transform .15s ease; }
+.tabbar a:active { transform: scale(.93); }
+.tabbar a[aria-current="page"] svg { animation: pop .38s cubic-bezier(.3, 1.4, .5, 1); }
+/* ---- sticky glass header ---- */
+.topbar { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 86%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); padding-top: calc(16px + env(safe-area-inset-top, 0px)); }
+/* ---- Calendar: lighter, colourful ---- */
+.cur .seg { background: var(--surface-2); border: 0; }
+.cur .seg a.on { background: var(--accent); color: var(--on-accent); font-weight: 700; box-shadow: 0 6px 16px color-mix(in srgb, var(--accent) 30%, transparent); }
+.cur .ghead { padding: 14px 14px 14px 16px; margin: 4px 0 10px; border-radius: 26px; background: var(--secondary); color: var(--on-secondary); }
+.cur .gtitle, .cur .gtitle .gcaret { color: var(--on-secondary); }
+.cur .gbtn, .cur .gjump { border: 0; background: color-mix(in srgb, var(--on-secondary) 14%, transparent); color: var(--on-secondary); }
+.cur .gjump::placeholder { color: color-mix(in srgb, var(--on-secondary) 62%, transparent); }
+.cur .gbtn:active { transform: scale(.94); }
+.cur .gsub { color: var(--muted); }
+.cur .ggrid { gap: 6px; border: 0; border-radius: 0; background: transparent; }
+.cur .gcell { position: relative; min-height: 86px; padding: 6px 2px 5px; border: 0; border-radius: 16px; background: color-mix(in srgb, var(--secondary) 20%, var(--surface)); color: var(--ink); transition: transform .15s ease, box-shadow .2s ease; }
+.cur .gcell:active { transform: scale(.94); }
+.cur .gcell.pad { background: transparent; }
+.cur .gcell.st-completed { background: color-mix(in srgb, var(--accent) 38%, var(--surface)); }
+.cur .gcell.st-skipped { background: color-mix(in srgb, var(--tertiary) 38%, var(--surface)); }
+.cur .gcell.st-in-progress { background: color-mix(in srgb, var(--secondary) 45%, var(--surface)); }
+.cur .gcell.sel { background: color-mix(in srgb, var(--accent) 26%, var(--surface)); box-shadow: inset 0 0 0 2px var(--accent); }
+.cur .gcell.next .gnum { background: var(--accent); color: var(--on-accent); }
+.cur .gnum { font-weight: 700; }
+.cur .gchipx, .cur .gcell.st-completed .gchipx, .cur .gcell.st-skipped .gchipx, .cur .gcell.st-in-progress .gchipx { background: transparent; color: var(--ink); font-size: .6rem; line-height: 1.2; opacity: .85; }
+.cur .gcell.ms::after { background: var(--tertiary); left: 8px; right: 8px; bottom: 4px; }
+.cur .glegend { margin: 12px 4px; }
+.cur .card.agenda { border: 0; background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
+/* ---- Settings: pastel sections ---- */
+#settings-root > .card { border: 0; }
+#settings-root > .card:nth-of-type(3n+1) { background: color-mix(in srgb, var(--accent) 13%, var(--surface)); }
+#settings-root > .card:nth-of-type(3n+2) { background: color-mix(in srgb, var(--secondary) 15%, var(--surface)); }
+#settings-root > .card:nth-of-type(3n) { background: color-mix(in srgb, var(--tertiary) 15%, var(--surface)); }
+#settings-root .card > h2, #settings-root .card > h3 { font-family: var(--font-display); }
+/* ---- Progress: weekly chart card ---- */
+.pg-week { margin: 0 0 12px; padding: 18px 18px 14px; border-radius: 28px; background: var(--secondary); color: var(--on-secondary); }
+.pg-week-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+.pg-week-top strong { font-family: var(--font-display); font-size: 1.05rem; }
+.pg-week-top span { font-size: .82rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: color-mix(in srgb, var(--on-secondary) 14%, transparent); }
+.pg-bars { display: grid; grid-template-columns: repeat(7, 1fr); align-items: end; gap: 8px; height: 104px; }
+.pg-bar-col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; height: 100%; font-size: .72rem; }
+.pg-bar-col i { display: block; width: 100%; min-height: 6px; border-radius: 10px; background: color-mix(in srgb, var(--on-secondary) 22%, transparent); transform-origin: bottom; }
+.pg-bar-col.has i { background: var(--on-secondary); }
+.pg-bar-col.today i { outline: 2px solid var(--on-secondary); outline-offset: 2px; }
+.pg-bar-col em { font-style: normal; opacity: .75; }
+.pg-bar-col b { font-size: .72rem; }
+/* ---- motion ---- */
+@keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes pop { 0% { transform: scale(.78); } 60% { transform: scale(1.12); } 100% { transform: scale(1); } }
+@keyframes screenIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growY { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes ringIn { from { opacity: 0; transform: scale(.8) rotate(-50deg); } to { opacity: 1; transform: none; } }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+.anim-on .screen:not([hidden]) { animation: screenIn .36s cubic-bezier(.2, .8, .2, 1) backwards; }
+.anim-on :is(.pcard, .pg-hero, .pg-tile, .pg-row, .pg-next, .pg-week, .lib-hero, .lib-cat, .lib-card, .mini-card, .srow, .qbank-card, .project-item, .topic-item, .item, .gcell:not(.pad), .card.agenda, .home-workspace-tabs) { animation: rise .55s cubic-bezier(.2, .8, .2, 1) backwards; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(1) { animation-delay: 0ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(2) { animation-delay: 45ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(3) { animation-delay: 90ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(4) { animation-delay: 135ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(5) { animation-delay: 180ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(6) { animation-delay: 225ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(7) { animation-delay: 270ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(8) { animation-delay: 315ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(9) { animation-delay: 360ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(10) { animation-delay: 405ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(11) { animation-delay: 450ms; }
+.anim-on :is(.cur, .pg, .lib, .mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .acc-inner, .deck-list) > :nth-child(12) { animation-delay: 450ms; }
+.anim-on :is(.pc-bar i, .cbar span, .pg-row .cbar span, .pg-bar span) { transform-origin: left; animation: growX .9s .2s cubic-bezier(.2, .8, .2, 1) backwards; }
+.anim-on .pg-bar-col i { animation: growY .8s .15s cubic-bezier(.2, .8, .2, 1) backwards; }
+.anim-on :is(.pg-ring, .ring) { animation: ringIn .8s .1s cubic-bezier(.2, .8, .2, 1) backwards; }
+.acc-body:not([hidden]) { animation: slideDown .3s ease backwards; }
+.pcard, .lib-cat, .pg-tile, .pg-row, .btn, .home-btn, .circ-btn { transition: transform .16s ease, filter .16s ease; }
+.pcard:active, .lib-cat:active, .pg-tile:active, .pg-row:active { transform: scale(.975); }
+.btn:active, .home-btn:active, .circ-btn:active { transform: scale(.95); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+/* ---- Scroll stability fix ----
+   Prevent browser overscroll navigation / pull-to-refresh where supported.
+   This does not disable normal vertical scrolling inside Bytewise. */
+html,
+body {
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+}

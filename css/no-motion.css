@@ -1,0 +1,13 @@
+/* Bytewise no-animation mode. Loaded last so every screen and theme is covered. */
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+  view-transition-name: none !important;
+}
+
+html:focus-within {
+  scroll-behavior: auto !important;
+}

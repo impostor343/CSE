@@ -1,0 +1,92 @@
+/* Bytewise learning-plan calendar header */
+.plan-week-wrap {
+  margin: 0 0 14px;
+  padding: 16px 14px 12px;
+  border: 1px solid var(--soft-line);
+  border-radius: 24px;
+  background: var(--soft-1);
+}
+.plan-week-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--deep-ink);
+  margin: 0 2px 12px;
+}
+.plan-week-strip {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px;
+}
+.plan-date {
+  min-width: 0;
+  min-height: 76px;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  background: var(--soft-2);
+  color: var(--ink, var(--deep-ink));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 2px;
+}
+.plan-date:disabled { opacity: .38; }
+.plan-date.is-active {
+  background: var(--bg, #fff);
+  border-color: var(--accent);
+  box-shadow: 0 5px 16px rgba(0,0,0,.08);
+}
+.plan-date.is-today:not(.is-active) { outline: 1px solid var(--accent); }
+.plan-date-name { font-size: 10px; opacity: .72; }
+.plan-date-number { font-size: 18px; line-height: 1.1; }
+.plan-date-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--soft-line); }
+.plan-date-dot.is-done { background: #55B98A; }
+.plan-date-dot.is-skipped { background: #E4A34D; }
+.plan-date-dot.is-pending { background: var(--accent); }
+.plan-date-dot.is-empty { opacity: .25; }
+.plan-progress-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 16px;
+  padding: 16px;
+  border-radius: 22px;
+  background: var(--tint);
+  color: var(--deep-ink);
+}
+.plan-progress-ring {
+  --plan-progress: 0%;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: conic-gradient(var(--accent) var(--plan-progress), var(--soft-line) 0);
+  position: relative;
+  isolation: isolate;
+}
+.plan-progress-ring::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: var(--tint);
+  z-index: -1;
+}
+.plan-progress-copy { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.plan-progress-copy strong { font-size: 15px; }
+.plan-progress-copy span { font-size: 12px; opacity: .78; }
+.plan-selected-card {
+  border-radius: 24px;
+  padding: 20px;
+  background: var(--soft-2);
+  border: 1px solid var(--soft-line);
+}
+@media (max-width: 360px) {
+  .plan-week-strip { gap: 3px; }
+  .plan-date { min-height: 68px; border-radius: 14px; }
+  .plan-date-name { font-size: 9px; }
+}

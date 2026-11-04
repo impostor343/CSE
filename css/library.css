@@ -1,0 +1,72 @@
+/* Learning Library (Resources tab). Colours come from the theme (--accent, --secondary, --tertiary and their --on-* pairs). */
+.lib { padding-bottom: 8px; }
+.lib-hero { position: relative; overflow: hidden; margin: 4px 0 14px; padding: 22px 20px 20px; border-radius: 32px; background: var(--c); color: var(--on); isolation: isolate; }
+.lib-hero > *:not(.scribble) { position: relative; z-index: 1; }
+.lib-hero .scribble, .lib-cat .scribble { position: absolute; right: -8px; bottom: -6px; width: 64%; height: 82%; z-index: 0; pointer-events: none; }
+.lib-hero .scribble svg, .lib-cat .scribble svg { width: 100%; height: 100%; display: block; }
+.lib-hero .scribble path, .lib-cat .scribble path { fill: none; stroke: var(--s); stroke-width: 30; stroke-linecap: round; stroke-linejoin: round; }
+.lib-eyebrow { margin: 0 0 6px; font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; opacity: .72; }
+.cur .lib-hero h2 { margin: 0; font-family: var(--font-display); font-size: clamp(1.7rem, 8vw, 2.2rem); line-height: 1.05; letter-spacing: -.03em; color: inherit; }
+.cur .lib-sub { margin: 8px 0 14px; max-width: 78%; font-size: .95rem; color: inherit; opacity: .85; }
+.lib-stats { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 12px; font-size: .85rem; }
+.lib-stats b { font-size: 1.15rem; margin-right: 2px; }
+.lib-hero .pc-bar { margin-top: 4px; }
+.lib-cat-ic { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: color-mix(in srgb, var(--on) 14%, transparent); }
+.lib-cat-ic svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.lib-cat-ic.big { width: 52px; height: 52px; margin-bottom: 12px; }
+.lib-back { margin: 2px 0 6px; }
+.lib-searchwrap { position: relative; display: block; margin: 0 0 10px; }
+.lib-sic { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); display: grid; width: 20px; height: 20px; color: var(--muted); pointer-events: none; }
+.lib-sic svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.lib-search { width: 100%; min-height: 52px; padding: 0 18px 0 46px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: 1rem; box-sizing: border-box; }
+.lib-search:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.lib-status { min-height: 1.2em; margin: 2px 6px 4px; color: var(--accent-text, var(--accent)); font-size: .85rem; }
+.cur .lib-h { margin: 22px 4px 10px; font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--ink); }
+.lib-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.lib-cat { position: relative; display: flex; flex-direction: column; gap: 4px; min-height: 196px; padding: 16px; border-radius: 28px; overflow: hidden; background: var(--c); color: var(--on); text-decoration: none; isolation: isolate; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+.lib-cat > *:not(.scribble) { position: relative; z-index: 1; }
+.lib-cat .lib-cat-ic { margin-bottom: auto; }
+.lib-go { position: absolute !important; top: 14px; right: 14px; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: #fff; color: #111; font-size: 1.05rem; font-weight: 700; }
+.lib-cat-name { margin-top: 18px; font-family: var(--font-display); font-size: 1.2rem; line-height: 1.12; letter-spacing: -.02em; overflow-wrap: anywhere; }
+.lib-cat-sub { font-size: .76rem; line-height: 1.3; opacity: .78; }
+.lib-cat-count { margin: 4px 0 6px; font-size: .78rem; font-weight: 700; }
+.lib-chips { display: flex; gap: 8px; overflow-x: auto; margin: 0 -16px; padding: 4px 16px 10px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.lib-chips::-webkit-scrollbar { display: none; }
+.lib-chip { flex: none; min-height: 40px; padding: 0 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: .88rem; white-space: nowrap; cursor: pointer; }
+.lib-chip[aria-pressed="true"] { background: var(--accent); border-color: transparent; color: var(--on-accent); font-weight: 700; }
+.lib-chip.toggle { margin-left: auto; border-style: dashed; }
+.lib-card { margin: 0 0 12px; padding: 16px; border: 1px solid var(--line); border-radius: 26px; background: var(--surface); }
+.lib-card.is-done { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); background: color-mix(in srgb, var(--accent) 9%, var(--surface)); }
+.lib-card-top { display: flex; align-items: flex-start; gap: 12px; }
+.lib-ic { display: grid; place-items: center; width: 44px; height: 44px; flex: none; border-radius: 50%; background: var(--surface-2); color: var(--accent-text, var(--accent)); }
+.lib-ic svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.lib-main { min-width: 0; flex: 1; }
+.cur .lib-title { margin: 0; font-family: var(--font-display); font-size: 1.02rem; font-weight: 700; line-height: 1.25; color: var(--ink); overflow-wrap: anywhere; }
+.cur .lib-by { margin: 3px 0 0; font-size: .82rem; color: var(--muted); overflow-wrap: anywhere; }
+.cur .lib-note { margin: 10px 0 0; font-size: .9rem; line-height: 1.4; color: var(--ink); opacity: .88; }
+.lib-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
+.lib-tag { padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); font-size: .72rem; font-weight: 600; }
+.lib-tag.k-book { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--ink); }
+.lib-tag.k-course { background: color-mix(in srgb, var(--secondary) 28%, transparent); color: var(--ink); }
+.lib-tag.k-docs, .lib-tag.k-guide { background: color-mix(in srgb, var(--tertiary) 26%, transparent); color: var(--ink); }
+.lib-tag.on { background: var(--accent); color: var(--on-accent); }
+.lib-check { display: grid; place-items: center; width: 44px; height: 44px; flex: none; padding: 0; border: 2px solid var(--line); border-radius: 50%; background: transparent; color: transparent; cursor: pointer; transition: background .2s, border-color .2s, color .2s, transform .2s; }
+.lib-check svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.lib-check[aria-pressed="true"] { background: var(--accent); border-color: transparent; color: var(--on-accent); animation: pop .35s ease; }
+.lib-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.lib-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 42px; margin: 0; padding: 0 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface-2); color: var(--ink); font: inherit; font-size: .88rem; font-weight: 600; text-decoration: none; cursor: pointer; transition: transform .15s ease, filter .15s ease; -webkit-tap-highlight-color: transparent; }
+.lib-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.lib-btn:active { transform: scale(.96); }
+.lib-btn.solid { background: var(--accent); border-color: transparent; color: var(--on-accent); }
+.lib-btn.offline { background: var(--secondary); border-color: transparent; color: var(--on-secondary); }
+.lib-btn.ghost { background: transparent; }
+.lib-btn.danger { color: #E5484D; padding: 0 12px; }
+.cur .lib-file { margin: 10px 0 0; font-size: .76rem; color: var(--muted); overflow-wrap: anywhere; }
+.cur .lib-empty { margin: 4px 6px 12px; color: var(--muted); }
+.cur .lib-foot { margin: 22px 8px 4px; font-size: .78rem; line-height: 1.45; color: var(--muted); }
+@media (max-width: 360px) { .lib-grid { gap: 8px; } .lib-cat { min-height: 180px; padding: 14px; } .lib-cat-name { font-size: 1.08rem; } }
+/* links inherit the card text colour (theme sets a global link colour) */
+.cur a.lib-cat, .cur a.lib-cat:visited, .cur a.lib-cat:hover { color: var(--on); text-decoration: none; }
+.cur a.lib-cat .lib-go { color: #111; }
+.cur a.lib-btn, .cur a.lib-btn:visited { color: var(--ink); text-decoration: none; }
+.cur a.lib-btn.solid, .cur a.lib-btn.solid:visited { color: var(--on-accent); }

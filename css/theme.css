@@ -1,0 +1,89 @@
+/* Appearance: colour palettes and fonts chosen in Settings. Values are applied as attributes on <html> by js/theme.js. */
+@font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url("../fonts/inter-400.woff") format("woff")}
+@font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:swap;src:url("../fonts/inter-600.woff") format("woff")}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/inter-700.woff") format("woff")}
+@font-face{font-family:"Poppins";font-weight:400;font-style:normal;font-display:swap;src:url("../fonts/poppins-400.woff") format("woff")}
+@font-face{font-family:"Poppins";font-weight:500 600;font-style:normal;font-display:swap;src:url("../fonts/poppins-500.woff") format("woff")}
+@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url("../fonts/poppins-700.woff") format("woff")}
+@font-face{font-family:"Lora";font-weight:400 700;font-style:normal;font-display:swap;src:url("../fonts/lora-var.woff") format("woff")}
+/* default palette (Emerald) */
+:root {--accent:#4CAF82;--accent-strong:#1E7B50;--tint:#E6F3EB;--soft-1:#F8FCF9;--soft-2:#EFF7F1;--soft-line:#D9E8DF;--pill:#E2F1E8;--pill-ink:#236B4C;--deep:#176C4C;--deep-ink:#173B30;--soft-ink:#506B60}
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"]) { --accent:#5CC59A;--accent-strong:#7FD8B1;--tint:#1F2D26;--soft-1:#19251F;--soft-2:#1C3026;--soft-line:#315343;--pill:#254B38;--pill-ink:#BDE8CF;--deep:#1F8A62;--deep-ink:#E0F2E7;--soft-ink:#B0C9BB }
+}
+/* forced dark */
+html[data-mode="dark"] { --accent:#5CC59A;--accent-strong:#7FD8B1;--tint:#1F2D26;--soft-1:#19251F;--soft-2:#1C3026;--soft-line:#315343;--pill:#254B38;--pill-ink:#BDE8CF;--deep:#1F8A62;--deep-ink:#E0F2E7;--soft-ink:#B0C9BB }
+
+/* Ocean */
+html[data-palette="ocean"] {--accent:#4C8FD6;--accent-strong:#1F5FA8;--tint:#E5EFFB;--soft-1:#F7FAFE;--soft-2:#EAF2FC;--soft-line:#D3E2F5;--pill:#DCEAFA;--pill-ink:#1E4F8A;--deep:#1F5FA8;--deep-ink:#14325A;--soft-ink:#4A6384}
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"])[data-palette="ocean"] { --accent:#6FA8EA;--accent-strong:#9CC4F4;--tint:#1B2736;--soft-1:#172230;--soft-2:#1A2B40;--soft-line:#2E4A6B;--pill:#243F63;--pill-ink:#C3DBF8;--deep:#2D6DBD;--deep-ink:#DCEAFC;--soft-ink:#A9C0DB }
+}
+/* forced dark */
+html[data-mode="dark"][data-palette="ocean"] { --accent:#6FA8EA;--accent-strong:#9CC4F4;--tint:#1B2736;--soft-1:#172230;--soft-2:#1A2B40;--soft-line:#2E4A6B;--pill:#243F63;--pill-ink:#C3DBF8;--deep:#2D6DBD;--deep-ink:#DCEAFC;--soft-ink:#A9C0DB }
+
+/* Violet */
+html[data-palette="violet"] {--accent:#8A6FD6;--accent-strong:#5B3FB5;--tint:#EEE9FA;--soft-1:#FAF8FE;--soft-2:#F1ECFB;--soft-line:#E0D8F4;--pill:#E7E0F8;--pill-ink:#4C3399;--deep:#5B3FB5;--deep-ink:#2E1F66;--soft-ink:#62588A}
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"])[data-palette="violet"] { --accent:#A58BE8;--accent-strong:#C5B3F5;--tint:#272036;--soft-1:#1E1A2B;--soft-2:#261F3A;--soft-line:#43386A;--pill:#3A2F63;--pill-ink:#DDD0FA;--deep:#6D4FCB;--deep-ink:#EAE2FC;--soft-ink:#BBB0DA }
+}
+/* forced dark */
+html[data-mode="dark"][data-palette="violet"] { --accent:#A58BE8;--accent-strong:#C5B3F5;--tint:#272036;--soft-1:#1E1A2B;--soft-2:#261F3A;--soft-line:#43386A;--pill:#3A2F63;--pill-ink:#DDD0FA;--deep:#6D4FCB;--deep-ink:#EAE2FC;--soft-ink:#BBB0DA }
+
+/* Sunset */
+html[data-palette="sunset"] {--accent:#E08A3C;--accent-strong:#B85F12;--tint:#FCEEDD;--soft-1:#FFFAF4;--soft-2:#FDF0E0;--soft-line:#F3DEC5;--pill:#FBE6CE;--pill-ink:#8F4A0C;--deep:#B85F12;--deep-ink:#5E3208;--soft-ink:#7F6347}
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"])[data-palette="sunset"] { --accent:#F2B06B;--accent-strong:#F5C48E;--tint:#33281B;--soft-1:#261E15;--soft-2:#33261A;--soft-line:#5A4128;--pill:#5C3F1F;--pill-ink:#FAD9B0;--deep:#C86F1E;--deep-ink:#FCE9D2;--soft-ink:#D6BC9C }
+}
+/* forced dark */
+html[data-mode="dark"][data-palette="sunset"] { --accent:#F2B06B;--accent-strong:#F5C48E;--tint:#33281B;--soft-1:#261E15;--soft-2:#33261A;--soft-line:#5A4128;--pill:#5C3F1F;--pill-ink:#FAD9B0;--deep:#C86F1E;--deep-ink:#FCE9D2;--soft-ink:#D6BC9C }
+
+/* Rose */
+html[data-palette="rose"] {--accent:#D9669B;--accent-strong:#B03A74;--tint:#FBE8F1;--soft-1:#FFF8FB;--soft-2:#FCEBF3;--soft-line:#F3D3E3;--pill:#F9DDEB;--pill-ink:#8E2A5A;--deep:#B03A74;--deep-ink:#5A1B3A;--soft-ink:#80566A}
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"])[data-palette="rose"] { --accent:#EE8DB9;--accent-strong:#F5AFCE;--tint:#34202B;--soft-1:#271B21;--soft-2:#35212C;--soft-line:#5E3A4C;--pill:#5A2F45;--pill-ink:#FAC9DF;--deep:#C24C86;--deep-ink:#FCE3EE;--soft-ink:#D7B4C5 }
+}
+/* forced dark */
+html[data-mode="dark"][data-palette="rose"] { --accent:#EE8DB9;--accent-strong:#F5AFCE;--tint:#34202B;--soft-1:#271B21;--soft-2:#35212C;--soft-line:#5E3A4C;--pill:#5A2F45;--pill-ink:#FAC9DF;--deep:#C24C86;--deep-ink:#FCE3EE;--soft-ink:#D7B4C5 }
+
+/* Teal */
+html[data-palette="teal"] {--accent:#2FA89B;--accent-strong:#137A70;--tint:#DFF3F0;--soft-1:#F5FCFB;--soft-2:#E7F6F4;--soft-line:#CBE8E4;--pill:#D6F0EC;--pill-ink:#0F5F57;--deep:#137A70;--deep-ink:#0B3B36;--soft-ink:#456B67}
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"])[data-palette="teal"] { --accent:#6AD6CB;--accent-strong:#8FE6DC;--tint:#1A2B29;--soft-1:#15221F;--soft-2:#1A302D;--soft-line:#2C524D;--pill:#1F4A45;--pill-ink:#BCF0EA;--deep:#1B8F83;--deep-ink:#D5F6F2;--soft-ink:#A5CBC7 }
+}
+/* forced dark */
+html[data-mode="dark"][data-palette="teal"] { --accent:#6AD6CB;--accent-strong:#8FE6DC;--tint:#1A2B29;--soft-1:#15221F;--soft-2:#1A302D;--soft-line:#2C524D;--pill:#1F4A45;--pill-ink:#BCF0EA;--deep:#1B8F83;--deep-ink:#D5F6F2;--soft-ink:#A5CBC7 }
+
+/* Graphite */
+html[data-palette="slate"] {--accent:#6B7A90;--accent-strong:#3F4C5F;--tint:#E8ECF1;--soft-1:#F8F9FB;--soft-2:#EEF1F5;--soft-line:#DCE1E8;--pill:#E3E8EE;--pill-ink:#364152;--deep:#3F4C5F;--deep-ink:#1D2633;--soft-ink:#5A6575}
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"])[data-palette="slate"] { --accent:#9AA8BC;--accent-strong:#C0CAD8;--tint:#232A33;--soft-1:#1B2027;--soft-2:#232A34;--soft-line:#3A4452;--pill:#333E4D;--pill-ink:#D3DBE6;--deep:#55657C;--deep-ink:#E4E9F0;--soft-ink:#B3BDCB }
+}
+/* forced dark */
+html[data-mode="dark"][data-palette="slate"] { --accent:#9AA8BC;--accent-strong:#C0CAD8;--tint:#232A33;--soft-1:#1B2027;--soft-2:#232A34;--soft-line:#3A4452;--pill:#333E4D;--pill-ink:#D3DBE6;--deep:#55657C;--deep-ink:#E4E9F0;--soft-ink:#B3BDCB }
+
+
+/* Fonts. "Default" keeps the original system sans body with serif headings. */
+html[data-font="inter"] { --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; --font-display: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+html[data-font="poppins"] { --font-body: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; --font-display: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+html[data-font="lora"] { --font-body: "Lora", Georgia, "Times New Roman", serif; --font-display: "Lora", Georgia, "Times New Roman", serif; }
+html[data-font="classic"] { --font-body: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif; --font-display: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif; }
+html[data-font="mono"] { --font-body: ui-monospace, "SF Mono", Menlo, Consolas, "Roboto Mono", "DejaVu Sans Mono", monospace; --font-display: ui-monospace, "SF Mono", Menlo, Consolas, "Roboto Mono", "DejaVu Sans Mono", monospace; }
+html[data-font="mono"] body { font-size: 1rem; }
+button, input, select, textarea { font-family: inherit; }
+
+/* Settings > Appearance */
+.cur .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 8px; margin: 6px 0 12px; }
+.cur .swatch { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 6px 10px; border-radius: 14px; border: 2px solid var(--line); background: var(--bg); color: var(--ink); font: inherit; font-size: .9rem; cursor: pointer; text-align: left; }
+.cur .swatch[aria-pressed="true"] { border-color: var(--accent-strong); background: var(--tint); font-weight: 600; }
+.cur .swatch .dot { width: 22px; height: 22px; flex: none; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0,0,0,.12); }
+.cur .fontopt { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; width: 100%; min-height: 52px; padding: 8px 14px; margin: 0 0 8px; border-radius: 14px; border: 2px solid var(--line); background: var(--bg); color: var(--ink); font-size: 1rem; cursor: pointer; text-align: left; }
+.cur .fontopt[aria-pressed="true"] { border-color: var(--accent-strong); background: var(--tint); }
+.cur .fontopt .sample { font-size: 1.35rem; color: var(--accent-strong); }
+
+/* Colour mode and text size */
+html[data-mode="light"] { color-scheme: light; }
+html[data-mode="dark"] { color-scheme: dark; }
+html[data-size="small"] { font-size: 14px; }
+html[data-size="large"] { font-size: 18px; }
+html[data-size="xlarge"] { font-size: 20px; }
