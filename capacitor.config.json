@@ -1,0 +1,11 @@
+{
+  "appId": "io.github.impostor343.cseroadmap",
+  "appName": "Bytewise",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

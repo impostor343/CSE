@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Data check | Java Roadmap</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body { padding-bottom: 32px; }
+    .wrap { max-width: 560px; margin: 0 auto; padding: 12px 20px; }
+    h1 { font-family: var(--font-display); font-size: 1.5rem; margin: 8px 0 4px; }
+    .counts { margin: 12px 0; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+    .counts p { margin: 2px 0; }
+    .tools { display: flex; gap: 8px; margin: 12px 0; }
+    .tools select, .tools input { flex: 1; min-height: 48px; font-size: 1rem; padding: 0 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--ink); }
+    .row { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .row b { font-weight: 600; }
+    .row small { display: block; color: var(--muted); }
+    .chip { display: inline-block; padding: 1px 8px; margin-left: 6px; border-radius: 999px; font-size: 0.8125rem; color: var(--ink); }
+    .err { color: #B3261E; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="./">Back to the app</a></p>
+    <h1>Data check</h1>
+    <p class="note">Temporary page to check the roadmap data. Removed before the final version.</p>
+    <div class="counts" id="counts">Loading data…</div>
+    <div class="tools">
+      <select id="month" aria-label="Month"></select>
+      <input id="search" type="search" placeholder="Search title or topic" aria-label="Search">
+    </div>
+    <div id="list"></div>
+  </div>
+  <script src="js/data-check.js?v=2"></script>
+</body>
+</html>

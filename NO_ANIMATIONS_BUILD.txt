@@ -1,0 +1,25 @@
+BYTEWISE CURRENT-FEATURES / NO-ANIMATIONS BUILD
+
+This complete source package carries forward the latest Bytewise app source
+and its current screens, modules, projects, data, settings, themes, library,
+widgets, notifications, search, Android build workflow and offline support.
+
+Animation removal:
+- Removed the motion.js entrance-effect and animated-counter controller.
+- Removed its script reference and service-worker precache entry.
+- Added css/no-motion.css as the final stylesheet. It disables CSS animations,
+  transitions and smooth scrolling across every screen and theme.
+- Changed horizontal deck movement to immediate scrolling. Swipe/card controls
+  remain available; their position changes happen instantly.
+- Bumped the service-worker cache to bytewise-v28 so devices fetch the update.
+
+Validation performed:
+- All JavaScript files pass Node syntax checks.
+- All local assets referenced by index.html exist.
+- All index CSS/JS assets are in the service-worker precache list.
+- All JSON data files parse successfully.
+- The older October 31 source archive contained no files absent from the
+  November 4 source archive, so no older-only project files were omitted.
+
+Not performed: real-device Android WebView testing. Test the hosted site or
+rebuild/reinstall the APK before treating runtime behaviour as confirmed.
