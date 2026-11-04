@@ -91,3 +91,27 @@ body {
   overscroll-behavior-y: none;
   overflow-x: hidden;
 }
+
+/* ---- restore normal page scrolling on mobile browsers ----
+   Keep the document as the vertical scroll container. Do not trap scrolling
+   inside the app shell or disable touch-driven vertical panning. */
+html {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  touch-action: pan-y pinch-zoom;
+}
+body {
+  height: auto !important;
+  min-height: 100vh !important;
+  min-height: 100dvh !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  touch-action: pan-y pinch-zoom;
+}
+main,
+.screen:not([hidden]) {
+  height: auto !important;
+  overflow: visible !important;
+}
