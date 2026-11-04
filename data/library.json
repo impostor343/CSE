@@ -1,0 +1,1438 @@
+{
+ "meta": {
+  "note": "Free books and guides only (open licences, author-published or official free documentation). Direct PDF links are used only where the publisher provides them; otherwise the book page is linked.",
+  "updated": "2026-11-03"
+ },
+ "categories": [
+  {
+   "id": "java",
+   "name": "Java & Spring",
+   "sub": "Language · JDBC · Spring · Testing",
+   "icon": "cup",
+   "areas": [
+    "Java",
+    "JDBC",
+    "Spring",
+    "Testing"
+   ]
+  },
+  {
+   "id": "dsa",
+   "name": "DSA",
+   "sub": "Algorithms · Data structures",
+   "icon": "sitemap",
+   "areas": [
+    "DSA"
+   ]
+  },
+  {
+   "id": "db",
+   "name": "Databases",
+   "sub": "SQL · DBMS",
+   "icon": "database",
+   "areas": [
+    "SQL",
+    "DBMS"
+   ]
+  },
+  {
+   "id": "web",
+   "name": "Web",
+   "sub": "HTML/CSS · JavaScript · React · TypeScript",
+   "icon": "globe",
+   "areas": [
+    "Web",
+    "JavaScript",
+    "React",
+    "TypeScript"
+   ]
+  },
+  {
+   "id": "git",
+   "name": "Git & DevOps",
+   "sub": "Git/GitHub · DevOps · Cloud",
+   "icon": "branch",
+   "areas": [
+    "Git/GitHub",
+    "DevOps",
+    "Cloud"
+   ]
+  },
+  {
+   "id": "systems",
+   "name": "Systems",
+   "sub": "C · OS · Networks",
+   "icon": "cpu",
+   "areas": [
+    "C",
+    "OS",
+    "Networks"
+   ]
+  },
+  {
+   "id": "python",
+   "name": "Python & Data/ML",
+   "sub": "Python · Data science · ML",
+   "icon": "chart",
+   "areas": [
+    "Python",
+    "Data/ML"
+   ]
+  },
+  {
+   "id": "design",
+   "name": "Software design",
+   "sub": "Engineering · Patterns · System design",
+   "icon": "layers",
+   "areas": [
+    "Software Engineering",
+    "Design Patterns",
+    "System Design",
+    "Distributed Systems"
+   ]
+  },
+  {
+   "id": "security",
+   "name": "Security",
+   "sub": "Web security · Cryptography",
+   "icon": "shield",
+   "areas": [
+    "Security"
+   ]
+  },
+  {
+   "id": "android",
+   "name": "Android",
+   "sub": "Kotlin · Compose · Apps",
+   "icon": "phone",
+   "areas": [
+    "Android"
+   ]
+  }
+ ],
+ "books": [
+  {
+   "areas": [
+    "Java"
+   ],
+   "title": "Think Java, 2nd Edition",
+   "author": "Allen B. Downey, Chris Mayfield",
+   "url": "https://greenteapress.com/wp/think-java-2e/",
+   "pdf": "https://greenteapress.com/thinkjava7/thinkjava.pdf",
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC-SA",
+   "note": "Start here: programming and Java from zero, with debugging advice.",
+   "id": "BK001"
+  },
+  {
+   "areas": [
+    "Java"
+   ],
+   "title": "Introduction to Programming Using Java",
+   "author": "David J. Eck",
+   "url": "https://math.hws.edu/javanotes/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC-SA",
+   "note": "Full free textbook: OOP, GUI, data structures, threads.",
+   "id": "BK002"
+  },
+  {
+   "areas": [
+    "Java"
+   ],
+   "title": "Java Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/JavaBook/",
+   "pdf": "https://goalkicker.com/JavaBook/JavaNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Quick reference compiled from Stack Overflow: streams, collections, concurrency.",
+   "id": "BK003"
+  },
+  {
+   "areas": [
+    "Java"
+   ],
+   "title": "Java Programming (Wikibooks)",
+   "author": "Wikibooks contributors",
+   "url": "https://en.wikibooks.org/wiki/Java_Programming",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-SA",
+   "note": "Open textbook with exercises and language details.",
+   "id": "BK004"
+  },
+  {
+   "areas": [
+    "Java"
+   ],
+   "title": "The Java Language Specification",
+   "author": "Oracle",
+   "url": "https://docs.oracle.com/javase/specs/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "The official rules of the language, free as HTML and PDF.",
+   "id": "BK005"
+  },
+  {
+   "areas": [
+    "JDBC"
+   ],
+   "title": "JDBC Developer’s Guide",
+   "author": "Oracle",
+   "url": "https://docs.oracle.com/en/database/oracle/oracle-database/23/jjdbc/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Official guide to connections, statements, result sets and transactions.",
+   "id": "BK006"
+  },
+  {
+   "areas": [
+    "JDBC",
+    "Java"
+   ],
+   "title": "Java Notes for Professionals (JDBC chapters)",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/JavaBook/",
+   "pdf": "https://goalkicker.com/JavaBook/JavaNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Short JDBC and database examples inside the Java notes.",
+   "id": "BK007"
+  },
+  {
+   "areas": [
+    "JDBC",
+    "SQL"
+   ],
+   "title": "SQL Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/SQLBook/",
+   "pdf": "https://goalkicker.com/SQLBook/SQLNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Use with JDBC: joins, transactions, indexes, prepared queries.",
+   "id": "BK008"
+  },
+  {
+   "areas": [
+    "Spring"
+   ],
+   "title": "Spring Framework Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/SpringFrameworkBook/",
+   "pdf": "https://goalkicker.com/SpringFrameworkBook/SpringFrameworkNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Beans, dependency injection, MVC and JDBC templates in short notes.",
+   "id": "BK009"
+  },
+  {
+   "areas": [
+    "Spring"
+   ],
+   "title": "Spring Boot Reference Documentation",
+   "author": "Spring team",
+   "url": "https://docs.spring.io/spring-boot/reference/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "The official, book-length reference for Spring Boot.",
+   "id": "BK010"
+  },
+  {
+   "areas": [
+    "Spring"
+   ],
+   "title": "Spring Framework Reference",
+   "author": "Spring team",
+   "url": "https://docs.spring.io/spring-framework/reference/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Core container, data access, web MVC and testing.",
+   "id": "BK011"
+  },
+  {
+   "areas": [
+    "Testing"
+   ],
+   "title": "JUnit 5 User Guide",
+   "author": "JUnit team",
+   "url": "https://junit.org/junit5/docs/current/user-guide/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Official guide with examples for every JUnit 5 feature.",
+   "id": "BK012"
+  },
+  {
+   "areas": [
+    "Testing"
+   ],
+   "title": "The Fuzzing Book",
+   "author": "Andreas Zeller et al.",
+   "url": "https://www.fuzzingbook.org/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY-NC-SA",
+   "note": "Free interactive book on automated test generation.",
+   "id": "BK013"
+  },
+  {
+   "areas": [
+    "Testing"
+   ],
+   "title": "The Debugging Book",
+   "author": "Andreas Zeller et al.",
+   "url": "https://www.debuggingbook.org/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY-NC-SA",
+   "note": "Free interactive book on finding and fixing bugs systematically.",
+   "id": "BK014"
+  },
+  {
+   "areas": [
+    "DSA"
+   ],
+   "title": "Algorithms",
+   "author": "Jeff Erickson",
+   "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+   "pdf": "https://jeffe.cs.illinois.edu/teaching/algorithms/book/Algorithms-JeffE.pdf",
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY",
+   "note": "Full free algorithms textbook: recursion, DP, graphs, NP-hardness.",
+   "id": "BK015"
+  },
+  {
+   "areas": [
+    "DSA"
+   ],
+   "title": "Open Data Structures (Java edition)",
+   "author": "Pat Morin",
+   "url": "https://opendatastructures.org/",
+   "pdf": "https://opendatastructures.org/ods-java.pdf",
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY",
+   "note": "Lists, trees, hashing, heaps and graphs with Java code.",
+   "id": "BK016"
+  },
+  {
+   "areas": [
+    "DSA"
+   ],
+   "title": "Think Data Structures",
+   "author": "Allen B. Downey",
+   "url": "https://greenteapress.com/wp/think-data-structures/",
+   "pdf": "https://greenteapress.com/thinkdast/thinkdast.pdf",
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC-SA",
+   "note": "Java data structures built from scratch and compared.",
+   "id": "BK017"
+  },
+  {
+   "areas": [
+    "DSA"
+   ],
+   "title": "Algorithms Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/AlgorithmsBook/",
+   "pdf": "https://goalkicker.com/AlgorithmsBook/AlgorithmsNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Big-O, sorting, graphs and dynamic programming cheat sheets.",
+   "id": "BK018"
+  },
+  {
+   "areas": [
+    "DSA"
+   ],
+   "title": "OpenDSA",
+   "author": "Virginia Tech and contributors",
+   "url": "https://opendsa-server.cs.vt.edu/",
+   "pdf": null,
+   "kind": "course",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Free interactive textbook with visualisations and practice.",
+   "id": "BK019"
+  },
+  {
+   "areas": [
+    "SQL"
+   ],
+   "title": "SQL Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/SQLBook/",
+   "pdf": "https://goalkicker.com/SQLBook/SQLNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Joins, grouping, indexes and window functions in short notes.",
+   "id": "BK020"
+  },
+  {
+   "areas": [
+    "SQL"
+   ],
+   "title": "SQL for Web Nerds",
+   "author": "Philip Greenspun",
+   "url": "https://philip.greenspun.com/sql/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "A friendly free introduction to SQL and data modelling.",
+   "id": "BK021"
+  },
+  {
+   "areas": [
+    "SQL"
+   ],
+   "title": "Use The Index, Luke",
+   "author": "Markus Winand",
+   "url": "https://use-the-index-luke.com/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Free online guide to SQL indexing and query speed.",
+   "id": "BK022"
+  },
+  {
+   "areas": [
+    "SQL"
+   ],
+   "title": "PostgreSQL Documentation",
+   "author": "PostgreSQL Global Development Group",
+   "url": "https://www.postgresql.org/docs/current/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Complete manual with a tutorial; PDF copies are offered on the docs page.",
+   "id": "BK023"
+  },
+  {
+   "areas": [
+    "SQL"
+   ],
+   "title": "PostgreSQL Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/PostgreSQLBook/",
+   "pdf": "https://goalkicker.com/PostgreSQLBook/PostgreSQLNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Practical PostgreSQL tasks in short notes.",
+   "id": "BK024"
+  },
+  {
+   "areas": [
+    "DBMS"
+   ],
+   "title": "Database Design, 2nd Edition",
+   "author": "Adrienne Watt, Nelson Eng",
+   "url": "https://opentextbc.ca/dbdesign01/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY",
+   "note": "Open textbook: ER models, normalisation, relational design.",
+   "id": "BK025"
+  },
+  {
+   "areas": [
+    "DBMS"
+   ],
+   "title": "Foundations of Databases",
+   "author": "Abiteboul, Hull, Vianu",
+   "url": "https://webdam.inria.fr/Alice/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Theory of relational databases, free from the authors’ site.",
+   "id": "BK026"
+  },
+  {
+   "areas": [
+    "DBMS"
+   ],
+   "title": "Readings in Database Systems (Red Book)",
+   "author": "Bailis, Hellerstein, Stonebraker",
+   "url": "https://www.redbook.io/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Classic papers and commentary on how databases work.",
+   "id": "BK027"
+  },
+  {
+   "areas": [
+    "DBMS"
+   ],
+   "title": "Architecture of a Database System",
+   "author": "Hellerstein, Stonebraker, Hamilton",
+   "url": "https://dsf.berkeley.edu/papers/fntdb07-architecture.pdf",
+   "pdf": "https://dsf.berkeley.edu/papers/fntdb07-architecture.pdf",
+   "kind": "book",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Inside a DBMS: storage, buffers, transactions, query processing.",
+   "id": "BK028"
+  },
+  {
+   "areas": [
+    "Git/GitHub"
+   ],
+   "title": "Pro Git, 2nd Edition",
+   "author": "Scott Chacon, Ben Straub",
+   "url": "https://git-scm.com/book/en/v2",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC-SA",
+   "note": "The standard free Git book; PDF and ebook downloads are on the page.",
+   "id": "BK029"
+  },
+  {
+   "areas": [
+    "Git/GitHub"
+   ],
+   "title": "Git Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/GitBook/",
+   "pdf": "https://goalkicker.com/GitBook/GitNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Branching, rebasing, stashing and recovery recipes.",
+   "id": "BK030"
+  },
+  {
+   "areas": [
+    "Git/GitHub",
+    "DevOps"
+   ],
+   "title": "The Missing Semester of Your CS Education",
+   "author": "MIT",
+   "url": "https://missing.csail.mit.edu/",
+   "pdf": null,
+   "kind": "course",
+   "level": "Beginner",
+   "license": "CC BY-NC-SA",
+   "note": "Shell, Git, editors and debugging: the tools courses skip.",
+   "id": "BK031"
+  },
+  {
+   "areas": [
+    "DevOps"
+   ],
+   "title": "Site Reliability Engineering",
+   "author": "Google",
+   "url": "https://sre.google/sre-book/table-of-contents/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "How Google runs production systems; free to read online.",
+   "id": "BK032"
+  },
+  {
+   "areas": [
+    "DevOps"
+   ],
+   "title": "The Site Reliability Workbook",
+   "author": "Google",
+   "url": "https://sre.google/workbook/table-of-contents/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Practical companion to the SRE book with real examples.",
+   "id": "BK033"
+  },
+  {
+   "areas": [
+    "DevOps",
+    "OS"
+   ],
+   "title": "The Linux Command Line",
+   "author": "William Shotts",
+   "url": "https://linuxcommand.org/tlcl.php",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC-ND",
+   "note": "Free full book on the shell; PDF download on the page.",
+   "id": "BK034"
+  },
+  {
+   "areas": [
+    "DevOps"
+   ],
+   "title": "The Twelve-Factor App",
+   "author": "Adam Wiggins",
+   "url": "https://12factor.net/",
+   "pdf": null,
+   "kind": "guide",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Short guide to building deployable, scalable web apps.",
+   "id": "BK035"
+  },
+  {
+   "areas": [
+    "Cloud"
+   ],
+   "title": "AWS Well-Architected Framework",
+   "author": "Amazon Web Services",
+   "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Design principles for secure, reliable, efficient cloud systems.",
+   "id": "BK036"
+  },
+  {
+   "areas": [
+    "Cloud"
+   ],
+   "title": "AWS Whitepapers and Guides",
+   "author": "Amazon Web Services",
+   "url": "https://aws.amazon.com/whitepapers/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Free PDF whitepapers: cloud basics, security, architecture.",
+   "id": "BK037"
+  },
+  {
+   "areas": [
+    "Cloud"
+   ],
+   "title": "Google Cloud Architecture Framework",
+   "author": "Google Cloud",
+   "url": "https://cloud.google.com/architecture/framework",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Best practices for designing and running cloud workloads.",
+   "id": "BK038"
+  },
+  {
+   "areas": [
+    "Cloud"
+   ],
+   "title": "Azure Well-Architected Framework",
+   "author": "Microsoft",
+   "url": "https://learn.microsoft.com/en-us/azure/well-architected/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Microsoft’s guidance on reliability, security and cost.",
+   "id": "BK039"
+  },
+  {
+   "areas": [
+    "Web"
+   ],
+   "title": "Eloquent JavaScript, 4th Edition",
+   "author": "Marijn Haverbeke",
+   "url": "https://eloquentjavascript.net/",
+   "pdf": "https://eloquentjavascript.net/Eloquent_JavaScript.pdf",
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC",
+   "note": "Great free book on JavaScript, the DOM and browser programming.",
+   "id": "BK040"
+  },
+  {
+   "areas": [
+    "Web"
+   ],
+   "title": "Resilient Web Design",
+   "author": "Jeremy Keith",
+   "url": "https://resilientwebdesign.com/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Free online book on building web pages that work everywhere.",
+   "id": "BK041"
+  },
+  {
+   "areas": [
+    "Web"
+   ],
+   "title": "web.dev Learn (HTML, CSS, Responsive)",
+   "author": "Google",
+   "url": "https://web.dev/learn",
+   "pdf": null,
+   "kind": "course",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Free structured courses on modern HTML and CSS.",
+   "id": "BK042"
+  },
+  {
+   "areas": [
+    "JavaScript"
+   ],
+   "title": "Eloquent JavaScript, 4th Edition",
+   "author": "Marijn Haverbeke",
+   "url": "https://eloquentjavascript.net/",
+   "pdf": "https://eloquentjavascript.net/Eloquent_JavaScript.pdf",
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC",
+   "note": "Language fundamentals through projects.",
+   "id": "BK043"
+  },
+  {
+   "areas": [
+    "JavaScript"
+   ],
+   "title": "You Don’t Know JS Yet",
+   "author": "Kyle Simpson",
+   "url": "https://github.com/getify/You-Dont-Know-JS",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY-NC-ND",
+   "note": "Deep, free book series on how JavaScript really works.",
+   "id": "BK044"
+  },
+  {
+   "areas": [
+    "JavaScript"
+   ],
+   "title": "JavaScript for Impatient Programmers",
+   "author": "Axel Rauschmayer",
+   "url": "https://exploringjs.com/impatient-js/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Fast, complete free book on modern JavaScript.",
+   "id": "BK045"
+  },
+  {
+   "areas": [
+    "JavaScript"
+   ],
+   "title": "JavaScript Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/JavaScriptBook/",
+   "pdf": "https://goalkicker.com/JavaScriptBook/JavaScriptNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Short notes on arrays, promises, modules and the DOM.",
+   "id": "BK046"
+  },
+  {
+   "areas": [
+    "React"
+   ],
+   "title": "Full Stack Open",
+   "author": "University of Helsinki",
+   "url": "https://fullstackopen.com/en/",
+   "pdf": null,
+   "kind": "course",
+   "level": "Intermediate",
+   "license": "CC BY-SA",
+   "note": "Free course-book: React, Node, GraphQL, TypeScript, testing.",
+   "id": "BK047"
+  },
+  {
+   "areas": [
+    "React"
+   ],
+   "title": "Patterns.dev",
+   "author": "Lydia Hallie, Addy Osmani",
+   "url": "https://www.patterns.dev/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Free guide to JavaScript and React design patterns.",
+   "id": "BK048"
+  },
+  {
+   "areas": [
+    "TypeScript"
+   ],
+   "title": "TypeScript Deep Dive",
+   "author": "Basarat Ali Syed",
+   "url": "https://basarat.gitbook.io/typescript/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Free online book on TypeScript’s type system and tooling.",
+   "id": "BK049"
+  },
+  {
+   "areas": [
+    "TypeScript"
+   ],
+   "title": "The TypeScript Handbook",
+   "author": "Microsoft",
+   "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "The official guide, from basic types to generics.",
+   "id": "BK050"
+  },
+  {
+   "areas": [
+    "C"
+   ],
+   "title": "Beej’s Guide to C Programming",
+   "author": "Brian “Beej” Hall",
+   "url": "https://beej.us/guide/bgc/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Clear free guide to C, with HTML and PDF versions.",
+   "id": "BK051"
+  },
+  {
+   "areas": [
+    "C"
+   ],
+   "title": "Modern C",
+   "author": "Jens Gustedt",
+   "url": "https://gustedt.gitlabpages.inria.fr/modern-c/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY-NC-SA",
+   "note": "Free book on writing modern, safe C.",
+   "id": "BK052"
+  },
+  {
+   "areas": [
+    "C"
+   ],
+   "title": "C Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/CBook/",
+   "pdf": "https://goalkicker.com/CBook/CNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Pointers, memory, structs and the preprocessor in short notes.",
+   "id": "BK053"
+  },
+  {
+   "areas": [
+    "C"
+   ],
+   "title": "The GNU C Reference Manual",
+   "author": "Free Software Foundation",
+   "url": "https://www.gnu.org/software/gnu-c-manual/",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Reference for the C language as GCC implements it.",
+   "id": "BK054"
+  },
+  {
+   "areas": [
+    "Python"
+   ],
+   "title": "Think Python, 3rd Edition",
+   "author": "Allen B. Downey",
+   "url": "https://allendowney.github.io/ThinkPython/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC-SA",
+   "note": "Free introduction to programming with Python.",
+   "id": "BK055"
+  },
+  {
+   "areas": [
+    "Python"
+   ],
+   "title": "Think Python, 2nd Edition",
+   "author": "Allen B. Downey",
+   "url": "https://greenteapress.com/wp/think-python-2e/",
+   "pdf": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC",
+   "note": "The PDF edition: good for offline reading.",
+   "id": "BK056"
+  },
+  {
+   "areas": [
+    "Python"
+   ],
+   "title": "Automate the Boring Stuff with Python",
+   "author": "Al Sweigart",
+   "url": "https://automatetheboringstuff.com/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC-SA",
+   "note": "Practical Python projects for files, web and spreadsheets.",
+   "id": "BK057"
+  },
+  {
+   "areas": [
+    "Python"
+   ],
+   "title": "Python Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/PythonBook/",
+   "pdf": "https://goalkicker.com/PythonBook/PythonNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Quick reference on lists, classes, generators and modules.",
+   "id": "BK058"
+  },
+  {
+   "areas": [
+    "OS"
+   ],
+   "title": "Operating Systems: Three Easy Pieces",
+   "author": "Remzi & Andrea Arpaci-Dusseau",
+   "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "The popular free OS book: virtualisation, concurrency, persistence.",
+   "id": "BK059"
+  },
+  {
+   "areas": [
+    "OS"
+   ],
+   "title": "Think OS",
+   "author": "Allen B. Downey",
+   "url": "https://greenteapress.com/wp/think-os/",
+   "pdf": "https://greenteapress.com/thinkos/thinkos.pdf",
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC-SA",
+   "note": "Short free OS book with C examples.",
+   "id": "BK060"
+  },
+  {
+   "areas": [
+    "OS"
+   ],
+   "title": "MIT 6.828 Operating System Engineering (xv6)",
+   "author": "MIT",
+   "url": "https://pdos.csail.mit.edu/6.828/",
+   "pdf": null,
+   "kind": "course",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Course page with the free xv6 book and labs.",
+   "id": "BK061"
+  },
+  {
+   "areas": [
+    "Networks"
+   ],
+   "title": "Computer Networks: A Systems Approach",
+   "author": "Larry Peterson, Bruce Davie",
+   "url": "https://book.systemsapproach.org/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY",
+   "note": "Open textbook, free to read online and download.",
+   "id": "BK062"
+  },
+  {
+   "areas": [
+    "Networks"
+   ],
+   "title": "Computer Networking: Principles, Protocols and Practice",
+   "author": "Olivier Bonaventure",
+   "url": "https://www.computer-networking.info/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY",
+   "note": "Open textbook with TCP/IP, routing and applications.",
+   "id": "BK063"
+  },
+  {
+   "areas": [
+    "Networks"
+   ],
+   "title": "Beej’s Guide to Network Programming",
+   "author": "Brian “Beej” Hall",
+   "url": "https://beej.us/guide/bgnet/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Sockets in C, explained plainly; HTML and PDF.",
+   "id": "BK064"
+  },
+  {
+   "areas": [
+    "Networks"
+   ],
+   "title": "High Performance Browser Networking",
+   "author": "Ilya Grigorik",
+   "url": "https://hpbn.co/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "How TCP, TLS, HTTP/2 and WebSockets behave in browsers.",
+   "id": "BK065"
+  },
+  {
+   "areas": [
+    "Software Engineering"
+   ],
+   "title": "Software Engineering at Google",
+   "author": "Winters, Manshreck, Wright",
+   "url": "https://abseil.io/resources/swe-book",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Free online: testing, code review, build systems, culture.",
+   "id": "BK066"
+  },
+  {
+   "areas": [
+    "Software Engineering",
+    "System Design"
+   ],
+   "title": "The Architecture of Open Source Applications",
+   "author": "Amy Brown, Greg Wilson (eds.)",
+   "url": "https://aosabook.org/en/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Advanced",
+   "license": "CC BY",
+   "note": "Chapters by the authors of real systems explaining their design.",
+   "id": "BK067"
+  },
+  {
+   "areas": [
+    "Software Engineering"
+   ],
+   "title": "Producing Open Source Software",
+   "author": "Karl Fogel",
+   "url": "https://producingoss.com/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-SA",
+   "note": "Free book on collaboration, reviews and running a project.",
+   "id": "BK068"
+  },
+  {
+   "areas": [
+    "Software Engineering"
+   ],
+   "title": "Software Design by Example",
+   "author": "Greg Wilson",
+   "url": "https://third-bit.com/sdxjs/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY-NC",
+   "note": "Learn design by building a test runner, parser and more in JavaScript.",
+   "id": "BK069"
+  },
+  {
+   "areas": [
+    "Design Patterns"
+   ],
+   "title": "Game Programming Patterns",
+   "author": "Robert Nystrom",
+   "url": "https://gameprogrammingpatterns.com/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Clear free explanations of classic patterns, not only for games.",
+   "id": "BK070"
+  },
+  {
+   "areas": [
+    "Design Patterns"
+   ],
+   "title": "Java Design Patterns",
+   "author": "Ilkka Seppälä and contributors",
+   "url": "https://java-design-patterns.com/",
+   "pdf": null,
+   "kind": "guide",
+   "level": "Intermediate",
+   "license": "Open source",
+   "note": "Free catalogue of patterns with Java code.",
+   "id": "BK071"
+  },
+  {
+   "areas": [
+    "Design Patterns"
+   ],
+   "title": "SourceMaking Design Patterns",
+   "author": "SourceMaking",
+   "url": "https://sourcemaking.com/design_patterns",
+   "pdf": null,
+   "kind": "guide",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Free tutorials on patterns, anti-patterns and refactoring.",
+   "id": "BK072"
+  },
+  {
+   "areas": [
+    "Security"
+   ],
+   "title": "OWASP Web Security Testing Guide",
+   "author": "OWASP",
+   "url": "https://owasp.org/www-project-web-security-testing-guide/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY-SA",
+   "note": "Free, detailed guide to testing web apps for weaknesses.",
+   "id": "BK073"
+  },
+  {
+   "areas": [
+    "Security"
+   ],
+   "title": "OWASP Developer Guide",
+   "author": "OWASP",
+   "url": "https://owasp.org/www-project-developer-guide/",
+   "pdf": null,
+   "kind": "guide",
+   "level": "Beginner",
+   "license": "CC BY-SA",
+   "note": "Free guide to building secure software.",
+   "id": "BK074"
+  },
+  {
+   "areas": [
+    "Security"
+   ],
+   "title": "Security Engineering",
+   "author": "Ross Anderson",
+   "url": "https://www.cl.cam.ac.uk/~rja14/book.html",
+   "pdf": null,
+   "kind": "book",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Landmark security book, free from the author’s site.",
+   "id": "BK075"
+  },
+  {
+   "areas": [
+    "Security"
+   ],
+   "title": "A Graduate Course in Applied Cryptography",
+   "author": "Dan Boneh, Victor Shoup",
+   "url": "https://crypto.stanford.edu/~dabo/cryptobook/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Free draft textbook on modern cryptography.",
+   "id": "BK076"
+  },
+  {
+   "areas": [
+    "Security"
+   ],
+   "title": "OWASP ASVS",
+   "author": "OWASP",
+   "url": "https://owasp.org/www-project-application-security-verification-standard/",
+   "pdf": null,
+   "kind": "guide",
+   "level": "Intermediate",
+   "license": "CC BY-SA",
+   "note": "Checklist of security requirements for web applications.",
+   "id": "BK077"
+  },
+  {
+   "areas": [
+    "System Design"
+   ],
+   "title": "Distributed Systems for Fun and Profit",
+   "author": "Mikito Takada",
+   "url": "https://book.mixu.net/distsys/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Short free book on the ideas behind distributed systems.",
+   "id": "BK078"
+  },
+  {
+   "areas": [
+    "System Design"
+   ],
+   "title": "Martin Fowler’s Software Architecture Guide",
+   "author": "Martin Fowler",
+   "url": "https://martinfowler.com/architecture/",
+   "pdf": null,
+   "kind": "guide",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Free articles on architecture, microservices and patterns.",
+   "id": "BK079"
+  },
+  {
+   "areas": [
+    "System Design",
+    "DevOps"
+   ],
+   "title": "Site Reliability Engineering",
+   "author": "Google",
+   "url": "https://sre.google/sre-book/table-of-contents/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Reliability, monitoring and capacity planning at scale.",
+   "id": "BK080"
+  },
+  {
+   "areas": [
+    "Distributed Systems"
+   ],
+   "title": "Distributed Systems, 4th Edition",
+   "author": "Maarten van Steen, Andrew Tanenbaum",
+   "url": "https://www.distributed-systems.net/index.php/books/ds4/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Standard textbook; a free PDF is offered on the authors’ site.",
+   "id": "BK081"
+  },
+  {
+   "areas": [
+    "Distributed Systems"
+   ],
+   "title": "Distributed Systems for Fun and Profit",
+   "author": "Mikito Takada",
+   "url": "https://book.mixu.net/distsys/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Time, replication and consistency explained simply.",
+   "id": "BK082"
+  },
+  {
+   "areas": [
+    "Data/ML"
+   ],
+   "title": "An Introduction to Statistical Learning (with Python)",
+   "author": "James, Witten, Hastie, Tibshirani",
+   "url": "https://www.statlearning.com/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "The classic free ML textbook with Python labs.",
+   "id": "BK083"
+  },
+  {
+   "areas": [
+    "Data/ML"
+   ],
+   "title": "Mathematics for Machine Learning",
+   "author": "Deisenroth, Faisal, Ong",
+   "url": "https://mml-book.github.io/",
+   "pdf": "https://mml-book.github.io/book/mml-book.pdf",
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "Free",
+   "note": "Linear algebra, calculus and probability for ML, free PDF.",
+   "id": "BK084"
+  },
+  {
+   "areas": [
+    "Data/ML"
+   ],
+   "title": "Dive into Deep Learning",
+   "author": "Zhang, Lipton, Li, Smola",
+   "url": "https://d2l.ai/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY-SA",
+   "note": "Free interactive deep learning book with code.",
+   "id": "BK085"
+  },
+  {
+   "areas": [
+    "Data/ML",
+    "Python"
+   ],
+   "title": "Python Data Science Handbook",
+   "author": "Jake VanderPlas",
+   "url": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Intermediate",
+   "license": "CC BY-NC-ND",
+   "note": "NumPy, Pandas, Matplotlib and scikit-learn, free online.",
+   "id": "BK086"
+  },
+  {
+   "areas": [
+    "Data/ML"
+   ],
+   "title": "Think Stats, 2nd Edition",
+   "author": "Allen B. Downey",
+   "url": "https://greenteapress.com/wp/think-stats-2e/",
+   "pdf": "https://greenteapress.com/thinkstats2/thinkstats2.pdf",
+   "kind": "book",
+   "level": "Beginner",
+   "license": "CC BY-NC",
+   "note": "Statistics for programmers, with Python.",
+   "id": "BK087"
+  },
+  {
+   "areas": [
+    "Data/ML"
+   ],
+   "title": "Deep Learning",
+   "author": "Goodfellow, Bengio, Courville",
+   "url": "https://www.deeplearningbook.org/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Free online edition of the standard deep learning textbook.",
+   "id": "BK088"
+  },
+  {
+   "areas": [
+    "Data/ML"
+   ],
+   "title": "The Elements of Statistical Learning",
+   "author": "Hastie, Tibshirani, Friedman",
+   "url": "https://hastie.su.domains/ElemStatLearn/",
+   "pdf": null,
+   "kind": "book",
+   "level": "Advanced",
+   "license": "Free",
+   "note": "Advanced companion to ISL; free PDF from the authors.",
+   "id": "BK089"
+  },
+  {
+   "areas": [
+    "Android"
+   ],
+   "title": "Android Basics with Compose",
+   "author": "Google",
+   "url": "https://developer.android.com/courses/android-basics-compose/course",
+   "pdf": null,
+   "kind": "course",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Google’s free beginner course using Kotlin and Jetpack Compose.",
+   "id": "BK090"
+  },
+  {
+   "areas": [
+    "Android"
+   ],
+   "title": "Android Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/AndroidBook/",
+   "pdf": "https://goalkicker.com/AndroidBook/AndroidNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Activities, intents, layouts, storage and networking in short notes.",
+   "id": "BK091"
+  },
+  {
+   "areas": [
+    "Android"
+   ],
+   "title": "Kotlin Notes for Professionals",
+   "author": "GoalKicker.com",
+   "url": "https://goalkicker.com/KotlinBook/",
+   "pdf": "https://goalkicker.com/KotlinBook/KotlinNotesForProfessionals.pdf",
+   "kind": "book",
+   "level": "Reference",
+   "license": "Free",
+   "note": "Kotlin syntax, coroutines and collections in short notes.",
+   "id": "BK092"
+  },
+  {
+   "areas": [
+    "Android"
+   ],
+   "title": "Kotlin Documentation",
+   "author": "JetBrains",
+   "url": "https://kotlinlang.org/docs/getting-started.html",
+   "pdf": null,
+   "kind": "docs",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "The official Kotlin guide and tour.",
+   "id": "BK093"
+  },
+  {
+   "areas": [
+    "Android"
+   ],
+   "title": "Jetpack Compose Tutorial",
+   "author": "Google",
+   "url": "https://developer.android.com/develop/ui/compose/tutorial",
+   "pdf": null,
+   "kind": "course",
+   "level": "Beginner",
+   "license": "Free",
+   "note": "Official step-by-step tutorial for modern Android UI.",
+   "id": "BK094"
+  }
+ ]
+}

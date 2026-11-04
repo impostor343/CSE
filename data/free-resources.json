@@ -1,0 +1,294 @@
+{
+ "meta": {
+  "note": "Free resources list supplied by the owner. Set \"pdf\" to a file path like pdfs/FR01.pdf to bundle an offline PDF, or attach one on the phone from the Resources tab."
+ },
+ "items": [
+  {
+   "id": "FR01",
+   "area": "Git/GitHub",
+   "name": "GitHub Skills",
+   "url": "https://skills.github.com/",
+   "pdf": null
+  },
+  {
+   "id": "FR02",
+   "area": "Git/GitHub",
+   "name": "Pro Git",
+   "url": "https://git-scm.com/book/en/v2",
+   "pdf": null
+  },
+  {
+   "id": "FR03",
+   "area": "Java",
+   "name": "MOOC.fi Java Programming I & II",
+   "url": "https://java-programming.mooc.fi/",
+   "pdf": null
+  },
+  {
+   "id": "FR04",
+   "area": "Java",
+   "name": "dev.java Learn",
+   "url": "https://dev.java/learn/",
+   "pdf": null
+  },
+  {
+   "id": "FR05",
+   "area": "Java",
+   "name": "Java API Documentation",
+   "url": "https://docs.oracle.com/en/java/",
+   "pdf": null
+  },
+  {
+   "id": "FR06",
+   "area": "DSA",
+   "name": "Princeton Algorithms",
+   "url": "https://algs4.cs.princeton.edu/home/",
+   "pdf": null
+  },
+  {
+   "id": "FR07",
+   "area": "DSA",
+   "name": "VisuAlgo",
+   "url": "https://visualgo.net/en",
+   "pdf": null
+  },
+  {
+   "id": "FR08",
+   "area": "DSA",
+   "name": "LeetCode Problemset",
+   "url": "https://leetcode.com/problemset/",
+   "pdf": null
+  },
+  {
+   "id": "FR09",
+   "area": "SQL",
+   "name": "SQLBolt",
+   "url": "https://sqlbolt.com/",
+   "pdf": null
+  },
+  {
+   "id": "FR10",
+   "area": "SQL",
+   "name": "PostgreSQL Tutorial",
+   "url": "https://www.postgresql.org/docs/current/tutorial.html",
+   "pdf": null
+  },
+  {
+   "id": "FR11",
+   "area": "SQL",
+   "name": "PGExercises",
+   "url": "https://pgexercises.com/",
+   "pdf": null
+  },
+  {
+   "id": "FR12",
+   "area": "JDBC",
+   "name": "JDBC Tutorial",
+   "url": "https://docs.oracle.com/javase/tutorial/jdbc/",
+   "pdf": null
+  },
+  {
+   "id": "FR13",
+   "area": "Spring",
+   "name": "Spring Guides",
+   "url": "https://spring.io/guides",
+   "pdf": null
+  },
+  {
+   "id": "FR14",
+   "area": "Spring",
+   "name": "Spring Boot Reference",
+   "url": "https://docs.spring.io/spring-boot/reference/",
+   "pdf": null
+  },
+  {
+   "id": "FR15",
+   "area": "Testing",
+   "name": "JUnit 5 User Guide",
+   "url": "https://junit.org/junit5/docs/current/user-guide/",
+   "pdf": null
+  },
+  {
+   "id": "FR16",
+   "area": "Testing",
+   "name": "Mockito",
+   "url": "https://site.mockito.org/",
+   "pdf": null
+  },
+  {
+   "id": "FR17",
+   "area": "Web",
+   "name": "MDN Learn Web Development",
+   "url": "https://developer.mozilla.org/en-US/docs/Learn",
+   "pdf": null
+  },
+  {
+   "id": "FR18",
+   "area": "JavaScript",
+   "name": "JavaScript.info",
+   "url": "https://javascript.info/",
+   "pdf": null
+  },
+  {
+   "id": "FR19",
+   "area": "React",
+   "name": "React Learn",
+   "url": "https://react.dev/learn",
+   "pdf": null
+  },
+  {
+   "id": "FR20",
+   "area": "TypeScript",
+   "name": "TypeScript Handbook",
+   "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+   "pdf": null
+  },
+  {
+   "id": "FR21",
+   "area": "C",
+   "name": "CS50x",
+   "url": "https://cs50.harvard.edu/x/2025/",
+   "pdf": null
+  },
+  {
+   "id": "FR22",
+   "area": "C",
+   "name": "Learn C",
+   "url": "https://www.learn-c.org/",
+   "pdf": null
+  },
+  {
+   "id": "FR23",
+   "area": "Python",
+   "name": "CS50P",
+   "url": "https://cs50.harvard.edu/python/",
+   "pdf": null
+  },
+  {
+   "id": "FR24",
+   "area": "Python",
+   "name": "Python Tutorial",
+   "url": "https://docs.python.org/3/tutorial/",
+   "pdf": null
+  },
+  {
+   "id": "FR25",
+   "area": "OS",
+   "name": "Operating Systems: Three Easy Pieces",
+   "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+   "pdf": null
+  },
+  {
+   "id": "FR26",
+   "area": "Networks",
+   "name": "Kurose/Ross companion site",
+   "url": "https://gaia.cs.umass.edu/kurose_ross/",
+   "pdf": null
+  },
+  {
+   "id": "FR27",
+   "area": "Networks",
+   "name": "Cloudflare Learning",
+   "url": "https://www.cloudflare.com/learning/",
+   "pdf": null
+  },
+  {
+   "id": "FR28",
+   "area": "DBMS",
+   "name": "CMU 15-445",
+   "url": "https://15445.courses.cs.cmu.edu/",
+   "pdf": null
+  },
+  {
+   "id": "FR29",
+   "area": "Software Engineering",
+   "name": "Google Engineering Practices",
+   "url": "https://google.github.io/eng-practices/",
+   "pdf": null
+  },
+  {
+   "id": "FR30",
+   "area": "Design Patterns",
+   "name": "Refactoring Guru",
+   "url": "https://refactoring.guru/design-patterns",
+   "pdf": null
+  },
+  {
+   "id": "FR31",
+   "area": "Security",
+   "name": "OWASP Top 10",
+   "url": "https://owasp.org/www-project-top-ten/",
+   "pdf": null
+  },
+  {
+   "id": "FR32",
+   "area": "Security",
+   "name": "PortSwigger Web Security Academy",
+   "url": "https://portswigger.net/web-security",
+   "pdf": null
+  },
+  {
+   "id": "FR33",
+   "area": "Security",
+   "name": "OWASP Cheat Sheet Series",
+   "url": "https://cheatsheetseries.owasp.org/",
+   "pdf": null
+  },
+  {
+   "id": "FR34",
+   "area": "DevOps",
+   "name": "Docker Get Started",
+   "url": "https://docs.docker.com/get-started/",
+   "pdf": null
+  },
+  {
+   "id": "FR35",
+   "area": "DevOps",
+   "name": "GitHub Actions Docs",
+   "url": "https://docs.github.com/en/actions",
+   "pdf": null
+  },
+  {
+   "id": "FR36",
+   "area": "Cloud",
+   "name": "AWS Skill Builder",
+   "url": "https://skillbuilder.aws/",
+   "pdf": null
+  },
+  {
+   "id": "FR37",
+   "area": "System Design",
+   "name": "System Design Primer",
+   "url": "https://github.com/donnemartin/system-design-primer",
+   "pdf": null
+  },
+  {
+   "id": "FR38",
+   "area": "Distributed Systems",
+   "name": "MIT 6.5840",
+   "url": "https://pdos.csail.mit.edu/6.824/",
+   "pdf": null
+  },
+  {
+   "id": "FR39",
+   "area": "Data/ML",
+   "name": "Kaggle Learn",
+   "url": "https://www.kaggle.com/learn",
+   "pdf": null
+  },
+  {
+   "id": "FR40",
+   "area": "Data/ML",
+   "name": "scikit-learn User Guide",
+   "url": "https://scikit-learn.org/stable/user_guide.html",
+   "pdf": null
+  },
+  {
+   "id": "FR41",
+   "area": "Android",
+   "name": "Android Developers",
+   "url": "https://developer.android.com/",
+   "pdf": null
+  }
+ ]
+}

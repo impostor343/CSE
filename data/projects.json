@@ -1,0 +1,280 @@
+{
+ "projects": [
+  {
+   "key": "guessing-game",
+   "colourKey": "guessing-game",
+   "name": "Guessing Game (existing project)",
+   "firstIntroduction": "Already started; roadmap continues Oct 28, 2026",
+   "milestones": "V1 fundamentals Oct 28–Nov 4 → V2 OOP Nov 6–13 → V3 persistence Dec 2–6 → V4 collections scoreboard Dec 8–15 → V5 tests/docs/portfolio audit Jun 2–5",
+   "publishRule": "Publish after stable gameplay, a clear README, clean run instructions and tests or a test checklist.",
+   "folder": "Java-Internship-Journey/02-Java-Practice/guessing-game/",
+   "continuityRule": "Keep the same folder and codebase. Each version upgrades the previous one; never recreate it for each topic.",
+   "versions": [
+    {
+     "version": "V1: reliable console game",
+     "learnFirst": "Methods, loops, input, random numbers",
+     "returnWhen": "Oct 28–Nov 4, 2026",
+     "feature": "Refactor repeated logic into methods; difficulty, limited attempts, hints, replay, input validation where appropriate.",
+     "completionCheck": "Play 5 rounds; test win/loss/replay, invalid input and edge cases.",
+     "folder": "Java-Internship-Journey/02-Java-Practice/guessing-game/"
+    },
+    {
+     "version": "V2: OOP refactor",
+     "learnFirst": "Classes, constructors, encapsulation",
+     "returnWhen": "Nov 6–13, 2026",
+     "feature": "Move state and behaviour into suitable classes while preserving gameplay; do not force inheritance or interfaces without a reason.",
+     "completionCheck": "Game still works; fields are encapsulated; explain each class and its responsibility.",
+     "folder": "Java-Internship-Journey/02-Java-Practice/guessing-game/"
+    },
+    {
+     "version": "V3: persistent high scores",
+     "learnFirst": "Path/Files, exceptions",
+     "returnWhen": "Dec 2–6, 2026",
+     "feature": "Save/load high scores in a documented text format; handle missing, empty and malformed files.",
+     "completionCheck": "Scores survive restart; file errors are handled; existing game features still work.",
+     "folder": "Java-Internship-Journey/02-Java-Practice/guessing-game/"
+    },
+    {
+     "version": "V4: collections scoreboard",
+     "learnFirst": "List, Set, Map, sorting/Comparator",
+     "returnWhen": "Dec 8–15, 2026; review Feb 9, 2027",
+     "feature": "Add a leaderboard with a justified collection and sorting; keep player data and game logic readable.",
+     "completionCheck": "Test empty board, tied scores, repeated players and ordering.",
+     "folder": "Java-Internship-Journey/02-Java-Practice/guessing-game/"
+    },
+    {
+     "version": "V5: quality and portfolio pass",
+     "learnFirst": "Git, testing concepts, documentation",
+     "returnWhen": "Portfolio audit Jun 2–5, 2027",
+     "feature": "Add/verify README, clean commits, tests or a precise manual test checklist.",
+     "completionCheck": "Fresh reader can run it; known limitations and test results are documented.",
+     "folder": "Java-Internship-Journey/02-Java-Practice/guessing-game/"
+    }
+   ]
+  },
+  {
+   "key": "banking",
+   "colourKey": "banking",
+   "name": "Banking and Account Management System",
+   "firstIntroduction": "Nov 14–17, 2026",
+   "milestones": "V1 OOP console → V2 exceptions/validation Dec 1 and review Dec 16 → V3 persistence Dec 7 → optional concurrency lab Feb 14–16 → portfolio review Jun 2",
+   "publishRule": "Publish after operations, edge cases, persistence and limitations are documented and tested.",
+   "folder": "Java-Internship-Journey/04-Projects/Active-Projects/banking-system/",
+   "continuityRule": "One continuing codebase. The concurrency work is an educational lab, not production-grade financial software.",
+   "versions": [
+    {
+     "version": "V1: OOP console model",
+     "learnFirst": "Classes, methods, constructors, encapsulation",
+     "returnWhen": "Nov 14–17, 2026",
+     "feature": "Implement account model, deposit, withdrawal, transfer, menu and validation.",
+     "completionCheck": "Balances remain correct; invalid amounts and insufficient funds are rejected.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/banking-system/"
+    },
+    {
+     "version": "V2: robust validation",
+     "learnFirst": "Exceptions and input validation",
+     "returnWhen": "Dec 1 and Dec 16, 2026",
+     "feature": "Use clear errors/custom exceptions for invalid operations; review class responsibility and duplicate code.",
+     "completionCheck": "Test negative amounts, missing accounts, insufficient funds and malformed input.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/banking-system/"
+    },
+    {
+     "version": "V3: persistence",
+     "learnFirst": "File I/O and documented data format",
+     "returnWhen": "Dec 7, 2026; revisit after Guessing Game persistence",
+     "feature": "Save/load accounts or transactions without losing the existing OOP design.",
+     "completionCheck": "Data survives restart; empty/malformed files are handled.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/banking-system/"
+    },
+    {
+     "version": "V4: concurrency lab (optional)",
+     "learnFirst": "Threads, race conditions, synchronized",
+     "returnWhen": "Feb 14–16, 2027",
+     "feature": "Use a small shared-account simulation to demonstrate a race condition and a synchronized fix. This is an educational extension, not production banking software.",
+     "completionCheck": "Repeat a controlled test and explain the observed issue and limitation.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/banking-system/concurrency-lab/"
+    }
+   ]
+  },
+  {
+   "key": "smart-library",
+   "colourKey": "smart-library",
+   "name": "Smart Library Management System",
+   "firstIntroduction": "Dec 17–19, 2026",
+   "milestones": "V1 OOP/borrow-return/member rules → V2 policy validation → V3 SQL schema Feb 20–21 → V4 frontend extension Apr 1–3",
+   "publishRule": "Publish after borrow/return rules, role-based limits/fines and sample scenarios work and are documented.",
+   "folder": "Java-Internship-Journey/04-Projects/Active-Projects/library-system/",
+   "continuityRule": "Preserve the same domain model when adding SQL and the frontend. Do not rebuild from scratch.",
+   "versions": [
+    {
+     "version": "V1: OOP and borrowing rules",
+     "learnFirst": "OOP, collections, methods",
+     "returnWhen": "Dec 17–19, 2026",
+     "feature": "Model Book, BookCopy, Member, Loan and FinePolicy; define teacher/student/pass-holder borrowing and fine rules.",
+     "completionCheck": "Test normal borrow/return, unavailable copy, overdue return and member-specific rules.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/library-system/"
+    },
+    {
+     "version": "V2: policy validation",
+     "learnFirst": "Conditionals, exceptions, edge cases",
+     "returnWhen": "Return during the V1 milestone and code review",
+     "feature": "Make borrowing limits, due dates and fine policies explicit and testable.",
+     "completionCheck": "Rules are not scattered randomly; tests cover each member type and boundary.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/library-system/"
+    },
+    {
+     "version": "V3: relational database design",
+     "learnFirst": "SQL, keys, constraints, ER diagrams, normalization",
+     "returnWhen": "Feb 20–21, 2027",
+     "feature": "Extend the same library domain to a relational schema for books, copies, members, loans and fines.",
+     "completionCheck": "Keys and constraints prevent invalid relationships; sample queries work.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/library-system/"
+    }
+   ]
+  },
+  {
+   "key": "inventory",
+   "colourKey": "inventory",
+   "name": "Inventory Management System",
+   "firstIntroduction": "Feb 25, 2027 (provisional)",
+   "milestones": "V1 schema → V2 JDBC CRUD Feb 26 and Mar 4–6 → V3 transactions/reports Mar 8–13 → optional frontend extension Apr 1–3",
+   "publishRule": "Publish after schema, setup instructions, CRUD, transaction cases and sample reports are verified.",
+   "folder": "Java-Internship-Journey/04-Projects/Active-Projects/inventory-system/",
+   "continuityRule": "Every milestone modifies the same schema/codebase. Record migration or setup changes.",
+   "versions": [
+    {
+     "version": "V1: database model",
+     "learnFirst": "SQL basics, ER design, keys and constraints",
+     "returnWhen": "Feb 25, 2027",
+     "feature": "Design products, categories and stock movements with sensible constraints.",
+     "completionCheck": "Sample inserts/updates/reports work; invalid data is rejected.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/inventory-system/"
+    },
+    {
+     "version": "V2: Java + SQL CRUD",
+     "learnFirst": "JDBC, PreparedStatement, resource handling",
+     "returnWhen": "Feb 26 and Mar 4–6, 2027",
+     "feature": "Connect Java CRUD to the existing schema using prepared statements and safe resource handling.",
+     "completionCheck": "Create/read/update/delete work from a clean start; no string-concatenated SQL.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/inventory-system/"
+    },
+    {
+     "version": "V3: transactions and reports",
+     "learnFirst": "Transactions, joins, aggregation",
+     "returnWhen": "Mar 8–13, 2027",
+     "feature": "Add transaction-safe stock changes and useful reports; refine the schema rather than replacing it.",
+     "completionCheck": "Test rollback/error paths, stock boundaries and report totals.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/inventory-system/"
+    }
+   ]
+  },
+  {
+   "key": "task-api",
+   "colourKey": "task-api",
+   "name": "Task Management REST API",
+   "firstIntroduction": "Apr 5, 2027 (provisional)",
+   "milestones": "V1 Spring Boot CRUD Apr 5–16 → V2 tests/docs/integration Apr 17–28 → V3 security/config May 7–13 → V4 deployment/CI May 14–18",
+   "publishRule": "Publish stable tested milestones. Tag a release only after clean setup, API examples and test results are verified.",
+   "folder": "Java-Internship-Journey/04-Projects/Active-Projects/task-management-api/",
+   "continuityRule": "Continue the same repository across April and May. Exam buffers pause work; they do not reset the project.",
+   "versions": [
+    {
+     "version": "V1: API foundation",
+     "learnFirst": "HTTP, REST, JSON, Maven, Spring Boot",
+     "returnWhen": "Apr 5–16, 2027",
+     "feature": "Build task CRUD with controller/service/repository responsibilities and SQL persistence.",
+     "completionCheck": "Endpoints behave correctly; validation and status codes are sensible; API can be run from documented instructions.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/task-management-api/"
+    },
+    {
+     "version": "V2: tests and integration",
+     "learnFirst": "JUnit, Mockito, Postman, API errors",
+     "returnWhen": "Apr 17–28, 2027",
+     "feature": "Add service and integration tests, edge-case handling, API documentation and a frontend integration checkpoint.",
+     "completionCheck": "Tests cover success/failure cases; README includes verified request examples.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/task-management-api/"
+    },
+    {
+     "version": "V3: security and configuration",
+     "learnFirst": "Configuration, validation, security concepts, logging",
+     "returnWhen": "May 7–13, 2027",
+     "feature": "Improve configuration, validation, error handling and basic security only after the API works. Never commit secrets.",
+     "completionCheck": "Configuration is documented; errors are predictable; no secrets are in the repository.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/task-management-api/"
+    },
+    {
+     "version": "V4: deployment and CI",
+     "learnFirst": "Deployment, Docker basics, GitHub Actions",
+     "returnWhen": "May 14–18, 2027",
+     "feature": "Deploy if a genuinely free suitable host is available; add a basic test/build workflow.",
+     "completionCheck": "Deployment and CI instructions are reproducible; clearly document any hosting limitations.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/task-management-api/"
+    }
+   ]
+  },
+  {
+   "key": "semester-planner",
+   "colourKey": "semester-planner",
+   "name": "Semester Planner Android App (Java, flagship)",
+   "firstIntroduction": "May 19, 2027 (provisional)",
+   "milestones": "V1 requirements May 19 → V2 native app shell/timetable/tasks May 20–22 → V3 attendance/calendar May 23–24 → V4 local persistence/tests/README May 25–26 → portfolio review Jun 2–5",
+   "publishRule": "Treat as flagship only if the core Android workflow works, data survives restart, and implemented features are distinguished from future ideas. Reminders/widgets are optional later work.",
+   "folder": "Java-Internship-Journey/04-Projects/Active-Projects/semester-planner-android/",
+   "continuityRule": "One native Android Java codebase from requirements through demo. Do not start a fresh app for each feature.",
+   "versions": [
+    {
+     "version": "V1: requirements and screen flow",
+     "learnFirst": "Requirements, Java classes, mobile UI planning",
+     "returnWhen": "May 19, 2027",
+     "feature": "Define semester, timetable, weekly lecture view, tasks and attendance. Treat reminders/widgets as later enhancements after the core MVP works.",
+     "completionCheck": "Screen flow and rules are documented, including holidays excluded from attendance percentage.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/semester-planner-android/"
+    },
+    {
+     "version": "V2: native app shell and workflows",
+     "learnFirst": "Android Activities/Views, Java model classes, navigation",
+     "returnWhen": "May 20–22, 2027",
+     "feature": "Create a compiling Android Java app, weekly timetable navigation, and basic task/timetable CRUD.",
+     "completionCheck": "App launches; main screens navigate correctly; core CRUD works with sample data.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/semester-planner-android/"
+    },
+    {
+     "version": "V3: calendar and attendance",
+     "learnFirst": "Date selection, local data, attendance rules",
+     "returnWhen": "May 23–24, 2027",
+     "feature": "Add attendance marking, holiday-aware percentage calculation, and calendar-to-week navigation.",
+     "completionCheck": "Test holidays, empty weeks and date selection; calculation rules are documented.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/semester-planner-android/"
+    },
+    {
+     "version": "V4: persistence, tests and demo",
+     "learnFirst": "Local persistence, manual/automated testing, documentation",
+     "returnWhen": "May 25–26, 2027; revisit Jun 2–5",
+     "feature": "Persist timetable/tasks/attendance locally, test app restart and edge cases, and document setup/demo. Keep reminders/widgets as future milestones unless tested.",
+     "completionCheck": "App launches cleanly; data survives restart; README separates implemented features from future work.",
+     "folder": "Java-Internship-Journey/04-Projects/Active-Projects/semester-planner-android/"
+    }
+   ]
+  },
+  {
+   "key": "frontend-extension",
+   "colourKey": null,
+   "name": "Frontend extension for Library / Inventory",
+   "firstIntroduction": "Apr 1–3, 2027 (provisional)",
+   "milestones": "Build a small responsive UI for one existing domain; use mock data clearly labelled if backend integration is not yet ready.",
+   "publishRule": "Publish as a subfolder or extension of the existing project; avoid presenting a mock frontend as a fully integrated system.",
+   "folder": "Java-Internship-Journey/06-Web-Development/library-inventory-frontend/",
+   "continuityRule": "This is an extension milestone, not a seventh unrelated portfolio project.",
+   "versions": [
+    {
+     "version": "V4: frontend extension",
+     "learnFirst": "HTML, CSS, JavaScript, forms, DOM",
+     "returnWhen": "Apr 1–3, 2027",
+     "feature": "Build a small responsive interface for an existing library or inventory workflow; keep it as an extension, not a disposable new project.",
+     "completionCheck": "Forms validate input; UI states and sample data work; document what is mocked.",
+     "folder": "Java-Internship-Journey/06-Web-Development/library-inventory-frontend/"
+    }
+   ]
+  }
+ ]
+}

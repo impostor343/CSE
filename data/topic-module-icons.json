@@ -1,0 +1,1604 @@
+{
+  "schemaVersion": 1,
+  "description": "Offline icon assignments for Bytewise curriculum modules and topics. Icon values refer to keys in js/icons.js.",
+  "iconRegistry": "js/icons.js",
+  "fallbackIcon": "book",
+  "moduleIcons": {
+    "M01": {
+      "icon": "branch",
+      "label": "Git, GitHub and developer workflow"
+    },
+    "M02": {
+      "icon": "code",
+      "label": "Java methods, arrays, strings and problem-solving bridge"
+    },
+    "M03": {
+      "icon": "box",
+      "label": "Object-oriented programming"
+    },
+    "M04": {
+      "icon": "layers",
+      "label": "Collections, generics and data handling"
+    },
+    "M05": {
+      "icon": "shield",
+      "label": "Exceptions, files, debugging and reliability"
+    },
+    "M06": {
+      "icon": "check",
+      "label": "Clean code, testing foundations and build tools"
+    },
+    "M07": {
+      "icon": "network",
+      "label": "Data structures and algorithms foundations"
+    },
+    "M08": {
+      "icon": "database",
+      "label": "SQL and relational database foundations"
+    },
+    "M09": {
+      "icon": "database",
+      "label": "Database design, JDBC and persistence"
+    },
+    "M10": {
+      "icon": "globe",
+      "label": "HTTP, JSON, APIs and Maven build workflow"
+    },
+    "M11": {
+      "icon": "server",
+      "label": "Spring Boot and REST API development"
+    },
+    "M12": {
+      "icon": "shield",
+      "label": "Backend testing, security basics and deployment"
+    },
+    "M13": {
+      "icon": "monitor",
+      "label": "HTML, CSS, JavaScript and React introduction"
+    },
+    "M14": {
+      "icon": "briefcase",
+      "label": "Portfolio, communication and internship application readiness"
+    },
+    "M15": {
+      "icon": "target",
+      "label": "Advanced algorithms and problem-solving"
+    },
+    "M16": {
+      "icon": "cpu",
+      "label": "Advanced Java, JVM, concurrency and performance"
+    },
+    "M17": {
+      "icon": "cpu",
+      "label": "C programming and low-level computer foundations"
+    },
+    "M18": {
+      "icon": "gear",
+      "label": "Python for automation, scripting and data work"
+    },
+    "M19": {
+      "icon": "monitor",
+      "label": "JavaScript, TypeScript and modern frontend engineering"
+    },
+    "M20": {
+      "icon": "cpu",
+      "label": "Operating systems and systems fundamentals"
+    },
+    "M21": {
+      "icon": "network",
+      "label": "Computer networks and internet protocols"
+    },
+    "M22": {
+      "icon": "database",
+      "label": "Advanced DBMS and database engineering"
+    },
+    "M23": {
+      "icon": "sitemap",
+      "label": "Software design, architecture and maintainability"
+    },
+    "M24": {
+      "icon": "check",
+      "label": "Professional testing and quality engineering"
+    },
+    "M25": {
+      "icon": "shield",
+      "label": "Application security and secure engineering"
+    },
+    "M26": {
+      "icon": "sitemap",
+      "label": "System design and scalable application architecture"
+    },
+    "M27": {
+      "icon": "network",
+      "label": "Distributed systems fundamentals"
+    },
+    "M28": {
+      "icon": "cloud",
+      "label": "Cloud computing, containers and delivery engineering"
+    },
+    "M29": {
+      "icon": "chart",
+      "label": "Data engineering and AI/ML foundations (broad CSE literacy)"
+    },
+    "M30": {
+      "icon": "users",
+      "label": "Open source, collaboration and engineering maturity"
+    },
+    "M31": {
+      "icon": "flag",
+      "label": "Final-year engineering capstone and career consolidation"
+    }
+  },
+  "topicIcons": {
+    "TOP0001": {
+      "icon": "branch",
+      "label": "Git mental model: working tree, staging area and repository",
+      "moduleId": "M01"
+    },
+    "TOP0002": {
+      "icon": "branch",
+      "label": "Git installation, identity, init, status, add and commit",
+      "moduleId": "M01"
+    },
+    "TOP0003": {
+      "icon": "branch",
+      "label": "GitHub profile, remote repositories, clone, push and pull",
+      "moduleId": "M01"
+    },
+    "TOP0004": {
+      "icon": "branch",
+      "label": ".gitignore, README, license awareness and repository hygiene",
+      "moduleId": "M01"
+    },
+    "TOP0005": {
+      "icon": "branch",
+      "label": "Branches, merge, pull requests and review",
+      "moduleId": "M01"
+    },
+    "TOP0006": {
+      "icon": "branch",
+      "label": "Merge conflicts, revert, reset safety and recovery",
+      "moduleId": "M01"
+    },
+    "TOP0007": {
+      "icon": "code",
+      "label": "Methods: signatures, parameters, return values and void",
+      "moduleId": "M02"
+    },
+    "TOP0008": {
+      "icon": "code",
+      "label": "Method decomposition and tracing",
+      "moduleId": "M02"
+    },
+    "TOP0009": {
+      "icon": "code",
+      "label": "Scope, local variables, parameter passing and return flow",
+      "moduleId": "M02"
+    },
+    "TOP0010": {
+      "icon": "code",
+      "label": "Overloading, static methods and constants",
+      "moduleId": "M02"
+    },
+    "TOP0011": {
+      "icon": "list",
+      "label": "Arrays: declaration, indexing, traversal and bounds",
+      "moduleId": "M02"
+    },
+    "TOP0012": {
+      "icon": "list",
+      "label": "Arrays: searching, counting, copying and mutation",
+      "moduleId": "M02"
+    },
+    "TOP0013": {
+      "icon": "list",
+      "label": "Two-dimensional arrays and nested traversal",
+      "moduleId": "M02"
+    },
+    "TOP0014": {
+      "icon": "file",
+      "label": "Strings, immutability, StringBuilder and character processing",
+      "moduleId": "M02"
+    },
+    "TOP0015": {
+      "icon": "code",
+      "label": "Input validation, edge cases and program decomposition",
+      "moduleId": "M02"
+    },
+    "TOP0016": {
+      "icon": "book",
+      "label": "Integrated Java practice and checkpoint",
+      "moduleId": "M02"
+    },
+    "TOP0017": {
+      "icon": "code",
+      "label": "Classes, objects, fields, methods and constructors",
+      "moduleId": "M03"
+    },
+    "TOP0018": {
+      "icon": "box",
+      "label": "Encapsulation, access modifiers and invariants",
+      "moduleId": "M03"
+    },
+    "TOP0019": {
+      "icon": "box",
+      "label": "this, constructor chaining and initialization",
+      "moduleId": "M03"
+    },
+    "TOP0020": {
+      "icon": "box",
+      "label": "Composition and object collaboration",
+      "moduleId": "M03"
+    },
+    "TOP0021": {
+      "icon": "box",
+      "label": "Inheritance and when not to use it",
+      "moduleId": "M03"
+    },
+    "TOP0022": {
+      "icon": "box",
+      "label": "Polymorphism, overriding and dynamic dispatch",
+      "moduleId": "M03"
+    },
+    "TOP0023": {
+      "icon": "box",
+      "label": "Abstract classes and interfaces",
+      "moduleId": "M03"
+    },
+    "TOP0024": {
+      "icon": "box",
+      "label": "Enums, records overview and immutable value objects",
+      "moduleId": "M03"
+    },
+    "TOP0025": {
+      "icon": "file",
+      "label": "equals, hashCode and toString contracts",
+      "moduleId": "M03"
+    },
+    "TOP0026": {
+      "icon": "box",
+      "label": "UML class diagrams and object modelling",
+      "moduleId": "M03"
+    },
+    "TOP0027": {
+      "icon": "box",
+      "label": "OOP refactoring checkpoint",
+      "moduleId": "M03"
+    },
+    "TOP0028": {
+      "icon": "list",
+      "label": "List, ArrayList and index-based operations",
+      "moduleId": "M04"
+    },
+    "TOP0029": {
+      "icon": "target",
+      "label": "LinkedList concept and trade-offs",
+      "moduleId": "M04"
+    },
+    "TOP0030": {
+      "icon": "layers",
+      "label": "Set, uniqueness and equality",
+      "moduleId": "M04"
+    },
+    "TOP0031": {
+      "icon": "list",
+      "label": "Map, HashMap and frequency counting",
+      "moduleId": "M04"
+    },
+    "TOP0032": {
+      "icon": "layers",
+      "label": "Queue, Deque and priority queue",
+      "moduleId": "M04"
+    },
+    "TOP0033": {
+      "icon": "layers",
+      "label": "Iterators, enhanced for, fail-fast behaviour",
+      "moduleId": "M04"
+    },
+    "TOP0034": {
+      "icon": "code",
+      "label": "Generics, type parameters and generic methods",
+      "moduleId": "M04"
+    },
+    "TOP0035": {
+      "icon": "layers",
+      "label": "Comparable, Comparator and sorting",
+      "moduleId": "M04"
+    },
+    "TOP0036": {
+      "icon": "target",
+      "label": "Collections complexity and selection practice",
+      "moduleId": "M04"
+    },
+    "TOP0037": {
+      "icon": "shield",
+      "label": "Exception hierarchy, checked and unchecked exceptions",
+      "moduleId": "M05"
+    },
+    "TOP0038": {
+      "icon": "shield",
+      "label": "try/catch/finally, multi-catch and propagation",
+      "moduleId": "M05"
+    },
+    "TOP0039": {
+      "icon": "shield",
+      "label": "Custom exceptions and validation boundaries",
+      "moduleId": "M05"
+    },
+    "TOP0040": {
+      "icon": "shield",
+      "label": "Try-with-resources and resource safety",
+      "moduleId": "M05"
+    },
+    "TOP0041": {
+      "icon": "file",
+      "label": "File paths, text files and buffered I/O",
+      "moduleId": "M05"
+    },
+    "TOP0042": {
+      "icon": "file",
+      "label": "Serialization caution and safer data formats",
+      "moduleId": "M05"
+    },
+    "TOP0043": {
+      "icon": "search",
+      "label": "Debugging with breakpoints, watches and stack traces",
+      "moduleId": "M05"
+    },
+    "TOP0044": {
+      "icon": "shield",
+      "label": "Logging basics and failure messages",
+      "moduleId": "M05"
+    },
+    "TOP0045": {
+      "icon": "shield",
+      "label": "Reliability checkpoint",
+      "moduleId": "M05"
+    },
+    "TOP0046": {
+      "icon": "code",
+      "label": "Naming, small methods, cohesion and duplication",
+      "moduleId": "M06"
+    },
+    "TOP0047": {
+      "icon": "check",
+      "label": "SOLID overview with practical examples",
+      "moduleId": "M06"
+    },
+    "TOP0048": {
+      "icon": "check",
+      "label": "Unit testing concepts, arrange-act-assert",
+      "moduleId": "M06"
+    },
+    "TOP0049": {
+      "icon": "code",
+      "label": "JUnit 5 assertions, lifecycle and parameterized tests",
+      "moduleId": "M06"
+    },
+    "TOP0050": {
+      "icon": "box",
+      "label": "Maven project structure, dependencies and lifecycle",
+      "moduleId": "M06"
+    },
+    "TOP0051": {
+      "icon": "file",
+      "label": "Debugging workflow, code review and README quality",
+      "moduleId": "M06"
+    },
+    "TOP0052": {
+      "icon": "target",
+      "label": "Problem-solving framework and constraints",
+      "moduleId": "M07"
+    },
+    "TOP0053": {
+      "icon": "target",
+      "label": "Big-O, time-space trade-offs and growth rates",
+      "moduleId": "M07"
+    },
+    "TOP0054": {
+      "icon": "list",
+      "label": "Arrays and two-pointer patterns",
+      "moduleId": "M07"
+    },
+    "TOP0055": {
+      "icon": "file",
+      "label": "Strings, frequency maps and anagrams",
+      "moduleId": "M07"
+    },
+    "TOP0056": {
+      "icon": "list",
+      "label": "Prefix sums and difference arrays",
+      "moduleId": "M07"
+    },
+    "TOP0057": {
+      "icon": "code",
+      "label": "Sliding window: fixed and variable size",
+      "moduleId": "M07"
+    },
+    "TOP0058": {
+      "icon": "network",
+      "label": "Binary search and boundary templates",
+      "moduleId": "M07"
+    },
+    "TOP0059": {
+      "icon": "layers",
+      "label": "Sorting algorithms and comparator use",
+      "moduleId": "M07"
+    },
+    "TOP0060": {
+      "icon": "layers",
+      "label": "Linked lists and pointer manipulation",
+      "moduleId": "M07"
+    },
+    "TOP0061": {
+      "icon": "layers",
+      "label": "Stacks, queues and monotonic stack introduction",
+      "moduleId": "M07"
+    },
+    "TOP0062": {
+      "icon": "network",
+      "label": "Hashing patterns and collision intuition",
+      "moduleId": "M07"
+    },
+    "TOP0063": {
+      "icon": "network",
+      "label": "Recursion, call stack and backtracking basics",
+      "moduleId": "M07"
+    },
+    "TOP0064": {
+      "icon": "list",
+      "label": "Trees: traversal, BST and recursion",
+      "moduleId": "M07"
+    },
+    "TOP0065": {
+      "icon": "layers",
+      "label": "Heaps and priority queues",
+      "moduleId": "M07"
+    },
+    "TOP0066": {
+      "icon": "network",
+      "label": "Graphs: representations, BFS and DFS",
+      "moduleId": "M07"
+    },
+    "TOP0067": {
+      "icon": "network",
+      "label": "Greedy fundamentals and interval problems",
+      "moduleId": "M07"
+    },
+    "TOP0068": {
+      "icon": "network",
+      "label": "Dynamic programming introduction",
+      "moduleId": "M07"
+    },
+    "TOP0069": {
+      "icon": "briefcase",
+      "label": "DSA mixed practice and interview explanation",
+      "moduleId": "M07"
+    },
+    "TOP0070": {
+      "icon": "target",
+      "label": "Relational model, tables, rows, keys and constraints",
+      "moduleId": "M08"
+    },
+    "TOP0071": {
+      "icon": "database",
+      "label": "SELECT, WHERE, ORDER BY, LIMIT and NULL",
+      "moduleId": "M08"
+    },
+    "TOP0072": {
+      "icon": "database",
+      "label": "INSERT, UPDATE, DELETE and safe changes",
+      "moduleId": "M08"
+    },
+    "TOP0073": {
+      "icon": "database",
+      "label": "Aggregate functions, GROUP BY and HAVING",
+      "moduleId": "M08"
+    },
+    "TOP0074": {
+      "icon": "database",
+      "label": "INNER, LEFT, RIGHT and self joins",
+      "moduleId": "M08"
+    },
+    "TOP0075": {
+      "icon": "database",
+      "label": "Subqueries, CTEs and set operations",
+      "moduleId": "M08"
+    },
+    "TOP0076": {
+      "icon": "database",
+      "label": "Normalization: 1NF, 2NF, 3NF and anomalies",
+      "moduleId": "M08"
+    },
+    "TOP0077": {
+      "icon": "target",
+      "label": "Primary keys, foreign keys, unique and check constraints",
+      "moduleId": "M08"
+    },
+    "TOP0078": {
+      "icon": "database",
+      "label": "Transactions, ACID and isolation overview",
+      "moduleId": "M08"
+    },
+    "TOP0079": {
+      "icon": "database",
+      "label": "Indexes and explain-plan introduction",
+      "moduleId": "M08"
+    },
+    "TOP0080": {
+      "icon": "box",
+      "label": "JDBC architecture, drivers and connection lifecycle",
+      "moduleId": "M09"
+    },
+    "TOP0081": {
+      "icon": "database",
+      "label": "PreparedStatement and SQL injection prevention",
+      "moduleId": "M09"
+    },
+    "TOP0082": {
+      "icon": "branch",
+      "label": "CRUD repository/DAO pattern",
+      "moduleId": "M09"
+    },
+    "TOP0083": {
+      "icon": "branch",
+      "label": "Transactions, commit, rollback and auto-commit",
+      "moduleId": "M09"
+    },
+    "TOP0084": {
+      "icon": "database",
+      "label": "Connection management and configuration",
+      "moduleId": "M09"
+    },
+    "TOP0085": {
+      "icon": "check",
+      "label": "Database integration testing and schema setup",
+      "moduleId": "M09"
+    },
+    "TOP0086": {
+      "icon": "database",
+      "label": "Persistence project checkpoint",
+      "moduleId": "M09"
+    },
+    "TOP0087": {
+      "icon": "globe",
+      "label": "Client-server model, URLs, DNS overview and ports",
+      "moduleId": "M10"
+    },
+    "TOP0088": {
+      "icon": "code",
+      "label": "HTTP methods, status codes, headers and body",
+      "moduleId": "M10"
+    },
+    "TOP0089": {
+      "icon": "globe",
+      "label": "JSON structure, parsing and validation",
+      "moduleId": "M10"
+    },
+    "TOP0090": {
+      "icon": "check",
+      "label": "REST resource naming, statelessness and API conventions",
+      "moduleId": "M10"
+    },
+    "TOP0091": {
+      "icon": "file",
+      "label": "Maven dependencies, profiles and packaging",
+      "moduleId": "M10"
+    },
+    "TOP0092": {
+      "icon": "box",
+      "label": "Spring ecosystem, IoC, dependency injection and beans",
+      "moduleId": "M11"
+    },
+    "TOP0093": {
+      "icon": "server",
+      "label": "Spring Boot project structure and configuration",
+      "moduleId": "M11"
+    },
+    "TOP0094": {
+      "icon": "server",
+      "label": "Controllers, services, repositories and DTOs",
+      "moduleId": "M11"
+    },
+    "TOP0095": {
+      "icon": "code",
+      "label": "Request mapping, path variables, query params and payloads",
+      "moduleId": "M11"
+    },
+    "TOP0096": {
+      "icon": "book",
+      "label": "Validation and consistent error responses",
+      "moduleId": "M11"
+    },
+    "TOP0097": {
+      "icon": "server",
+      "label": "Spring Data JPA and entity relationships",
+      "moduleId": "M11"
+    },
+    "TOP0098": {
+      "icon": "server",
+      "label": "Pagination, sorting and filtering",
+      "moduleId": "M11"
+    },
+    "TOP0099": {
+      "icon": "globe",
+      "label": "OpenAPI/Swagger documentation",
+      "moduleId": "M11"
+    },
+    "TOP0100": {
+      "icon": "file",
+      "label": "Configuration, profiles and secrets hygiene",
+      "moduleId": "M11"
+    },
+    "TOP0101": {
+      "icon": "book",
+      "label": "Backend integration checkpoint",
+      "moduleId": "M11"
+    },
+    "TOP0102": {
+      "icon": "layers",
+      "label": "Postman collections, environments and API assertions",
+      "moduleId": "M12"
+    },
+    "TOP0103": {
+      "icon": "check",
+      "label": "Spring Boot unit and slice tests",
+      "moduleId": "M12"
+    },
+    "TOP0104": {
+      "icon": "check",
+      "label": "Integration tests and Testcontainers introduction",
+      "moduleId": "M12"
+    },
+    "TOP0105": {
+      "icon": "shield",
+      "label": "Authentication concepts, sessions and tokens",
+      "moduleId": "M12"
+    },
+    "TOP0106": {
+      "icon": "server",
+      "label": "Spring Security fundamentals and password hashing",
+      "moduleId": "M12"
+    },
+    "TOP0107": {
+      "icon": "shield",
+      "label": "CORS, CSRF and common web security risks",
+      "moduleId": "M12"
+    },
+    "TOP0108": {
+      "icon": "globe",
+      "label": "Docker image, container, port and volume basics",
+      "moduleId": "M12"
+    },
+    "TOP0109": {
+      "icon": "code",
+      "label": "Deployment, environment variables and logs",
+      "moduleId": "M12"
+    },
+    "TOP0110": {
+      "icon": "globe",
+      "label": "Portfolio review and interview checkpoint",
+      "moduleId": "M12"
+    },
+    "TOP0111": {
+      "icon": "monitor",
+      "label": "HTML document structure, semantic elements and forms",
+      "moduleId": "M13"
+    },
+    "TOP0112": {
+      "icon": "monitor",
+      "label": "CSS box model, layout, Flexbox and Grid",
+      "moduleId": "M13"
+    },
+    "TOP0113": {
+      "icon": "code",
+      "label": "JavaScript values, variables, functions and control flow",
+      "moduleId": "M13"
+    },
+    "TOP0114": {
+      "icon": "list",
+      "label": "Arrays, objects, modules and modern syntax",
+      "moduleId": "M13"
+    },
+    "TOP0115": {
+      "icon": "monitor",
+      "label": "DOM, events, fetch and promises",
+      "moduleId": "M13"
+    },
+    "TOP0116": {
+      "icon": "monitor",
+      "label": "React components, props, state and events",
+      "moduleId": "M13"
+    },
+    "TOP0117": {
+      "icon": "globe",
+      "label": "React effects, forms and API integration",
+      "moduleId": "M13"
+    },
+    "TOP0118": {
+      "icon": "monitor",
+      "label": "Frontend integration checkpoint",
+      "moduleId": "M13"
+    },
+    "TOP0119": {
+      "icon": "briefcase",
+      "label": "Resume evidence: skills linked to proof",
+      "moduleId": "M14"
+    },
+    "TOP0120": {
+      "icon": "sitemap",
+      "label": "Project walkthrough and architecture explanation",
+      "moduleId": "M14"
+    },
+    "TOP0121": {
+      "icon": "box",
+      "label": "Java, OOP, collections and exception interview revision",
+      "moduleId": "M14"
+    },
+    "TOP0122": {
+      "icon": "database",
+      "label": "SQL, DBMS, REST and Spring interview revision",
+      "moduleId": "M14"
+    },
+    "TOP0123": {
+      "icon": "briefcase",
+      "label": "DSA interview patterns and timed practice",
+      "moduleId": "M14"
+    },
+    "TOP0124": {
+      "icon": "briefcase",
+      "label": "Aptitude, reasoning and communication practice",
+      "moduleId": "M14"
+    },
+    "TOP0125": {
+      "icon": "users",
+      "label": "Application workflow and professional conduct",
+      "moduleId": "M14"
+    },
+    "TOP0126": {
+      "icon": "flag",
+      "label": "Phase 1 capstone quality gate",
+      "moduleId": "M14"
+    },
+    "TOP0127": {
+      "icon": "list",
+      "label": "Advanced graph traversal and connected components",
+      "moduleId": "M15"
+    },
+    "TOP0128": {
+      "icon": "network",
+      "label": "Topological sorting and DAG problems",
+      "moduleId": "M15"
+    },
+    "TOP0129": {
+      "icon": "file",
+      "label": "Shortest paths: BFS, Dijkstra and Bellman-Ford",
+      "moduleId": "M15"
+    },
+    "TOP0130": {
+      "icon": "network",
+      "label": "Minimum spanning trees: Prim and Kruskal",
+      "moduleId": "M15"
+    },
+    "TOP0131": {
+      "icon": "database",
+      "label": "Union-Find / Disjoint Set Union",
+      "moduleId": "M15"
+    },
+    "TOP0132": {
+      "icon": "network",
+      "label": "Advanced dynamic programming: state design",
+      "moduleId": "M15"
+    },
+    "TOP0133": {
+      "icon": "book",
+      "label": "Knapsack, subsequence and interval DP",
+      "moduleId": "M15"
+    },
+    "TOP0134": {
+      "icon": "book",
+      "label": "Bit manipulation and bitmask DP introduction",
+      "moduleId": "M15"
+    },
+    "TOP0135": {
+      "icon": "file",
+      "label": "Trie, suffix structures overview and string matching",
+      "moduleId": "M15"
+    },
+    "TOP0136": {
+      "icon": "network",
+      "label": "Segment tree and Fenwick tree",
+      "moduleId": "M15"
+    },
+    "TOP0137": {
+      "icon": "network",
+      "label": "Advanced greedy, proof intuition and amortized analysis",
+      "moduleId": "M15"
+    },
+    "TOP0138": {
+      "icon": "monitor",
+      "label": "Randomized algorithms and probability intuition",
+      "moduleId": "M15"
+    },
+    "TOP0139": {
+      "icon": "check",
+      "label": "Mixed interview sets and contest-style review",
+      "moduleId": "M15"
+    },
+    "TOP0140": {
+      "icon": "layers",
+      "label": "Generics in depth, wildcards and type erasure",
+      "moduleId": "M16"
+    },
+    "TOP0141": {
+      "icon": "code",
+      "label": "Functional interfaces, lambdas and method references",
+      "moduleId": "M16"
+    },
+    "TOP0142": {
+      "icon": "book",
+      "label": "Streams, collectors and parallel stream cautions",
+      "moduleId": "M16"
+    },
+    "TOP0143": {
+      "icon": "globe",
+      "label": "Optional, date/time API and modern Java features",
+      "moduleId": "M16"
+    },
+    "TOP0144": {
+      "icon": "box",
+      "label": "JVM architecture, bytecode and class loading",
+      "moduleId": "M16"
+    },
+    "TOP0145": {
+      "icon": "cpu",
+      "label": "Heap, stack, metaspace and garbage collection",
+      "moduleId": "M16"
+    },
+    "TOP0146": {
+      "icon": "box",
+      "label": "Thread lifecycle, race conditions and visibility",
+      "moduleId": "M16"
+    },
+    "TOP0147": {
+      "icon": "book",
+      "label": "synchronized, locks, atomics and volatile",
+      "moduleId": "M16"
+    },
+    "TOP0148": {
+      "icon": "database",
+      "label": "Executors, thread pools, futures and CompletableFuture",
+      "moduleId": "M16"
+    },
+    "TOP0149": {
+      "icon": "layers",
+      "label": "Concurrent collections and producer-consumer patterns",
+      "moduleId": "M16"
+    },
+    "TOP0150": {
+      "icon": "book",
+      "label": "Deadlocks, starvation, contention and safe design",
+      "moduleId": "M16"
+    },
+    "TOP0151": {
+      "icon": "cpu",
+      "label": "JMH/profiling mindset and performance measurement",
+      "moduleId": "M16"
+    },
+    "TOP0152": {
+      "icon": "book",
+      "label": "C toolchain, compilation, linking and program structure",
+      "moduleId": "M17"
+    },
+    "TOP0153": {
+      "icon": "book",
+      "label": "Types, operators, control flow and functions",
+      "moduleId": "M17"
+    },
+    "TOP0154": {
+      "icon": "list",
+      "label": "Arrays, strings and character buffers",
+      "moduleId": "M17"
+    },
+    "TOP0155": {
+      "icon": "book",
+      "label": "Pointers, addresses and pointer arithmetic",
+      "moduleId": "M17"
+    },
+    "TOP0156": {
+      "icon": "cpu",
+      "label": "Dynamic memory: malloc, calloc, realloc and free",
+      "moduleId": "M17"
+    },
+    "TOP0157": {
+      "icon": "box",
+      "label": "Structs, enums, unions and layout overview",
+      "moduleId": "M17"
+    },
+    "TOP0158": {
+      "icon": "file",
+      "label": "File I/O, error codes and defensive C programming",
+      "moduleId": "M17"
+    },
+    "TOP0159": {
+      "icon": "layers",
+      "label": "Data structures in C: linked list and stack",
+      "moduleId": "M17"
+    },
+    "TOP0160": {
+      "icon": "cpu",
+      "label": "C memory safety and undefined behaviour awareness",
+      "moduleId": "M17"
+    },
+    "TOP0161": {
+      "icon": "gear",
+      "label": "Python syntax, data types, control flow and functions",
+      "moduleId": "M18"
+    },
+    "TOP0162": {
+      "icon": "layers",
+      "label": "Lists, tuples, sets, dictionaries and comprehensions",
+      "moduleId": "M18"
+    },
+    "TOP0163": {
+      "icon": "book",
+      "label": "Modules, packages, virtual environments and pip",
+      "moduleId": "M18"
+    },
+    "TOP0164": {
+      "icon": "shield",
+      "label": "Exceptions, files, pathlib and CSV/JSON",
+      "moduleId": "M18"
+    },
+    "TOP0165": {
+      "icon": "box",
+      "label": "Classes, dataclasses and type hints",
+      "moduleId": "M18"
+    },
+    "TOP0166": {
+      "icon": "globe",
+      "label": "HTTP requests, APIs and JSON processing",
+      "moduleId": "M18"
+    },
+    "TOP0167": {
+      "icon": "check",
+      "label": "Testing with pytest and code quality tools",
+      "moduleId": "M18"
+    },
+    "TOP0168": {
+      "icon": "gear",
+      "label": "Automation mini-project and documentation",
+      "moduleId": "M18"
+    },
+    "TOP0169": {
+      "icon": "code",
+      "label": "JavaScript execution model, scope, closures and hoisting",
+      "moduleId": "M19"
+    },
+    "TOP0170": {
+      "icon": "box",
+      "label": "Prototypes, classes, this and object model",
+      "moduleId": "M19"
+    },
+    "TOP0171": {
+      "icon": "box",
+      "label": "Promises, async/await, event loop and task queues",
+      "moduleId": "M19"
+    },
+    "TOP0172": {
+      "icon": "database",
+      "label": "Browser APIs, storage, accessibility and security",
+      "moduleId": "M19"
+    },
+    "TOP0173": {
+      "icon": "box",
+      "label": "TypeScript types, interfaces, unions and narrowing",
+      "moduleId": "M19"
+    },
+    "TOP0174": {
+      "icon": "layers",
+      "label": "Generics, utility types and tsconfig",
+      "moduleId": "M19"
+    },
+    "TOP0175": {
+      "icon": "monitor",
+      "label": "React hooks, composition and component design",
+      "moduleId": "M19"
+    },
+    "TOP0176": {
+      "icon": "network",
+      "label": "Routing, forms, validation and state management overview",
+      "moduleId": "M19"
+    },
+    "TOP0177": {
+      "icon": "search",
+      "label": "Frontend testing and browser debugging",
+      "moduleId": "M19"
+    },
+    "TOP0178": {
+      "icon": "box",
+      "label": "Build tools, bundling and production builds",
+      "moduleId": "M19"
+    },
+    "TOP0179": {
+      "icon": "cpu",
+      "label": "Accessibility, performance and responsive design",
+      "moduleId": "M19"
+    },
+    "TOP0180": {
+      "icon": "book",
+      "label": "OS role, kernel/user mode, system calls and interrupts",
+      "moduleId": "M20"
+    },
+    "TOP0181": {
+      "icon": "cpu",
+      "label": "Processes, process states and context switching",
+      "moduleId": "M20"
+    },
+    "TOP0182": {
+      "icon": "cpu",
+      "label": "Threads, concurrency and synchronization",
+      "moduleId": "M20"
+    },
+    "TOP0183": {
+      "icon": "cpu",
+      "label": "CPU scheduling algorithms",
+      "moduleId": "M20"
+    },
+    "TOP0184": {
+      "icon": "code",
+      "label": "Locks, semaphores, monitors and condition variables",
+      "moduleId": "M20"
+    },
+    "TOP0185": {
+      "icon": "book",
+      "label": "Deadlocks: conditions, prevention and detection",
+      "moduleId": "M20"
+    },
+    "TOP0186": {
+      "icon": "cpu",
+      "label": "Virtual memory, paging and address translation",
+      "moduleId": "M20"
+    },
+    "TOP0187": {
+      "icon": "cpu",
+      "label": "Page replacement and memory allocation",
+      "moduleId": "M20"
+    },
+    "TOP0188": {
+      "icon": "file",
+      "label": "File systems, directories and storage",
+      "moduleId": "M20"
+    },
+    "TOP0189": {
+      "icon": "box",
+      "label": "I/O, disk scheduling and device abstraction",
+      "moduleId": "M20"
+    },
+    "TOP0190": {
+      "icon": "check",
+      "label": "OS lab and consolidation",
+      "moduleId": "M20"
+    },
+    "TOP0191": {
+      "icon": "box",
+      "label": "Network models, encapsulation and addressing",
+      "moduleId": "M21"
+    },
+    "TOP0192": {
+      "icon": "book",
+      "label": "Ethernet, MAC, switches and ARP",
+      "moduleId": "M21"
+    },
+    "TOP0193": {
+      "icon": "network",
+      "label": "IP addressing, subnetting, IPv4 and IPv6",
+      "moduleId": "M21"
+    },
+    "TOP0194": {
+      "icon": "database",
+      "label": "Routing, routers and routing-table intuition",
+      "moduleId": "M21"
+    },
+    "TOP0195": {
+      "icon": "shield",
+      "label": "TCP connection, reliability, flow and congestion control",
+      "moduleId": "M21"
+    },
+    "TOP0196": {
+      "icon": "target",
+      "label": "UDP and transport trade-offs",
+      "moduleId": "M21"
+    },
+    "TOP0197": {
+      "icon": "globe",
+      "label": "DNS, DHCP, NAT and common infrastructure",
+      "moduleId": "M21"
+    },
+    "TOP0198": {
+      "icon": "globe",
+      "label": "HTTP/1.1, HTTP/2, HTTP/3 and TLS overview",
+      "moduleId": "M21"
+    },
+    "TOP0199": {
+      "icon": "globe",
+      "label": "Sockets and client-server programming",
+      "moduleId": "M21"
+    },
+    "TOP0200": {
+      "icon": "network",
+      "label": "Network troubleshooting tools",
+      "moduleId": "M21"
+    },
+    "TOP0201": {
+      "icon": "check",
+      "label": "Network security basics and consolidation",
+      "moduleId": "M21"
+    },
+    "TOP0202": {
+      "icon": "database",
+      "label": "Relational algebra and query processing overview",
+      "moduleId": "M22"
+    },
+    "TOP0203": {
+      "icon": "book",
+      "label": "Query planner, EXPLAIN and execution plans",
+      "moduleId": "M22"
+    },
+    "TOP0204": {
+      "icon": "target",
+      "label": "B-tree and hash indexes, selectivity and trade-offs",
+      "moduleId": "M22"
+    },
+    "TOP0205": {
+      "icon": "database",
+      "label": "Transactions, serializability and isolation anomalies",
+      "moduleId": "M22"
+    },
+    "TOP0206": {
+      "icon": "book",
+      "label": "MVCC and locking overview",
+      "moduleId": "M22"
+    },
+    "TOP0207": {
+      "icon": "database",
+      "label": "Normalization versus denormalization",
+      "moduleId": "M22"
+    },
+    "TOP0208": {
+      "icon": "book",
+      "label": "Partitioning, replication and backup concepts",
+      "moduleId": "M22"
+    },
+    "TOP0209": {
+      "icon": "database",
+      "label": "NoSQL models: document, key-value, wide-column and graph",
+      "moduleId": "M22"
+    },
+    "TOP0210": {
+      "icon": "sitemap",
+      "label": "Redis caching and data structures overview",
+      "moduleId": "M22"
+    },
+    "TOP0211": {
+      "icon": "shield",
+      "label": "Database reliability and migration strategy",
+      "moduleId": "M22"
+    },
+    "TOP0212": {
+      "icon": "book",
+      "label": "Requirements, user stories and acceptance criteria",
+      "moduleId": "M23"
+    },
+    "TOP0213": {
+      "icon": "box",
+      "label": "UML use cases, sequence and class diagrams",
+      "moduleId": "M23"
+    },
+    "TOP0214": {
+      "icon": "check",
+      "label": "Cohesion, coupling, SOLID and dependency direction",
+      "moduleId": "M23"
+    },
+    "TOP0215": {
+      "icon": "book",
+      "label": "Common design patterns: strategy, factory and adapter",
+      "moduleId": "M23"
+    },
+    "TOP0216": {
+      "icon": "branch",
+      "label": "Observer, decorator, builder and repository patterns",
+      "moduleId": "M23"
+    },
+    "TOP0217": {
+      "icon": "sitemap",
+      "label": "Layered architecture, MVC and hexagonal architecture",
+      "moduleId": "M23"
+    },
+    "TOP0218": {
+      "icon": "monitor",
+      "label": "Domain modelling and domain-driven design basics",
+      "moduleId": "M23"
+    },
+    "TOP0219": {
+      "icon": "book",
+      "label": "Refactoring techniques and technical debt",
+      "moduleId": "M23"
+    },
+    "TOP0220": {
+      "icon": "branch",
+      "label": "Code review, branching strategy and team workflow",
+      "moduleId": "M23"
+    },
+    "TOP0221": {
+      "icon": "sitemap",
+      "label": "Architecture decision records and technical writing",
+      "moduleId": "M23"
+    },
+    "TOP0222": {
+      "icon": "check",
+      "label": "Test pyramid, test strategy and risk-based testing",
+      "moduleId": "M24"
+    },
+    "TOP0223": {
+      "icon": "check",
+      "label": "Mockito, stubs, mocks and interaction testing",
+      "moduleId": "M24"
+    },
+    "TOP0224": {
+      "icon": "check",
+      "label": "Integration and contract testing",
+      "moduleId": "M24"
+    },
+    "TOP0225": {
+      "icon": "check",
+      "label": "End-to-end testing with browser automation",
+      "moduleId": "M24"
+    },
+    "TOP0226": {
+      "icon": "check",
+      "label": "Property-based and fuzz testing overview",
+      "moduleId": "M24"
+    },
+    "TOP0227": {
+      "icon": "check",
+      "label": "Load testing and performance test design",
+      "moduleId": "M24"
+    },
+    "TOP0228": {
+      "icon": "check",
+      "label": "CI test pipelines and flaky-test diagnosis",
+      "moduleId": "M24"
+    },
+    "TOP0229": {
+      "icon": "globe",
+      "label": "Defect reports, root-cause analysis and regression",
+      "moduleId": "M24"
+    },
+    "TOP0230": {
+      "icon": "shield",
+      "label": "Threat modelling, assets, trust boundaries and risk",
+      "moduleId": "M25"
+    },
+    "TOP0231": {
+      "icon": "shield",
+      "label": "Authentication, authorisation, RBAC and least privilege",
+      "moduleId": "M25"
+    },
+    "TOP0232": {
+      "icon": "book",
+      "label": "Password storage, sessions, tokens and MFA concepts",
+      "moduleId": "M25"
+    },
+    "TOP0233": {
+      "icon": "shield",
+      "label": "Injection, XSS, CSRF and output encoding",
+      "moduleId": "M25"
+    },
+    "TOP0234": {
+      "icon": "book",
+      "label": "Access control flaws and IDOR prevention",
+      "moduleId": "M25"
+    },
+    "TOP0235": {
+      "icon": "box",
+      "label": "Secrets management, dependency risk and supply chain",
+      "moduleId": "M25"
+    },
+    "TOP0236": {
+      "icon": "database",
+      "label": "TLS, secure headers, CORS and browser security",
+      "moduleId": "M25"
+    },
+    "TOP0237": {
+      "icon": "shield",
+      "label": "Logging, privacy, backups and incident response basics",
+      "moduleId": "M25"
+    },
+    "TOP0238": {
+      "icon": "shield",
+      "label": "Security review checkpoint",
+      "moduleId": "M25"
+    },
+    "TOP0239": {
+      "icon": "book",
+      "label": "Functional and non-functional requirements",
+      "moduleId": "M26"
+    },
+    "TOP0240": {
+      "icon": "book",
+      "label": "Capacity estimation and back-of-the-envelope calculations",
+      "moduleId": "M26"
+    },
+    "TOP0241": {
+      "icon": "globe",
+      "label": "API design, pagination, idempotency and versioning",
+      "moduleId": "M26"
+    },
+    "TOP0242": {
+      "icon": "target",
+      "label": "Monolith, modular monolith and microservices trade-offs",
+      "moduleId": "M26"
+    },
+    "TOP0243": {
+      "icon": "sitemap",
+      "label": "Caching strategies, TTL and invalidation",
+      "moduleId": "M26"
+    },
+    "TOP0244": {
+      "icon": "server",
+      "label": "Load balancing, horizontal scaling and stateless services",
+      "moduleId": "M26"
+    },
+    "TOP0245": {
+      "icon": "database",
+      "label": "Database scaling, replicas and partitioning",
+      "moduleId": "M26"
+    },
+    "TOP0246": {
+      "icon": "layers",
+      "label": "Queues, asynchronous jobs and event-driven design",
+      "moduleId": "M26"
+    },
+    "TOP0247": {
+      "icon": "shield",
+      "label": "Reliability, retries, timeouts, circuit breakers",
+      "moduleId": "M26"
+    },
+    "TOP0248": {
+      "icon": "book",
+      "label": "Observability: logs, metrics, traces and SLOs",
+      "moduleId": "M26"
+    },
+    "TOP0249": {
+      "icon": "globe",
+      "label": "Design case study: URL shortener",
+      "moduleId": "M26"
+    },
+    "TOP0250": {
+      "icon": "book",
+      "label": "Design case study: booking or commerce system",
+      "moduleId": "M26"
+    },
+    "TOP0251": {
+      "icon": "shield",
+      "label": "Distributed system models and partial failure",
+      "moduleId": "M27"
+    },
+    "TOP0252": {
+      "icon": "book",
+      "label": "Time, clocks, ordering and event timestamps",
+      "moduleId": "M27"
+    },
+    "TOP0253": {
+      "icon": "sitemap",
+      "label": "Consistency models and CAP theorem nuance",
+      "moduleId": "M27"
+    },
+    "TOP0254": {
+      "icon": "book",
+      "label": "Replication, leader/follower and quorum concepts",
+      "moduleId": "M27"
+    },
+    "TOP0255": {
+      "icon": "book",
+      "label": "Consensus overview and Raft intuition",
+      "moduleId": "M27"
+    },
+    "TOP0256": {
+      "icon": "book",
+      "label": "Message delivery, at-most-once and at-least-once",
+      "moduleId": "M27"
+    },
+    "TOP0257": {
+      "icon": "sitemap",
+      "label": "Eventual consistency and conflict resolution",
+      "moduleId": "M27"
+    },
+    "TOP0258": {
+      "icon": "database",
+      "label": "Distributed transactions and saga overview",
+      "moduleId": "M27"
+    },
+    "TOP0259": {
+      "icon": "shield",
+      "label": "Service discovery, coordination and failure recovery",
+      "moduleId": "M27"
+    },
+    "TOP0260": {
+      "icon": "sitemap",
+      "label": "Distributed systems case study",
+      "moduleId": "M27"
+    },
+    "TOP0261": {
+      "icon": "server",
+      "label": "Cloud service models, regions, zones and shared responsibility",
+      "moduleId": "M28"
+    },
+    "TOP0262": {
+      "icon": "server",
+      "label": "Linux processes, permissions, services and shell scripting",
+      "moduleId": "M28"
+    },
+    "TOP0263": {
+      "icon": "file",
+      "label": "Dockerfiles, images, layers, volumes and networks",
+      "moduleId": "M28"
+    },
+    "TOP0264": {
+      "icon": "cloud",
+      "label": "Docker Compose and multi-container environments",
+      "moduleId": "M28"
+    },
+    "TOP0265": {
+      "icon": "cloud",
+      "label": "CI pipelines, build checks and artifact creation",
+      "moduleId": "M28"
+    },
+    "TOP0266": {
+      "icon": "cloud",
+      "label": "CD, deployment strategies and rollback",
+      "moduleId": "M28"
+    },
+    "TOP0267": {
+      "icon": "database",
+      "label": "Cloud compute, storage, managed databases and IAM",
+      "moduleId": "M28"
+    },
+    "TOP0268": {
+      "icon": "book",
+      "label": "Infrastructure as code and configuration management overview",
+      "moduleId": "M28"
+    },
+    "TOP0269": {
+      "icon": "book",
+      "label": "Monitoring, alerts, cost awareness and backup",
+      "moduleId": "M28"
+    },
+    "TOP0270": {
+      "icon": "cloud",
+      "label": "Cloud deployment capstone",
+      "moduleId": "M28"
+    },
+    "TOP0271": {
+      "icon": "globe",
+      "label": "Data formats, CSV, JSON, Parquet and data quality",
+      "moduleId": "M29"
+    },
+    "TOP0272": {
+      "icon": "cloud",
+      "label": "ETL/ELT, batch versus streaming and pipeline stages",
+      "moduleId": "M29"
+    },
+    "TOP0273": {
+      "icon": "gear",
+      "label": "Pandas basics and exploratory data analysis",
+      "moduleId": "M29"
+    },
+    "TOP0274": {
+      "icon": "chart",
+      "label": "Statistics refresh: distributions, correlation and sampling",
+      "moduleId": "M29"
+    },
+    "TOP0275": {
+      "icon": "check",
+      "label": "ML problem types, features, labels and train/test split",
+      "moduleId": "M29"
+    },
+    "TOP0276": {
+      "icon": "book",
+      "label": "Baseline models, evaluation metrics and overfitting",
+      "moduleId": "M29"
+    },
+    "TOP0277": {
+      "icon": "book",
+      "label": "Data leakage, bias, privacy and responsible AI",
+      "moduleId": "M29"
+    },
+    "TOP0278": {
+      "icon": "book",
+      "label": "AI-assisted development: verification and safe use",
+      "moduleId": "M29"
+    },
+    "TOP0279": {
+      "icon": "briefcase",
+      "label": "Data/ML mini-project and communication",
+      "moduleId": "M29"
+    },
+    "TOP0280": {
+      "icon": "sitemap",
+      "label": "Reading unfamiliar codebases and architecture maps",
+      "moduleId": "M30"
+    },
+    "TOP0281": {
+      "icon": "book",
+      "label": "Issue triage, reproduction and minimal bug fixes",
+      "moduleId": "M30"
+    },
+    "TOP0282": {
+      "icon": "branch",
+      "label": "Pull request etiquette, review responses and collaboration",
+      "moduleId": "M30"
+    },
+    "TOP0283": {
+      "icon": "book",
+      "label": "Technical writing, diagrams and runbooks",
+      "moduleId": "M30"
+    },
+    "TOP0284": {
+      "icon": "code",
+      "label": "Mentoring, estimation and task decomposition",
+      "moduleId": "M30"
+    },
+    "TOP0285": {
+      "icon": "book",
+      "label": "Open-source contribution workflow",
+      "moduleId": "M30"
+    },
+    "TOP0286": {
+      "icon": "globe",
+      "label": "Professional portfolio and evidence audit",
+      "moduleId": "M30"
+    },
+    "TOP0287": {
+      "icon": "code",
+      "label": "Choose capstone scope and write requirements",
+      "moduleId": "M31"
+    },
+    "TOP0288": {
+      "icon": "globe",
+      "label": "Architecture, data model and API contracts",
+      "moduleId": "M31"
+    },
+    "TOP0289": {
+      "icon": "database",
+      "label": "Implementation sprint: backend and persistence",
+      "moduleId": "M31"
+    },
+    "TOP0290": {
+      "icon": "monitor",
+      "label": "Implementation sprint: frontend or client",
+      "moduleId": "M31"
+    },
+    "TOP0291": {
+      "icon": "shield",
+      "label": "Security, observability and deployment hardening",
+      "moduleId": "M31"
+    },
+    "TOP0292": {
+      "icon": "shield",
+      "label": "Performance, reliability and failure testing",
+      "moduleId": "M31"
+    },
+    "TOP0293": {
+      "icon": "book",
+      "label": "Documentation, demo and technical presentation",
+      "moduleId": "M31"
+    },
+    "TOP0294": {
+      "icon": "globe",
+      "label": "Final interview and portfolio review",
+      "moduleId": "M31"
+    }
+  }
+}

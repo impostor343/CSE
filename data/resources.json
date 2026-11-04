@@ -1,0 +1,148 @@
+{
+ "resources": [
+  {
+   "purpose": "Main Java reference",
+   "name": "Dev.java: language basics",
+   "url": "https://dev.java/learn/",
+   "use": "Primary official reference for language concepts and APIs."
+  },
+  {
+   "purpose": "Structured Java exercises",
+   "name": "University of Helsinki Java MOOC (legacy, still free exercises)",
+   "url": "https://java-programming.mooc.fi/",
+   "use": "Free exercises; older course, so use for practice rather than as the sole source for modern Java."
+  },
+  {
+   "purpose": "Free Java textbook",
+   "name": "Free online textbook: Introduction to Programming Using Java (Eck)",
+   "url": "https://math.hws.edu/javanotes/",
+   "use": "Read only the relevant sections assigned for the day's topic."
+  },
+  {
+   "purpose": "Extra Java practice",
+   "name": "Exercism Java track",
+   "url": "https://exercism.org/tracks/java",
+   "use": "Use when a daily row assigns a focused exercise."
+  },
+  {
+   "purpose": "Git and version control",
+   "name": "Pro Git book (free)",
+   "url": "https://git-scm.com/book/en/v2",
+   "use": "Read selected chapters as Git becomes relevant."
+  },
+  {
+   "purpose": "GitHub profile workflow",
+   "name": "GitHub Skills",
+   "url": "https://skills.github.com/",
+   "use": "Short guided GitHub activities and repository workflow."
+  },
+  {
+   "purpose": "SQL learning",
+   "name": "SQLBolt interactive SQL lessons",
+   "url": "https://sqlbolt.com/",
+   "use": "Interactive SQL lessons for query fundamentals."
+  },
+  {
+   "purpose": "SQL practice",
+   "name": "KillSQL free browser SQL practice",
+   "url": "https://www.killsql.org/",
+   "use": "Browser-based practice for queries and joins."
+  },
+  {
+   "purpose": "Database documentation",
+   "name": "PostgreSQL tutorial",
+   "url": "https://www.postgresql.org/docs/current/tutorial.html",
+   "use": "Use for relational database concepts and PostgreSQL examples."
+  },
+  {
+   "purpose": "MySQL alternative",
+   "name": "MySQL tutorial",
+   "url": "https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/",
+   "use": "Use instead if we choose MySQL as the primary database."
+  },
+  {
+   "purpose": "Frontend",
+   "name": "MDN Learn Web Development",
+   "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+   "use": "Free structured HTML/CSS/JavaScript learning material."
+  },
+  {
+   "purpose": "Spring Boot",
+   "name": "Official Spring Boot first application tutorial",
+   "url": "https://docs.spring.io/spring-boot/tutorial/first-application/",
+   "use": "Official first-app tutorial when we reach Spring Boot."
+  },
+  {
+   "purpose": "Spring tutorials",
+   "name": "Official Spring Guides",
+   "url": "https://spring.io/guides",
+   "use": "Use the relevant official guide for each feature."
+  },
+  {
+   "purpose": "Spring Data JPA",
+   "name": "Spring Data JPA reference",
+   "url": "https://docs.spring.io/spring-data/jpa/reference/",
+   "use": "Reference for persistence once SQL/JDBC concepts are understood."
+  },
+  {
+   "purpose": "Testing",
+   "name": "JUnit 5 User Guide",
+   "url": "https://junit.org/junit5/docs/current/user-guide/",
+   "use": "JUnit 5 reference for automated Java tests."
+  },
+  {
+   "purpose": "Mocking",
+   "name": "Mockito documentation",
+   "url": "https://site.mockito.org/",
+   "use": "Mockito reference for isolated service tests."
+  },
+  {
+   "purpose": "API testing",
+   "name": "Postman Learning Center",
+   "url": "https://learning.postman.com/",
+   "use": "Learn request collections and test endpoints."
+  },
+  {
+   "purpose": "Build tooling",
+   "name": "Maven Getting Started Guide",
+   "url": "https://maven.apache.org/guides/getting-started/",
+   "use": "Maven project structure, dependencies and build lifecycle."
+  },
+  {
+   "purpose": "Deployment containers",
+   "name": "Docker Get Started",
+   "url": "https://docs.docker.com/get-started/",
+   "use": "Introductory Docker concepts; optional until the app is ready."
+  },
+  {
+   "purpose": "CI/CD",
+   "name": "GitHub Actions documentation",
+   "url": "https://docs.github.com/en/actions",
+   "use": "Automate build/test workflow with GitHub Actions."
+  },
+  {
+   "purpose": "Security",
+   "name": "Spring Security reference",
+   "url": "https://docs.spring.io/spring-security/reference/",
+   "use": "Spring Security reference; use when authentication becomes relevant."
+  },
+  {
+   "purpose": "Android app development (Java)",
+   "name": "Android Developers: Activities",
+   "url": "https://developer.android.com/guide/components/activities/intro-activities",
+   "use": "Use when the Semester Planner Android Java project begins; build a small compiling Activity before adding screens."
+  },
+  {
+   "purpose": "Android layouts (Views)",
+   "name": "Android Developers: Layouts",
+   "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout",
+   "use": "Use for the native Android UI; prefer simple layouts and verify on a narrow screen."
+  },
+  {
+   "purpose": "Android local persistence",
+   "name": "Android Developers: Save data in a local database / Room",
+   "url": "https://developer.android.com/training/data-storage/room",
+   "use": "Use when the core Semester Planner screens work; keep persistence incremental and test data across restarts."
+  }
+ ]
+}
