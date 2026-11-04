@@ -166,11 +166,13 @@
   // so swiping to the next or previous session stays exactly where you were scrolled.
   function render() {
     if (U.route('today') === null) { return; }
-    var keep = window.scrollY, h0 = root.offsetHeight;
+    var scroller = document.getElementById('main');
+    var keep = scroller ? scroller.scrollTop : window.scrollY, h0 = root.offsetHeight;
     if (h0 > 0) { root.style.minHeight = h0 + 'px'; }
     build();
     root.style.minHeight = '';
-    if (Math.abs(window.scrollY - keep) > 1) { window.scrollTo(0, keep); }
+    if (scroller) { scroller.scrollTop = keep; }
+    else if (Math.abs(window.scrollY - keep) > 1) { window.scrollTo(0, keep); }
   }
   function build() {
     root.textContent = '';

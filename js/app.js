@@ -20,7 +20,7 @@
     document.body.setAttribute('data-screen', id);
     titleEl.textContent = title; document.title = title + ' | Bytewise';
     // Only jump to the top when you change screen. Moving between sessions (#today/8 -> #today/9) keeps your scroll position.
-    if (id !== lastId) { window.scrollTo(0, 0); mainEl.focus({ preventScroll: true }); }
+    if (id !== lastId) { mainEl.scrollTop = 0; mainEl.focus({ preventScroll: true }); }
     lastId = id;
   }
   window.addEventListener('hashchange', showScreen); showScreen();
