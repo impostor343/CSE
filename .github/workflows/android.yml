@@ -1,0 +1,72 @@
+name: Build Android APK
+
+# How to run it (works from your phone):
+# GitHub repo > Actions > "Build Android APK" > Run workflow > Run workflow.
+# When it turns green (about 6-10 minutes), open the repo's Releases page and download CSE-Roadmap.apk.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Copy website into www/
+        run: npm run prepare-web
+
+      - name: Create the Android project
+        run: |
+          npx cap add android
+          npx cap sync android
+
+      - name: Add home-screen widgets and the Back-button/widget bridge
+        run: python3 android-build/add_widgets.py
+
+      - name: Set version number and app icon
+        run: |
+          sed -i "s/versionCode 1/versionCode ${{ github.run_number }}/; s/versionName \"1.0\"/versionName \"1.${{ github.run_number }}\"/" android/app/build.gradle
+          pip install pillow
+          python3 android-build/make_icons.py
+
+      - name: Use the fixed signing key (so updates install over the old app)
+        run: |
+          mkdir -p ~/.android
+          cp android-build/debug.keystore ~/.android/debug.keystore
+
+      - name: Build APK
+        working-directory: android
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: Name the file
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk CSE-Roadmap.apk
+
+      - name: Keep a copy as a workflow download
+        uses: actions/upload-artifact@v4
+        with:
+          name: CSE-Roadmap-apk
+          path: CSE-Roadmap.apk
+
+      - name: Publish to Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "apk-${{ github.run_number }}" CSE-Roadmap.apk \
+            --title "CSE Roadmap APK #${{ github.run_number }}" \
+            --notes "Android app build ${{ github.run_number }}. Download CSE-Roadmap.apk and install it."
