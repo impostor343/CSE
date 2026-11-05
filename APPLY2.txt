@@ -1,0 +1,9 @@
+Upload to your GitHub repo (same folders, replace if they exist):
+  index.html                 (replace)
+  sw.js                      (replace)
+  js/workspace.js            (replace)
+  js/progress.js             (replace)
+  js/coverage.js             (NEW)
+  css/coverage.css           (NEW)
+  data/module-overview.json  (NEW)
+Then refresh the site once. For the Android app, run Actions > Build Android APK again.
