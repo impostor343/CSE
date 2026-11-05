@@ -29,3 +29,8 @@
 .cur .pl-date .sel { margin-top: 4px; }
 .cur .pl-day { display: flex; flex-direction: column; gap: 2px; padding: 8px 0; border-bottom: 1px solid var(--line); }
 .cur .pl-next { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; margin: 6px 0; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); text-decoration: none; background: var(--bg); }
+
+/* six tabs in the bottom bar (Plans sits next to Calendar) */
+.tabbar { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.tabbar a span { white-space: nowrap; }
+.cur .pl-new { width: 100%; margin: 4px 0 10px; min-height: 46px; text-decoration: none; box-sizing: border-box; }
