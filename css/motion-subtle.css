@@ -1,0 +1,32 @@
+/*
+ * Subtle motion (Bytewise). Short, quiet, and only where it helps the eye follow a change:
+ *  - switching screens / Home tabs  - a gentle fade
+ *  - opening a module, project or library card - a soft fade + 6px slide
+ *  - arrow on a card turns smoothly
+ *  - tap feedback on buttons and cards (tiny press)
+ *  - bottom sheets (session details) fade up slightly
+ * Everything switches off for people who turn on "reduce motion" on their phone.
+ */
+@keyframes bw-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes bw-open { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@keyframes bw-sheet { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+.screen:not([hidden]) { animation: bw-fade .18s ease-out; }
+.home-workspace-panel:not([hidden]) { animation: bw-fade .18s ease-out; }
+.acc-body:not([hidden]) { animation: bw-open .2s ease-out; }
+dialog.sheet[open], .home-info-dialog[open] { animation: bw-sheet .22s ease-out; }
+dialog.sheet[open]::backdrop, .home-info-dialog[open]::backdrop { animation: bw-fade .22s ease-out; }
+
+.pc-go { transition: transform .2s ease; }
+.pcard, .mini-card, .lib-cat, .lib-card, .pg-tile, .pg-row, .srch-row, .btn, .home-btn, .circ-btn, .home-workspace-tab, .gchip, .rs-chip {
+  transition: transform .14s ease, background-color .18s ease, opacity .18s ease;
+}
+.pcard:active, .mini-card:active, .lib-cat:active, .lib-card:active, .pg-tile:active, .pg-row:active, .srch-row:active { transform: scale(.985); }
+.btn:active, .home-btn:active, .circ-btn:active, .home-workspace-tab:active { transform: scale(.96); }
+
+/* progress bars ease to their value when it changes (no replay on every redraw) */
+.pc-bar i, .pg-bar span, .cbar span, .bar-fill { transition: width .4s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

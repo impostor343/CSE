@@ -1,0 +1,39 @@
+/*
+ * Fit-to-screen fix (Bytewise).
+ * Problem: <main> is centred with auto margins inside a flex column, so it shrink-wrapped to its
+ * widest child. Opening a module/project/library card made it jump to its 720px max width, which
+ * pushed the right side of every card off a phone screen.
+ * Fix: main always takes exactly the screen width (up to 720px) and nothing inside may be wider.
+ */
+main#main {
+  width: 100% !important;
+  max-width: 720px !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+main#main *, main#main *::before, main#main *::after { box-sizing: border-box; }
+main#main .screen,
+main#main .home-workspace-panel,
+main#main .cur,
+main#main .acc,
+main#main .acc-body,
+main#main .acc-inner,
+main#main .card,
+main#main .pcard,
+main#main .deck,
+main#main .deck-slide,
+main#main .mod-list,
+main#main .lib-grid,
+main#main .lib-main { min-width: 0; max-width: 100%; }
+/* the swipe deck keeps its own sideways swipe, but never widens the page */
+.deck { max-width: none; }
+.deck-track { width: 100%; max-width: 100%; }
+/* long words, paths and monospace lines wrap instead of stretching the card */
+main#main :is(p, span, strong, h1, h2, h3, h4, li, a, label, .val, .pc-meta, .pc-title, .sess-foot) { overflow-wrap: anywhere; min-width: 0; }
+main#main :is(input, select, textarea, .sel, .notes) { max-width: 100%; min-width: 0; }
+main#main :is(pre, table, img, svg, video) { max-width: 100%; }
+main#main pre { white-space: pre-wrap; overflow-x: auto; }
+/* neutral cards inside an opened module should not be tinted wider than their parent */
+.pcard { overflow: hidden; }
