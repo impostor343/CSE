@@ -69,6 +69,7 @@
   function list() {
     var w = h('div', { class: 'mod-list' });
     w.appendChild(h('h2', { class: 'screen-h', text: 'Modules' }));
+    w.appendChild(h('a', { class: 'btn outline pl-entry', href: '#planner', text: 'Plan with ChatGPT' }));
     var input = h('input', { class: 'searchbar', type: 'search', placeholder: 'Search any session', 'aria-label': 'Search sessions', autocomplete: 'off', enterkeyhint: 'search' }); input.value = query;
     var results = h('div'), cards = h('div');
     function fill() {
@@ -121,6 +122,7 @@
       h('span', { class: 'prog-text' }, h('strong', { text: st.done + ' of ' + total + ' sessions done' }), h('span', { text: U.STATUS[status] })));
     w.appendChild(ring);
     var tools = h('div', { class: 'mod-tools' }, statusSelect(status, function (v) { A.saveTopic(m.id, { status: v }).then(refresh); }, m.name + ' status'));
+    tools.appendChild(h('a', { class: 'btn ghost', href: '#planner/' + m.id, text: 'Plan with ChatGPT' }));
     if (status === 'not-started') { tools.appendChild(h('button', { class: 'btn primary', type: 'button', text: 'Start module', onclick: function () { A.saveTopic(m.id, { status: 'in-progress' }).then(refresh); } })); }
     w.appendChild(tools);
     if (window.Coverage) { w.appendChild(Coverage.module(m)); }

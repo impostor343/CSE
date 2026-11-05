@@ -1,7 +1,7 @@
 // Router shell: the six tabs (Home, Calendar, Questions, Projects, Progress, Resources) plus Settings, chosen by the URL hash.
 (function () {
   'use strict';
-  var SCREENS = ['today', 'modules', 'manual', 'calendar', 'questions', 'projects', 'progress', 'resources', 'settings'];
+  var SCREENS = ['today', 'modules', 'manual', 'calendar', 'questions', 'projects', 'progress', 'resources', 'settings', 'planner'];
   var titleEl = document.getElementById('screen-title'), tabLinks = document.querySelectorAll('.tabbar a'), mainEl = document.getElementById('main');
   var lastId = null;
   function showScreen() {
@@ -14,7 +14,7 @@
     var sections = document.querySelectorAll('.screen');
     for (var i = 0; i < sections.length; i++) { sections[i].hidden = (sections[i].id !== 'screen-' + id); }
     for (var j = 0; j < tabLinks.length; j++) {
-      if (tabLinks[j].getAttribute('href') === '#' + id) { tabLinks[j].setAttribute('aria-current', 'page'); } else { tabLinks[j].removeAttribute('aria-current'); }
+      if (tabLinks[j].getAttribute('href') === '#' + (id === 'planner' ? 'today' : id)) { tabLinks[j].setAttribute('aria-current', 'page'); } else { tabLinks[j].removeAttribute('aria-current'); }
     }
     var title = document.getElementById('screen-' + id).getAttribute('data-title');
     document.body.setAttribute('data-screen', id);
