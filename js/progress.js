@@ -138,6 +138,7 @@
     w.appendChild(h('p', { class: 'eyebrow', text: m.catalogId + ' · ' + m.phase }));
     var mdic = h('span', { class: 'module-detail-icon module-icon-' + m.id.toLowerCase(), 'aria-hidden': 'true' }); mdic.appendChild(ic(moduleIcon(m)));
     w.appendChild(h('div', { class: 'module-detail-heading' }, mdic, h('h2', { text: m.name })));
+    if (window.Coverage) { w.appendChild(Coverage.module(m, { open: true })); }
     w.appendChild(card('Status', statusSelect(A.topicStatus(m), TOPIC_STATUSES, function (v) { A.saveTopic(id, { status: v }).then(V.refresh); }, 'Module status'),
       h('p', { class: 'muted small', text: 'Your status is separate from session completion. Changing it never completes or reopens sessions.' }), ts.completedAt ? row('Marked completed', U.stamp(ts.completedAt)) : null));
     w.appendChild(card('Learning progress', h('p', { class: 'bigday', text: t.done + ' / ' + t.total + ' sessions completed' }), U.bar(t.percent), h('p', { class: 'muted', text: t.remaining + ' remaining' + (t.skipped ? ' · ' + t.skipped + ' skipped' : '') })));
@@ -164,6 +165,7 @@
     w.appendChild(h('p', { class: 'eyebrow', text: tp.id + (m ? ' · ' + m.catalogId : '') }));
     var thic = h('span', { class: 'topic-detail-icon', 'aria-hidden': 'true' }); thic.appendChild(ic(topicIcon(tp)));
     w.appendChild(h('div', { class: 'topic-detail-heading' }, thic, h('h2', { text: tp.name })));
+    if (window.Coverage) { w.appendChild(Coverage.topic(tp, { open: true })); }
     w.appendChild(card('Status', statusSelect(A.conceptStatus(tp), TOPIC_STATUSES, function (v) { A.saveTopic(id, { status: v }).then(V.refresh); }, 'Topic status'),
       h('p', { class: 'muted small', text: 'Your topic status is separate from session completion. Completing one session never marks a topic complete.' }), ts.completedAt ? row('Marked completed', U.stamp(ts.completedAt)) : null));
     w.appendChild(card('Learning progress', h('p', { class: 'bigday', text: st.done + ' / ' + st.total + ' sessions completed' }), U.bar(st.percent), h('p', { class: 'muted', text: st.remaining + ' remaining' + (st.skipped ? ' · ' + st.skipped + ' skipped' : '') })));

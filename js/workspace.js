@@ -123,6 +123,7 @@
     var tools = h('div', { class: 'mod-tools' }, statusSelect(status, function (v) { A.saveTopic(m.id, { status: v }).then(refresh); }, m.name + ' status'));
     if (status === 'not-started') { tools.appendChild(h('button', { class: 'btn primary', type: 'button', text: 'Start module', onclick: function () { A.saveTopic(m.id, { status: 'in-progress' }).then(refresh); } })); }
     w.appendChild(tools);
+    if (window.Coverage) { w.appendChild(Coverage.module(m)); }
 
     var slides = []; for (var d = m.startDay; d <= m.endDay; d++) { slides.push(sessionCard(m, d, d - m.startDay, total)); }
     var counter = h('span', { class: 'deck-count' }), prev = h('button', { type: 'button', class: 'circ-btn', 'aria-label': 'Previous session', text: '←' }), next = h('button', { type: 'button', class: 'circ-btn', 'aria-label': 'Next session', text: '→' });
