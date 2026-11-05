@@ -3,7 +3,7 @@
 // Plans are saved in the existing 'meta' store (key "plan:<moduleId>"), so no database upgrade is needed and backups already include them.
 (function () {
   'use strict';
-  var C = window.Curriculum, A = window.State, S = window.Store, h = U.h, root = document.getElementById('planner-root');
+  var C = window.Curriculum, A = window.State, S = window.Store, h = U.h, root = document.getElementById('planner-root'), plansRoot = document.getElementById('plans-root');
   var PREFIX = 'plan:', plans = {};
 
   // ---------- saved plans ----------
@@ -187,7 +187,7 @@
       var days = chosen(); if (!days.length) { return; }
       var now = new Date().toISOString();
       savePlan({ moduleId: m.id, days: days, perDay: P.perDay, startDate: P.start || '', reason: P.reason || '', suggestedPerDay: P.suggested || null, savedAt: (existing && existing.savedAt) || now, updatedAt: now })
-        .then(function () { existing = plans[m.id]; saveBtn.textContent = 'Update saved plan'; saveMsg.className = 'muted small'; saveMsg.replaceChildren('Saved ✓  ', h('a', { href: '#planner', text: 'See saved plans' })); },
+        .then(function () { existing = plans[m.id]; saveBtn.textContent = 'Update saved plan'; saveMsg.className = 'muted small'; saveMsg.replaceChildren('Saved ✓  ', h('a', { href: '#plans', text: 'See saved plans' })); },
           function (e) { saveMsg.className = 'err small'; saveMsg.textContent = 'Could not save: ' + ((e && e.message) || e); });
     });
     var step3 = h('section', { class: 'card', hidden: 'hidden' }, h('h3', { text: '3 · How many sessions per day?' }), sugg,
@@ -252,10 +252,7 @@
     var w = h('div', { class: 'pl' });
     w.appendChild(h('h2', { class: 'screen-h', text: 'Plan with ChatGPT' }));
     w.appendChild(h('ol', { class: 'pl-steps' }, h('li', { text: 'Pick a module and copy it.' }), h('li', { text: 'Paste it in ChatGPT; it tells you what to cover.' }), h('li', { text: 'Paste its reply back here.' }), h('li', { text: 'Choose sessions per day and save.' })));
-    var saved = C.modules.map(function (m) { return plans[m.id]; }).filter(Boolean);
-    w.appendChild(h('h3', { class: 'ph', text: 'Saved plans' }));
-    if (!saved.length) { w.appendChild(h('p', { class: 'muted small', text: 'No plans yet. Pick a module below.' })); }
-    saved.forEach(function (p) { var c = planCard(p); if (c) { w.appendChild(c); } });
+    w.appendChild(h('a', { class: 'btn ghost pl-new', href: '#plans', text: 'See my saved plans' }));
     w.appendChild(h('h3', { class: 'ph', text: 'Choose a module' }));
     C.modules.forEach(function (m) {
       var st = A.topicStats(m);
@@ -264,13 +261,23 @@
     return w;
   }
 
+  function plansView() {
+    var w = h('div', { class: 'pl' });
+    w.appendChild(h('h2', { class: 'screen-h', text: 'My plans' }));
+    w.appendChild(h('a', { class: 'btn primary pl-new', href: '#planner', text: '+ New plan with ChatGPT' }));
+    var saved = C.modules.map(function (m) { return plans[m.id]; }).filter(Boolean);
+    if (!saved.length) { w.appendChild(h('p', { class: 'muted', text: 'No saved plans yet. Tap the button above, pick a module and follow the steps.' })); }
+    saved.forEach(function (p) { var c = planCard(p); if (c) { w.appendChild(c); } });
+    return w;
+  }
   function render(keepScroll) {
+    if (U.route('plans') !== null) { plansRoot.replaceChildren(plansView()); if (keepScroll !== true) { var mm = document.getElementById('main'); if (mm) { mm.scrollTop = 0; } } return; }
     var r = U.route('planner'); if (r === null) { return; }
     var m = r[0] ? C.module(r[0]) : null;
     root.replaceChildren(m ? moduleView(m) : listView());
     if (keepScroll !== true) { var main = document.getElementById('main'); if (main) { main.scrollTop = 0; } }
   }
-  function onData() { var r = U.route('planner'); if (r !== null && !r[0]) { render(true); } }   // only the list refreshes when progress changes; the editor never loses what you typed
+  function onData() { var r = U.route('planner'); if ((r !== null && !r[0]) || U.route('plans') !== null) { render(true); } }   // only the list refreshes when progress changes; the editor never loses what you typed
   Promise.all([C.ready, A.ready]).then(loadPlans).then(function () { render(); window.addEventListener('hashchange', function () { loadPlans().then(function () { render(); }); }); window.addEventListener('cur-changed', onData); })
     .catch(function (e) { root.textContent = 'Could not load: ' + e.message; });
 })();
