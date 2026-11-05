@@ -1,0 +1,126 @@
+{
+ "M01": {
+  "summary": "Learn to keep your work safe and shareable with Git and GitHub. You start with how Git thinks (working tree, staging, repository), then commits, remotes, branches, pull requests, and finally how to fix mistakes and merge conflicts without panic.",
+  "why": "Every internship team uses Git daily. Clean history and a tidy repo are the first thing a reviewer sees."
+ },
+ "M02": {
+  "summary": "Get comfortable writing real Java programs. You practise methods, parameters and return values, then arrays (including 2D), strings, input checking and breaking a bigger problem into small methods you can trace by hand.",
+  "why": "This is the bridge from 'I can follow a tutorial' to 'I can solve a small problem on my own'."
+ },
+ "M03": {
+  "summary": "Learn to model real things as classes and objects. Covers fields, constructors and encapsulation, composition, inheritance, polymorphism, abstract classes and interfaces, enums and records, equals/hashCode/toString, and drawing UML diagrams.",
+  "why": "Almost every Java interview and codebase is built on OOP, so this module is the core of your Java skill."
+ },
+ "M04": {
+  "summary": "Learn which Java collection to pick and why: List, LinkedList, Set, Map, Queue and Deque. Also covers iterators, generics, sorting with Comparable and Comparator, and the speed trade-offs of each collection.",
+  "why": "Choosing the right collection is one of the most common practical and interview questions in Java."
+ },
+ "M05": {
+  "summary": "Learn to handle things going wrong. Covers exceptions (checked and unchecked, try/catch/finally, custom ones), reading and writing files safely, debugging with breakpoints and stack traces, and basic logging.",
+  "why": "Real programs fail in unexpected ways. This module teaches you to find the cause from evidence instead of guessing."
+ },
+ "M06": {
+  "summary": "Learn to write code other people can read and trust. Covers naming and small methods, SOLID ideas, unit tests with JUnit 5, Maven projects, and a debugging, code review and README routine.",
+  "why": "Clean, tested, buildable projects are what make a portfolio look professional."
+ },
+ "M07": {
+  "summary": "The big problem-solving module. You build a method for attacking problems, learn Big-O, then work through arrays, strings, prefix sums, sliding window, binary search, sorting, linked lists, stacks and queues, hashing, recursion, trees, heaps, graphs, greedy and a first look at dynamic programming.",
+  "why": "Coding interviews test these patterns. Doing them steadily over weeks beats cramming."
+ },
+ "M08": {
+  "summary": "Learn SQL from the ground up. Tables and keys, SELECT with filters, safe INSERT/UPDATE/DELETE, aggregates and GROUP BY, all the joins, subqueries and CTEs, normalization, constraints, transactions and a first look at indexes.",
+  "why": "Nearly every backend job reads and writes data with SQL."
+ },
+ "M09": {
+  "summary": "Connect Java to a real database. Covers JDBC and connections, PreparedStatement to stop SQL injection, the DAO/repository pattern, transactions with commit and rollback, configuration and testing against a database.",
+  "why": "This is the step that turns a console program into an application that remembers data."
+ },
+ "M10": {
+  "summary": "A short, important module on how the web works. Clients and servers, URLs and DNS, HTTP methods and status codes, JSON, REST naming rules and Maven dependency handling.",
+  "why": "You need this picture in your head before building any backend service."
+ },
+ "M11": {
+  "summary": "Build a proper backend with Spring Boot. Covers dependency injection, project structure, controllers, services and repositories, request handling, validation and error responses, Spring Data JPA, pagination, Swagger docs and configuration.",
+  "why": "Spring Boot is the most common Java backend framework, and this module is where your main internship project takes shape."
+ },
+ "M12": {
+  "summary": "Make your backend trustworthy and shippable. Covers API testing with Postman, Spring Boot tests, integration tests, login and token basics, Spring Security, common web attacks (CORS, CSRF), Docker and deployment.",
+  "why": "A tested, secured and deployed service is far more convincing than one that only runs on your laptop."
+ },
+ "M13": {
+  "summary": "A first full tour of the frontend. HTML structure and forms, CSS layout with Flexbox and Grid, JavaScript basics, DOM and fetch, and an introduction to React with state, effects and calling your Java API.",
+  "why": "Even backend interns are expected to connect a simple screen to their API."
+ },
+ "M14": {
+  "summary": "Turn what you have learned into internship applications. Covers a resume that links skills to proof, explaining your projects, revising Java, SQL, Spring and DSA for interviews, aptitude and communication practice, and the application process.",
+  "why": "This closes Phase 1 and checks that your work can actually be shown to an employer."
+ },
+ "M15": {
+  "summary": "Level up your algorithms. Advanced graph traversal, topological sort, shortest paths, spanning trees, Union-Find, advanced dynamic programming, bit tricks, tries, segment and Fenwick trees, advanced greedy and mixed interview sets.",
+  "why": "For harder problems and stronger interviews, you need to choose the right technique and justify it."
+ },
+ "M16": {
+  "summary": "Look under the hood of Java. Generics in depth, lambdas and streams, Optional and the date/time API, the JVM and garbage collection, threads, locks, executors, concurrent collections, deadlocks and performance measurement.",
+  "why": "Understanding the runtime and concurrency is what separates a user of Java from an engineer."
+ },
+ "M17": {
+  "summary": "Learn C to understand how computers really work. Compilation and linking, types and control flow, arrays and strings, pointers, malloc and free, structs and unions, file I/O and the memory-safety traps of C.",
+  "why": "C makes memory and pointers concrete, which strengthens everything else you write."
+ },
+ "M18": {
+  "summary": "Add Python as a second practical language. Syntax and data types, lists, dicts and comprehensions, modules and virtual environments, files and JSON, classes and type hints, calling APIs, pytest and a small automation project.",
+  "why": "Python is great for scripts, automation and data tasks, and it complements your Java."
+ },
+ "M19": {
+  "summary": "Go deeper into the browser and modern frontend. Closures and the event loop, promises and async/await, browser APIs, TypeScript, React hooks and routing, frontend testing, build tools, accessibility and performance.",
+  "why": "This makes you able to build maintainable interfaces that work well with your backend."
+ },
+ "M20": {
+  "summary": "Learn what happens beneath your programs. System calls, processes and threads, CPU scheduling, locks and semaphores, deadlocks, virtual memory and paging, file systems and I/O.",
+  "why": "Operating system ideas appear in interviews, exams and every performance or concurrency problem."
+ },
+ "M21": {
+  "summary": "Learn how data travels across the internet. Network layers, Ethernet and ARP, IP addressing and subnets, routing, TCP and UDP, DNS/DHCP/NAT, HTTP and TLS, sockets and troubleshooting tools.",
+  "why": "It explains what actually happens when your app calls an API, and why it sometimes fails."
+ },
+ "M22": {
+  "summary": "Go beyond basic SQL. Query planning and EXPLAIN, B-tree and hash indexes, transaction isolation problems, MVCC and locking, normalization trade-offs, partitioning and replication, NoSQL models, Redis and migrations.",
+  "why": "Strong database knowledge is what keeps real systems fast and correct."
+ },
+ "M23": {
+  "summary": "Learn to design software that stays easy to change. Requirements and user stories, UML, coupling and cohesion, design patterns, layered and hexagonal architecture, domain modelling, refactoring, code review and decision records.",
+  "why": "Good structure and clear trade-offs matter more as projects grow."
+ },
+ "M24": {
+  "summary": "Learn professional testing. The test pyramid, mocking with Mockito, integration and contract tests, browser end-to-end tests, property-based testing, load testing, CI pipelines and writing useful defect reports.",
+  "why": "Layered tests give you confidence to change code without breaking it."
+ },
+ "M25": {
+  "summary": "Learn to build software that is hard to attack. Threat modelling, authentication and access control, password storage and tokens, injection and XSS, IDOR, secrets and dependency risk, TLS and secure headers, logging and incident basics.",
+  "why": "Security mistakes are costly, and knowing the common ones is expected from every engineer."
+ },
+ "M26": {
+  "summary": "Learn to design large systems on paper. Requirements, capacity estimates, API design, monolith versus microservices, caching, load balancing, database scaling, queues, reliability, observability, plus URL-shortener and booking-system case studies.",
+  "why": "System design interviews and real architecture work both rely on this way of thinking."
+ },
+ "M27": {
+  "summary": "Learn why software across many machines is hard. Partial failure, clocks and ordering, consistency and CAP, replication and quorum, consensus (Raft), message delivery guarantees, eventual consistency, sagas and failure recovery.",
+  "why": "Understanding these failure modes helps you reason about any modern cloud application."
+ },
+ "M28": {
+  "summary": "Learn to package, deploy and run software. Cloud basics, Linux and shell scripting, Docker and Compose, CI/CD pipelines, deployment and rollback, cloud compute and IAM, infrastructure as code, monitoring and a deployment capstone.",
+  "why": "It turns your project into something that runs reliably and can be updated safely."
+ },
+ "M29": {
+  "summary": "A broad introduction to data and AI. Data formats and quality, ETL pipelines, Pandas and analysis, statistics refresh, machine-learning basics and evaluation, bias and privacy, using AI tools safely, and a small data/ML project.",
+  "why": "You will not become an ML engineer here, but you will understand enough to work with data and AI sensibly."
+ },
+ "M30": {
+  "summary": "Learn to work like part of a team. Reading unfamiliar code, triaging issues and making small bug fixes, pull request etiquette, technical writing and runbooks, mentoring and estimation, and contributing to open source.",
+  "why": "Real jobs are mostly about working in existing codebases with other people."
+ },
+ "M31": {
+  "summary": "The final capstone. Choose a scope and write requirements, design the architecture and APIs, build backend and frontend sprints, harden security and deployment, test reliability, document and demo, then do a final interview and portfolio review.",
+  "why": "It brings the whole roadmap together into one substantial project you can present."
+ }
+}
