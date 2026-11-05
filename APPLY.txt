@@ -1,0 +1,6 @@
+Replace/add these 4 files in your GitHub repo (same folders):
+  index.html            (replace)
+  sw.js                 (replace)
+  css/fit-fix.css       (NEW)
+  css/motion-subtle.css (NEW)
+Then open https://impostor343.github.io/CSE/ and refresh once (cache is bumped to v29).
