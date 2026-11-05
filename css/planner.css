@@ -1,0 +1,31 @@
+/* Plan with ChatGPT screen (#planner). Uses the app's existing colour variables. */
+.cur .pl-back { display: inline-block; margin: 0 0 6px; color: var(--accent-strong); text-decoration: none; font-size: .9375rem; min-height: 40px; line-height: 40px; }
+.cur .pl-entry { width: 100%; margin: 4px 0 8px; min-height: 46px; text-decoration: none; box-sizing: border-box; }
+.cur .pl-steps { margin: 0 0 8px; padding-left: 22px; color: var(--muted); font-size: .9375rem; line-height: 1.6; }
+.cur .pl-mod { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 56px; padding: 12px 14px; margin: 8px 0; border: 1px solid var(--line); border-radius: 14px; background: var(--bg); color: var(--ink); text-decoration: none; box-sizing: border-box; }
+.cur .pl-mod-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.cur .pl-badge { flex: none; font-size: .75rem; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--tint); color: var(--accent-strong); }
+.cur .pl-check { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: .9375rem; }
+.cur .pl-check input, .cur .pl-row input { width: 22px; height: 22px; flex: none; accent-color: var(--accent-strong); }
+.cur .pl-det { margin: 10px 0 0; }
+.cur .pl-det summary { min-height: 40px; display: flex; align-items: center; cursor: pointer; color: var(--accent-strong); font-weight: 600; }
+.cur .pl-det textarea { width: 100%; box-sizing: border-box; margin-top: 8px; font-size: .8125rem; }
+.cur .pl-msg p { margin: 8px 0 0; }
+.cur .pl-sub { margin: 14px 0 6px; font-size: .9rem; font-weight: 600; color: var(--muted); }
+.cur .pl-reason { margin: 6px 0; font-size: .9375rem; line-height: 1.5; }
+.cur .pl-count { margin: 6px 0; font-weight: 600; }
+.cur .pl-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 8px; }
+.cur .pl-chip { min-height: 40px; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink); font: inherit; font-size: .875rem; cursor: pointer; }
+.cur .pl-list { max-height: 55vh; overflow-y: auto; border: 1px solid var(--line); border-radius: 12px; }
+.cur .pl-row { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 8px 12px; border-bottom: 1px solid var(--line); cursor: pointer; opacity: .6; }
+.cur .pl-row:last-child { border-bottom: 0; }
+.cur .pl-row.is-on { opacity: 1; background: var(--tint); }
+.cur .pl-row-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.cur .pl-stepper { display: flex; align-items: center; justify-content: center; gap: 22px; margin: 10px 0; }
+.cur .pl-per { display: flex; flex-direction: column; align-items: center; min-width: 70px; }
+.cur .pl-num { font-size: 2.25rem; line-height: 1; }
+.cur .pl-per small { color: var(--muted); }
+.cur .pl-date { display: block; margin: 10px 0; }
+.cur .pl-date .sel { margin-top: 4px; }
+.cur .pl-day { display: flex; flex-direction: column; gap: 2px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.cur .pl-next { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; margin: 6px 0; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); text-decoration: none; background: var(--bg); }
