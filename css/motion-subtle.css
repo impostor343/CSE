@@ -58,3 +58,30 @@ main.bw-enter :is(.ring, .pg-ring) { animation: bw-ring .4s ease-out backwards; 
 /* settings switches and selects feel soft */
 .switch { transition: background-color .2s ease; }
 .sel, .searchbar, .hs-input { transition: border-color .2s ease, box-shadow .2s ease; }
+
+/* ---- sliding colour pill (v3) ---- */
+.bw-pill { position: absolute; left: 0; top: 0; z-index: 0; pointer-events: none; opacity: 0; will-change: transform; }
+.bw-pill.is-ready { transition: transform .38s cubic-bezier(.3, 1.2, .4, 1), width .3s ease, height .3s ease, opacity .2s ease; }
+
+/* bottom bar */
+.tabbar.bw-slide .bw-pill-nav { width: 36px; height: 30px; border-radius: 14px; background: var(--accent); }
+.tabbar.bw-slide a { position: relative; z-index: 1; }
+html .tabbar.bw-slide a[aria-current="page"] svg { background: none; padding: 0; width: 24px; height: 24px; animation: none; transform: none; stroke: var(--on-accent); }
+.tabbar.bw-slide a svg { transition: stroke .25s ease; }
+
+/* Home tabs */
+.home-workspace-tabs.bw-slide { position: relative; }
+.home-workspace-tabs.bw-slide .bw-pill-ws { border-radius: 14px; }
+.home-workspace-tabs.bw-slide .home-workspace-tab { position: relative; z-index: 1; }
+html .home-workspace-tabs.bw-slide .home-workspace-tab.is-active { background: transparent; box-shadow: none; }
+.home-workspace-tabs.bw-slide .home-workspace-tab { transition: color .25s ease, transform .14s ease; }
+
+/* progress bars: a soft sheen passes over the fill when it grows */
+:is(.pc-bar > i, .pg-bar > span, .cbar > span) { position: relative; overflow: hidden; }
+:is(.pc-bar > i, .pg-bar > span, .cbar > span)::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0;
+  background: linear-gradient(100deg, transparent 20%, rgba(255, 255, 255, .45) 50%, transparent 80%); transform: translateX(-100%);
+}
+@keyframes bw-sheen { 0% { opacity: 1; transform: translateX(-100%); } 100% { opacity: 1; transform: translateX(100%); } }
+.bw-sheen::after, main.bw-enter :is(.pc-bar > i, .pg-bar > span, .cbar > span)::after { animation: bw-sheen .9s .35s ease-in-out both; }
+:is(.pc-bar > i, .pg-bar > span, .cbar > span) { transition: width .55s cubic-bezier(.25, .8, .3, 1); }
