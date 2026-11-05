@@ -1,0 +1,9 @@
+Plan with ChatGPT - update for https://impostor343.github.io/CSE
+
+Upload each file to the SAME folder in your CSE repo (same names replace the old ones):
+  Root:  index.html, sw.js        -> https://github.com/impostor343/CSE/upload/main
+  js/:   app.js, workspace.js, planner.js (NEW)   -> https://github.com/impostor343/CSE/upload/main/js
+  css/:  planner.css (NEW)        -> https://github.com/impostor343/CSE/upload/main/css
+Commit, wait about a minute, then reopen the site (close and reopen once if the old version shows).
+
+Where to find it: Home > Modules > "Plan with ChatGPT" button (also inside each module).
