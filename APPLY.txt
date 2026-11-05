@@ -1,6 +1,7 @@
-Replace/add these 4 files in your GitHub repo (same folders):
+Replace/add these 5 files in your GitHub repo (same folders):
   index.html            (replace)
   sw.js                 (replace)
   css/fit-fix.css       (NEW)
   css/motion-subtle.css (NEW)
-Then open https://impostor343.github.io/CSE/ and refresh once (cache is bumped to v29).
+  js/motion-lite.js     (NEW)
+Then open https://impostor343.github.io/CSE/ and refresh once (cache is bumped to v30).
