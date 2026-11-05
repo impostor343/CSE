@@ -30,3 +30,31 @@ dialog.sheet[open]::backdrop, .home-info-dialog[open]::backdrop { animation: bw-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ---- extra gentle touches (v2) ---- */
+@keyframes bw-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes bw-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes bw-ring { from { opacity: 0; transform: scale(.9); } to { opacity: 1; transform: none; } }
+
+/* cards float in one after another, only when a screen or tab is first shown */
+main.bw-enter :is(.pcard, .pg-hero, .pg-tile, .pg-row, .pg-next, .lib-hero, .lib-cat, .lib-card, .srow, .srch-row, .qbank-card, .item, .home-day-card, .home-notes) { animation: bw-rise .28s ease-out backwards; }
+main.bw-enter :is(.mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .cur) > :nth-child(2) { animation-delay: 40ms; }
+main.bw-enter :is(.mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .cur) > :nth-child(3) { animation-delay: 80ms; }
+main.bw-enter :is(.mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .cur) > :nth-child(4) { animation-delay: 120ms; }
+main.bw-enter :is(.mod-list, .pg-tiles, .pg-list, .lib-grid, .slist, .cur) > :nth-child(n+5) { animation-delay: 160ms; }
+
+/* progress bars and rings settle in once per screen */
+main.bw-enter :is(.pc-bar i, .pg-bar span, .cbar span) { transform-origin: left; animation: bw-grow .5s .1s ease-out backwards; }
+main.bw-enter :is(.ring, .pg-ring) { animation: bw-ring .4s ease-out backwards; }
+
+/* the bottom bar and Home tabs change colour smoothly */
+.tabbar a, .tabbar a svg, .tabbar a span { transition: color .2s ease, background-color .2s ease, transform .2s ease; }
+.tabbar a[aria-current="page"] svg { transform: translateY(-1px); }
+.home-workspace-tab { transition: background-color .2s ease, color .2s ease, transform .14s ease; }
+
+/* swiping between session cards: the card you land on rests slightly brighter */
+.deck-slide { transition: opacity .2s ease; }
+
+/* settings switches and selects feel soft */
+.switch { transition: background-color .2s ease; }
+.sel, .searchbar, .hs-input { transition: border-color .2s ease, box-shadow .2s ease; }
