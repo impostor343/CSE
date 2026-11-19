@@ -147,6 +147,11 @@
     }
     dialog.appendChild(inner);
     dialog.addEventListener('click', function (ev) {
+      // Question links navigate to another screen; close the modal first so it cannot
+      // remain above the question view or block interaction with the new screen.
+      var target = ev.target;
+      var questionLink = target && target.closest ? target.closest('a[href^="#questions/"]') : null;
+      if (questionLink) { dialog.close(); return; }
       if (ev.target === dialog) { dialog.close(); }
     });
     document.body.appendChild(dialog);
