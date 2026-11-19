@@ -2,12 +2,13 @@
   "meta": {
     "version": 1,
     "description": "Curriculum-aligned practice bank with coding, debugging, design, testing, workflow, interview scenarios and the existing LeetCode catalogue.",
-    "total": 2469,
+    "total": 2547,
     "curatedPerModule": 8,
     "workbookQuestionsImported": 2089,
     "workbookQuestionsInWorkbook": 2089,
     "note": "Existing question IDs and records are preserved. Bytewise elective extension questions are appended with BX IDs.",
-    "optionalElectiveQuestions": 72
+    "optionalElectiveQuestions": 72,
+    "careerPathwayQuestions": 78
   },
   "questions": [
     {
@@ -66678,6 +66679,2112 @@
         "implementation"
       ],
       "source": "Bytewise elective extension"
+    },
+    {
+      "id": "BX2470",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0319",
+      "topic": "HTML foundations and semantic structure",
+      "title": "Concept check — HTML foundations and semantic structure",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain html foundations and semantic structure in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1102
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "html foundations and semantic structure",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2471",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0319",
+      "topic": "HTML foundations and semantic structure",
+      "title": "Practical build — HTML foundations and semantic structure",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for html foundations and semantic structure based on this requirement: Build accessible page structure with semantic elements, headings, forms, tables and metadata. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1103
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "html foundations and semantic structure",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2472",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0319",
+      "topic": "HTML foundations and semantic structure",
+      "title": "Debug and review — HTML foundations and semantic structure",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your html foundations and semantic structure exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1104
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "html foundations and semantic structure",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2473",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0320",
+      "topic": "CSS foundations, selectors and layout",
+      "title": "Concept check — CSS foundations, selectors and layout",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain css foundations, selectors and layout in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1105
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "css foundations, selectors and layout",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2474",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0320",
+      "topic": "CSS foundations, selectors and layout",
+      "title": "Practical build — CSS foundations, selectors and layout",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for css foundations, selectors and layout based on this requirement: Style maintainable interfaces with the cascade, box model, typography, Flexbox and Grid. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1106
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "css foundations, selectors and layout",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2475",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0320",
+      "topic": "CSS foundations, selectors and layout",
+      "title": "Debug and review — CSS foundations, selectors and layout",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your css foundations, selectors and layout exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1107
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "css foundations, selectors and layout",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2476",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0321",
+      "topic": "JavaScript for interactive websites",
+      "title": "Concept check — JavaScript for interactive websites",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain javascript for interactive websites in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1108
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "javascript for interactive websites",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2477",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0321",
+      "topic": "JavaScript for interactive websites",
+      "title": "Practical build — JavaScript for interactive websites",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for javascript for interactive websites based on this requirement: Use variables, functions, arrays, objects, DOM events, modules and asynchronous fetch for real interactions. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1109
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "javascript for interactive websites",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2478",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0321",
+      "topic": "JavaScript for interactive websites",
+      "title": "Debug and review — JavaScript for interactive websites",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your javascript for interactive websites exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1110
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "javascript for interactive websites",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2479",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0322",
+      "topic": "Responsive design and accessibility",
+      "title": "Concept check — Responsive design and accessibility",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain responsive design and accessibility in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1111
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "responsive design and accessibility",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2480",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0322",
+      "topic": "Responsive design and accessibility",
+      "title": "Practical build — Responsive design and accessibility",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for responsive design and accessibility based on this requirement: Create mobile-first layouts with fluid sizing, breakpoints, accessible navigation and keyboard support. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1112
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "responsive design and accessibility",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2481",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0322",
+      "topic": "Responsive design and accessibility",
+      "title": "Debug and review — Responsive design and accessibility",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your responsive design and accessibility exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1113
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "responsive design and accessibility",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2482",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0323",
+      "topic": "Git and GitHub workflow for web projects",
+      "title": "Concept check — Git and GitHub workflow for web projects",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain git and github workflow for web projects in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1114
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "git and github workflow for web projects",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2483",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0323",
+      "topic": "Git and GitHub workflow for web projects",
+      "title": "Practical build — Git and GitHub workflow for web projects",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for git and github workflow for web projects based on this requirement: Use branches, meaningful commits, pull requests, issue tracking and a clean project README. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1115
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "git and github workflow for web projects",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2484",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0323",
+      "topic": "Git and GitHub workflow for web projects",
+      "title": "Debug and review — Git and GitHub workflow for web projects",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your git and github workflow for web projects exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1116
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "git and github workflow for web projects",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2485",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0324",
+      "topic": "Website deployment and production basics",
+      "title": "Concept check — Website deployment and production basics",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain website deployment and production basics in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1117
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "website deployment and production basics",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2486",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0324",
+      "topic": "Website deployment and production basics",
+      "title": "Practical build — Website deployment and production basics",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for website deployment and production basics based on this requirement: Deploy a static site, configure domains and HTTPS, verify builds and troubleshoot deployment failures. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1118
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "website deployment and production basics",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2487",
+      "moduleId": "M38",
+      "module": "Frontend & Web Development",
+      "topicId": "TOP0324",
+      "topic": "Website deployment and production basics",
+      "title": "Debug and review — Website deployment and production basics",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your website deployment and production basics exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1119
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "frontend & web development",
+        "website deployment and production basics",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2488",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0325",
+      "topic": "Figma foundations and design handoff",
+      "title": "Concept check — Figma foundations and design handoff",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain figma foundations and design handoff in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1120
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "figma foundations and design handoff",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2489",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0325",
+      "topic": "Figma foundations and design handoff",
+      "title": "Practical build — Figma foundations and design handoff",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for figma foundations and design handoff based on this requirement: Create frames, components, auto layout, variants and developer-ready design specifications. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1121
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "figma foundations and design handoff",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2490",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0325",
+      "topic": "Figma foundations and design handoff",
+      "title": "Debug and review — Figma foundations and design handoff",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your figma foundations and design handoff exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1122
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "figma foundations and design handoff",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2491",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0326",
+      "topic": "UI/UX research, wireframes and prototyping",
+      "title": "Concept check — UI/UX research, wireframes and prototyping",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain ui/ux research, wireframes and prototyping in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1123
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "ui/ux research, wireframes and prototyping",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2492",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0326",
+      "topic": "UI/UX research, wireframes and prototyping",
+      "title": "Practical build — UI/UX research, wireframes and prototyping",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for ui/ux research, wireframes and prototyping based on this requirement: Define user needs, map flows, create wireframes, prototype key journeys and test usability. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1124
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "ui/ux research, wireframes and prototyping",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2493",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0326",
+      "topic": "UI/UX research, wireframes and prototyping",
+      "title": "Debug and review — UI/UX research, wireframes and prototyping",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your ui/ux research, wireframes and prototyping exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1125
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "ui/ux research, wireframes and prototyping",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2494",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0327",
+      "topic": "WordPress setup, themes and pages",
+      "title": "Concept check — WordPress setup, themes and pages",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain wordpress setup, themes and pages in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1126
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "wordpress setup, themes and pages",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2495",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0327",
+      "topic": "WordPress setup, themes and pages",
+      "title": "Practical build — WordPress setup, themes and pages",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for wordpress setup, themes and pages based on this requirement: Set up WordPress, choose a suitable theme, structure pages and configure menus and essential settings. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1127
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "wordpress setup, themes and pages",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2496",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0327",
+      "topic": "WordPress setup, themes and pages",
+      "title": "Debug and review — WordPress setup, themes and pages",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your wordpress setup, themes and pages exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1128
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "wordpress setup, themes and pages",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2497",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0328",
+      "topic": "WordPress content, plugins and security",
+      "title": "Concept check — WordPress content, plugins and security",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain wordpress content, plugins and security in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1129
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "wordpress content, plugins and security",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2498",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0328",
+      "topic": "WordPress content, plugins and security",
+      "title": "Practical build — WordPress content, plugins and security",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for wordpress content, plugins and security based on this requirement: Manage content and media, evaluate plugins, configure backups, updates, roles and basic hardening. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1130
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "wordpress content, plugins and security",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2499",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0328",
+      "topic": "WordPress content, plugins and security",
+      "title": "Debug and review — WordPress content, plugins and security",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your wordpress content, plugins and security exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1131
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "wordpress content, plugins and security",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2500",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0329",
+      "topic": "SEO foundations and on-page optimisation",
+      "title": "Concept check — SEO foundations and on-page optimisation",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain seo foundations and on-page optimisation in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1132
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "seo foundations and on-page optimisation",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2501",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0329",
+      "topic": "SEO foundations and on-page optimisation",
+      "title": "Practical build — SEO foundations and on-page optimisation",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for seo foundations and on-page optimisation based on this requirement: Improve crawlability, titles, descriptions, headings, internal links, image text and structured content. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1133
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "seo foundations and on-page optimisation",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2502",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0329",
+      "topic": "SEO foundations and on-page optimisation",
+      "title": "Debug and review — SEO foundations and on-page optimisation",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your seo foundations and on-page optimisation exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1134
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "seo foundations and on-page optimisation",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2503",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0330",
+      "topic": "Website maintenance, backups and handover",
+      "title": "Concept check — Website maintenance, backups and handover",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain website maintenance, backups and handover in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1135
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "website maintenance, backups and handover",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2504",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0330",
+      "topic": "Website maintenance, backups and handover",
+      "title": "Practical build — Website maintenance, backups and handover",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for website maintenance, backups and handover based on this requirement: Maintain a live site with update routines, backups, uptime checks, content reviews, security hygiene and documented handover. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1136
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "website maintenance, backups and handover",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2505",
+      "moduleId": "M39",
+      "module": "Website Design & CMS",
+      "topicId": "TOP0330",
+      "topic": "Website maintenance, backups and handover",
+      "title": "Debug and review — Website maintenance, backups and handover",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your website maintenance, backups and handover exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1137
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "website design & cms",
+        "website maintenance, backups and handover",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2506",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0331",
+      "topic": "REST API design and HTTP fundamentals",
+      "title": "Concept check — REST API design and HTTP fundamentals",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain rest api design and http fundamentals in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1138
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "rest api design and http fundamentals",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2507",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0331",
+      "topic": "REST API design and HTTP fundamentals",
+      "title": "Practical build — REST API design and HTTP fundamentals",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for rest api design and http fundamentals based on this requirement: Design resource-oriented endpoints, HTTP methods, status codes, validation, pagination and error responses. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1139
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "rest api design and http fundamentals",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2508",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0331",
+      "topic": "REST API design and HTTP fundamentals",
+      "title": "Debug and review — REST API design and HTTP fundamentals",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your rest api design and http fundamentals exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1140
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "rest api design and http fundamentals",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2509",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0332",
+      "topic": "Spring Boot application development",
+      "title": "Concept check — Spring Boot application development",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain spring boot application development in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1141
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "spring boot application development",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2510",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0332",
+      "topic": "Spring Boot application development",
+      "title": "Practical build — Spring Boot application development",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for spring boot application development based on this requirement: Build a layered Spring Boot REST service with dependency injection, configuration and persistence. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1142
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "spring boot application development",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2511",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0332",
+      "topic": "Spring Boot application development",
+      "title": "Debug and review — Spring Boot application development",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your spring boot application development exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1143
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "spring boot application development",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2512",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0333",
+      "topic": "Backend testing and API quality",
+      "title": "Concept check — Backend testing and API quality",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain backend testing and api quality in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1144
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "backend testing and api quality",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2513",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0333",
+      "topic": "Backend testing and API quality",
+      "title": "Practical build — Backend testing and API quality",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for backend testing and api quality based on this requirement: Write unit, slice and integration tests; test validation, error cases and API contracts. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1145
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "backend testing and api quality",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2514",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0333",
+      "topic": "Backend testing and API quality",
+      "title": "Debug and review — Backend testing and API quality",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your backend testing and api quality exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1146
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "backend testing and api quality",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2515",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0334",
+      "topic": "Backend deployment and operations",
+      "title": "Concept check — Backend deployment and operations",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain backend deployment and operations in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1147
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "backend deployment and operations",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2516",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0334",
+      "topic": "Backend deployment and operations",
+      "title": "Practical build — Backend deployment and operations",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for backend deployment and operations based on this requirement: Package and configure an application, manage environment variables, logs, health checks and deployment. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1148
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "backend deployment and operations",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2517",
+      "moduleId": "M40",
+      "module": "Backend & Professional Development",
+      "topicId": "TOP0334",
+      "topic": "Backend deployment and operations",
+      "title": "Debug and review — Backend deployment and operations",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your backend deployment and operations exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1149
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "backend & professional development",
+        "backend deployment and operations",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2518",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0335",
+      "topic": "Portfolio positioning and case studies",
+      "title": "Concept check — Portfolio positioning and case studies",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain portfolio positioning and case studies in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1150
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "portfolio positioning and case studies",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2519",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0335",
+      "topic": "Portfolio positioning and case studies",
+      "title": "Practical build — Portfolio positioning and case studies",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for portfolio positioning and case studies based on this requirement: Present services, selected work, process, outcomes and honest case studies that build client confidence. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1151
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "portfolio positioning and case studies",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2520",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0335",
+      "topic": "Portfolio positioning and case studies",
+      "title": "Debug and review — Portfolio positioning and case studies",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your portfolio positioning and case studies exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1152
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "portfolio positioning and case studies",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2521",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0336",
+      "topic": "Client research and lead qualification",
+      "title": "Concept check — Client research and lead qualification",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain client research and lead qualification in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1153
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "client research and lead qualification",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2522",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0336",
+      "topic": "Client research and lead qualification",
+      "title": "Practical build — Client research and lead qualification",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for client research and lead qualification based on this requirement: Identify target clients, research their business, assess fit and prepare a relevant first contact. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1154
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "client research and lead qualification",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2523",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0336",
+      "topic": "Client research and lead qualification",
+      "title": "Debug and review — Client research and lead qualification",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your client research and lead qualification exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1155
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "client research and lead qualification",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2524",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0337",
+      "topic": "Client communication and discovery",
+      "title": "Concept check — Client communication and discovery",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain client communication and discovery in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1156
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "client communication and discovery",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2525",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0337",
+      "topic": "Client communication and discovery",
+      "title": "Practical build — Client communication and discovery",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for client communication and discovery based on this requirement: Run a discovery conversation, ask useful questions, capture requirements and confirm decisions in writing. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1157
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "client communication and discovery",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2526",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0337",
+      "topic": "Client communication and discovery",
+      "title": "Debug and review — Client communication and discovery",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your client communication and discovery exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1158
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "client communication and discovery",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2527",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0338",
+      "topic": "Pricing, estimates and scope control",
+      "title": "Concept check — Pricing, estimates and scope control",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain pricing, estimates and scope control in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1159
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "pricing, estimates and scope control",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2528",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0338",
+      "topic": "Pricing, estimates and scope control",
+      "title": "Practical build — Pricing, estimates and scope control",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for pricing, estimates and scope control based on this requirement: Estimate effort, set a pricing model, define assumptions, revisions, milestones and change requests. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1160
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "pricing, estimates and scope control",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2529",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0338",
+      "topic": "Pricing, estimates and scope control",
+      "title": "Debug and review — Pricing, estimates and scope control",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your pricing, estimates and scope control exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1161
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "pricing, estimates and scope control",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2530",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0339",
+      "topic": "Proposals, contracts and project kickoff",
+      "title": "Concept check — Proposals, contracts and project kickoff",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain proposals, contracts and project kickoff in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1162
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "proposals, contracts and project kickoff",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2531",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0339",
+      "topic": "Proposals, contracts and project kickoff",
+      "title": "Practical build — Proposals, contracts and project kickoff",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for proposals, contracts and project kickoff based on this requirement: Write tailored proposals with deliverables, timeline, exclusions, payment milestones and acceptance criteria. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1163
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "proposals, contracts and project kickoff",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2532",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0339",
+      "topic": "Proposals, contracts and project kickoff",
+      "title": "Debug and review — Proposals, contracts and project kickoff",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your proposals, contracts and project kickoff exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1164
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "proposals, contracts and project kickoff",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2533",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0340",
+      "topic": "Delivery, handover and client retention",
+      "title": "Concept check — Delivery, handover and client retention",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain delivery, handover and client retention in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1165
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "delivery, handover and client retention",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2534",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0340",
+      "topic": "Delivery, handover and client retention",
+      "title": "Practical build — Delivery, handover and client retention",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for delivery, handover and client retention based on this requirement: Deliver work against acceptance criteria, collect feedback, hand over assets and document ongoing support. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1166
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "delivery, handover and client retention",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2535",
+      "moduleId": "M41",
+      "module": "Freelancing & Business",
+      "topicId": "TOP0340",
+      "topic": "Delivery, handover and client retention",
+      "title": "Debug and review — Delivery, handover and client retention",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your delivery, handover and client retention exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1167
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "freelancing & business",
+        "delivery, handover and client retention",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2536",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0341",
+      "topic": "Excel formulas, tables and data cleaning",
+      "title": "Concept check — Excel formulas, tables and data cleaning",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain excel formulas, tables and data cleaning in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1168
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "excel formulas, tables and data cleaning",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2537",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0341",
+      "topic": "Excel formulas, tables and data cleaning",
+      "title": "Practical build — Excel formulas, tables and data cleaning",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for excel formulas, tables and data cleaning based on this requirement: Build structured workbooks with formulas, tables, validation, sorting, filtering and clean data practices. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1169
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "excel formulas, tables and data cleaning",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2538",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0341",
+      "topic": "Excel formulas, tables and data cleaning",
+      "title": "Debug and review — Excel formulas, tables and data cleaning",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your excel formulas, tables and data cleaning exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1170
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "excel formulas, tables and data cleaning",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2539",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0342",
+      "topic": "Google Sheets formulas and collaboration",
+      "title": "Concept check — Google Sheets formulas and collaboration",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain google sheets formulas and collaboration in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1171
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "google sheets formulas and collaboration",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2540",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0342",
+      "topic": "Google Sheets formulas and collaboration",
+      "title": "Practical build — Google Sheets formulas and collaboration",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for google sheets formulas and collaboration based on this requirement: Use array formulas, lookups, conditional formatting, validation, sharing and protected ranges. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1172
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "google sheets formulas and collaboration",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2541",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0342",
+      "topic": "Google Sheets formulas and collaboration",
+      "title": "Debug and review — Google Sheets formulas and collaboration",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your google sheets formulas and collaboration exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1173
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "google sheets formulas and collaboration",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2542",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0343",
+      "topic": "Google Apps Script foundations",
+      "title": "Concept check — Google Apps Script foundations",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain google apps script foundations in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1174
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "google apps script foundations",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2543",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0343",
+      "topic": "Google Apps Script foundations",
+      "title": "Practical build — Google Apps Script foundations",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for google apps script foundations based on this requirement: Write functions, work with SpreadsheetApp, read and write ranges and use triggers safely. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1175
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "google apps script foundations",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2544",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0343",
+      "topic": "Google Apps Script foundations",
+      "title": "Debug and review — Google Apps Script foundations",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your google apps script foundations exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1176
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "google apps script foundations",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2545",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0344",
+      "topic": "Workflow automation and reliability",
+      "title": "Concept check — Workflow automation and reliability",
+      "type": "Conceptual",
+      "difficulty": "Beginner",
+      "platform": "Self-designed",
+      "prompt": "Explain workflow automation and reliability in your own words. Define the important terms, describe the decision or mechanism involved, and give one realistic use case plus one common mistake to avoid.",
+      "acceptanceCriteria": "Explanation is accurate; includes key terminology, a relevant example and a practical caveat.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 20,
+      "sessionDays": [
+        1177
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "workflow automation and reliability",
+        "concept"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2546",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0344",
+      "topic": "Workflow automation and reliability",
+      "title": "Practical build — Workflow automation and reliability",
+      "type": "Hands-on project",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Create a small, usable exercise for workflow automation and reliability based on this requirement: Automate a recurring business process with triggers, notifications, logs, error handling and user documentation. State assumptions, build the smallest complete solution and show how someone can use it.",
+      "acceptanceCriteria": "Working artefact or reproducible workflow; clear instructions; at least three meaningful checks or examples.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 60,
+      "sessionDays": [
+        1178
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "workflow automation and reliability",
+        "implementation"
+      ],
+      "source": "Bytewise career pathway extension"
+    },
+    {
+      "id": "BX2547",
+      "moduleId": "M42",
+      "module": "Business Automation",
+      "topicId": "TOP0344",
+      "topic": "Workflow automation and reliability",
+      "title": "Debug and review — Workflow automation and reliability",
+      "type": "Debugging / applied reasoning",
+      "difficulty": "Intermediate",
+      "platform": "Self-designed",
+      "prompt": "Prepare a review of your workflow automation and reliability exercise. Introduce or identify two realistic failure cases, diagnose the root causes, fix them and explain the trade-offs of your solution.",
+      "acceptanceCriteria": "Two failure cases are explained; root causes and fixes are demonstrated; limitations and one next improvement are documented.",
+      "hint": "Use the official learning resource linked to this topic; build and test a small example before expanding it.",
+      "estimatedMinutes": 35,
+      "sessionDays": [
+        1179
+      ],
+      "prerequisites": "Basic computer literacy; complete earlier sessions in this topic first.",
+      "how": "Attempt independently. Save the result, evidence, test cases, mistakes and one improvement in the topic folder.",
+      "url": null,
+      "tags": [
+        "business automation",
+        "workflow automation and reliability",
+        "debugging"
+      ],
+      "source": "Bytewise career pathway extension"
     }
   ]
 }

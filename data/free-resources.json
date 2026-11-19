@@ -408,6 +408,41 @@
       "name": "scikit-learn User Guide",
       "url": "https://scikit-learn.org/stable/user_guide.html",
       "pdf": null
+    },
+    {
+      "id": "FR059",
+      "area": "Frontend & Web Development",
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+      "pdf": null
+    },
+    {
+      "id": "FR060",
+      "area": "Website Design & CMS",
+      "name": "WordPress Learn",
+      "url": "https://learn.wordpress.org/",
+      "pdf": null
+    },
+    {
+      "id": "FR061",
+      "area": "Backend & Professional Development",
+      "name": "Spring Guides",
+      "url": "https://spring.io/guides",
+      "pdf": null
+    },
+    {
+      "id": "FR062",
+      "area": "Freelancing & Business",
+      "name": "HubSpot Academy",
+      "url": "https://academy.hubspot.com/",
+      "pdf": null
+    },
+    {
+      "id": "FR063",
+      "area": "Business Automation",
+      "name": "Microsoft Learn and Google Apps Script",
+      "url": "https://support.microsoft.com/excel",
+      "pdf": null
     }
   ]
 }

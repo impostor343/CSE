@@ -146,5 +146,25 @@
   "M37": {
     "summary": "Understand neural-network training and evaluate when deep-learning methods are appropriate, including their limitations. Topics progress from concepts to tracing and then an independent build. This is an optional extension after the core 1,029-session roadmap.",
     "why": "Adds depth in a specialised area without changing the existing main navigation or making the elective mandatory."
+  },
+  "M38": {
+    "summary": "Design, build, version, test and deploy accessible responsive websites from semantic HTML through production delivery. The pathway is organised into sequenced topics with Learn, Build and Validate sessions, linked questions and one evolving practical project.",
+    "why": "This pathway turns the listed skills into demonstrable work that can be reviewed by a client, teammate or employer."
+  },
+  "M39": {
+    "summary": "Plan user-centred interfaces, create a CMS website, make it discoverable and maintain it responsibly. The pathway is organised into sequenced topics with Learn, Build and Validate sessions, linked questions and one evolving practical project.",
+    "why": "This pathway turns the listed skills into demonstrable work that can be reviewed by a client, teammate or employer."
+  },
+  "M40": {
+    "summary": "Design reliable APIs, build a Spring Boot service, test it and deploy it with professional documentation. The pathway is organised into sequenced topics with Learn, Build and Validate sessions, linked questions and one evolving practical project.",
+    "why": "This pathway turns the listed skills into demonstrable work that can be reviewed by a client, teammate or employer."
+  },
+  "M41": {
+    "summary": "Position a service, find suitable clients, communicate scope and price work, submit proposals and deliver professionally. The pathway is organised into sequenced topics with Learn, Build and Validate sessions, linked questions and one evolving practical project.",
+    "why": "This pathway turns the listed skills into demonstrable work that can be reviewed by a client, teammate or employer."
+  },
+  "M42": {
+    "summary": "Turn repetitive spreadsheet tasks into dependable, documented workflows using Excel, Google Sheets and Apps Script. The pathway is organised into sequenced topics with Learn, Build and Validate sessions, linked questions and one evolving practical project.",
+    "why": "This pathway turns the listed skills into demonstrable work that can be reviewed by a client, teammate or employer."
   }
 }

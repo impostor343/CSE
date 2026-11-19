@@ -151,6 +151,26 @@
     "M37": {
       "icon": "network",
       "label": "Elective: Deep Learning Foundations"
+    },
+    "M38": {
+      "icon": "globe",
+      "label": "Frontend & Web Development"
+    },
+    "M39": {
+      "icon": "palette",
+      "label": "Website Design & CMS"
+    },
+    "M40": {
+      "icon": "server",
+      "label": "Backend & Professional Development"
+    },
+    "M41": {
+      "icon": "briefcase",
+      "label": "Freelancing & Business"
+    },
+    "M42": {
+      "icon": "gear",
+      "label": "Business Automation"
     }
   },
   "topicIcons": {
@@ -1719,6 +1739,136 @@
     "TOP0318": {
       "icon": "network",
       "label": "Training pipelines, evaluation and deployment risks"
+    },
+    "TOP0319": {
+      "icon": "globe",
+      "label": "HTML foundations and semantic structure",
+      "moduleId": "M38"
+    },
+    "TOP0320": {
+      "icon": "globe",
+      "label": "CSS foundations, selectors and layout",
+      "moduleId": "M38"
+    },
+    "TOP0321": {
+      "icon": "globe",
+      "label": "JavaScript for interactive websites",
+      "moduleId": "M38"
+    },
+    "TOP0322": {
+      "icon": "globe",
+      "label": "Responsive design and accessibility",
+      "moduleId": "M38"
+    },
+    "TOP0323": {
+      "icon": "globe",
+      "label": "Git and GitHub workflow for web projects",
+      "moduleId": "M38"
+    },
+    "TOP0324": {
+      "icon": "globe",
+      "label": "Website deployment and production basics",
+      "moduleId": "M38"
+    },
+    "TOP0325": {
+      "icon": "palette",
+      "label": "Figma foundations and design handoff",
+      "moduleId": "M39"
+    },
+    "TOP0326": {
+      "icon": "palette",
+      "label": "UI/UX research, wireframes and prototyping",
+      "moduleId": "M39"
+    },
+    "TOP0327": {
+      "icon": "palette",
+      "label": "WordPress setup, themes and pages",
+      "moduleId": "M39"
+    },
+    "TOP0328": {
+      "icon": "palette",
+      "label": "WordPress content, plugins and security",
+      "moduleId": "M39"
+    },
+    "TOP0329": {
+      "icon": "palette",
+      "label": "SEO foundations and on-page optimisation",
+      "moduleId": "M39"
+    },
+    "TOP0330": {
+      "icon": "palette",
+      "label": "Website maintenance, backups and handover",
+      "moduleId": "M39"
+    },
+    "TOP0331": {
+      "icon": "server",
+      "label": "REST API design and HTTP fundamentals",
+      "moduleId": "M40"
+    },
+    "TOP0332": {
+      "icon": "server",
+      "label": "Spring Boot application development",
+      "moduleId": "M40"
+    },
+    "TOP0333": {
+      "icon": "server",
+      "label": "Backend testing and API quality",
+      "moduleId": "M40"
+    },
+    "TOP0334": {
+      "icon": "server",
+      "label": "Backend deployment and operations",
+      "moduleId": "M40"
+    },
+    "TOP0335": {
+      "icon": "briefcase",
+      "label": "Portfolio positioning and case studies",
+      "moduleId": "M41"
+    },
+    "TOP0336": {
+      "icon": "briefcase",
+      "label": "Client research and lead qualification",
+      "moduleId": "M41"
+    },
+    "TOP0337": {
+      "icon": "briefcase",
+      "label": "Client communication and discovery",
+      "moduleId": "M41"
+    },
+    "TOP0338": {
+      "icon": "briefcase",
+      "label": "Pricing, estimates and scope control",
+      "moduleId": "M41"
+    },
+    "TOP0339": {
+      "icon": "briefcase",
+      "label": "Proposals, contracts and project kickoff",
+      "moduleId": "M41"
+    },
+    "TOP0340": {
+      "icon": "briefcase",
+      "label": "Delivery, handover and client retention",
+      "moduleId": "M41"
+    },
+    "TOP0341": {
+      "icon": "gear",
+      "label": "Excel formulas, tables and data cleaning",
+      "moduleId": "M42"
+    },
+    "TOP0342": {
+      "icon": "gear",
+      "label": "Google Sheets formulas and collaboration",
+      "moduleId": "M42"
+    },
+    "TOP0343": {
+      "icon": "gear",
+      "label": "Google Apps Script foundations",
+      "moduleId": "M42"
+    },
+    "TOP0344": {
+      "icon": "gear",
+      "label": "Workflow automation and reliability",
+      "moduleId": "M42"
     }
   }
 }
