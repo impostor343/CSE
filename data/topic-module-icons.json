@@ -127,6 +127,30 @@
     "M31": {
       "icon": "flag",
       "label": "Final-year engineering capstone and career consolidation"
+    },
+    "M32": {
+      "icon": "database",
+      "label": "Elective: Advanced SQL Analytics"
+    },
+    "M33": {
+      "icon": "monitor",
+      "label": "Elective: Computer Graphics and Visualization"
+    },
+    "M34": {
+      "icon": "cpu",
+      "label": "Elective: Embedded Systems and IoT"
+    },
+    "M35": {
+      "icon": "code",
+      "label": "Elective: Compiler Construction"
+    },
+    "M36": {
+      "icon": "shield",
+      "label": "Elective: Blockchain and Smart Contract Engineering"
+    },
+    "M37": {
+      "icon": "network",
+      "label": "Elective: Deep Learning Foundations"
     }
   },
   "topicIcons": {
@@ -1599,6 +1623,102 @@
       "icon": "globe",
       "label": "Final interview and portfolio review",
       "moduleId": "M31"
+    },
+    "TOP0295": {
+      "icon": "database",
+      "label": "SQL window functions: OVER, PARTITION BY and ORDER BY"
+    },
+    "TOP0296": {
+      "icon": "database",
+      "label": "Ranking, offset and value window functions"
+    },
+    "TOP0297": {
+      "icon": "database",
+      "label": "Window frames and running aggregates"
+    },
+    "TOP0298": {
+      "icon": "database",
+      "label": "CTEs, recursive queries and analytical reporting"
+    },
+    "TOP0299": {
+      "icon": "monitor",
+      "label": "Graphics pipeline and coordinate systems"
+    },
+    "TOP0300": {
+      "icon": "monitor",
+      "label": "2D transformations, matrices and animation"
+    },
+    "TOP0301": {
+      "icon": "monitor",
+      "label": "Rasterization, color, lighting and textures"
+    },
+    "TOP0302": {
+      "icon": "monitor",
+      "label": "WebGL and shader fundamentals"
+    },
+    "TOP0303": {
+      "icon": "cpu",
+      "label": "Microcontrollers, memory and hardware interfaces"
+    },
+    "TOP0304": {
+      "icon": "cpu",
+      "label": "GPIO, timers, interrupts and debouncing"
+    },
+    "TOP0305": {
+      "icon": "cpu",
+      "label": "Serial protocols: UART, I2C and SPI"
+    },
+    "TOP0306": {
+      "icon": "cpu",
+      "label": "Real-time scheduling, power and reliability"
+    },
+    "TOP0307": {
+      "icon": "code",
+      "label": "Lexing, tokens and regular-language basics"
+    },
+    "TOP0308": {
+      "icon": "code",
+      "label": "Parsing, grammars and abstract syntax trees"
+    },
+    "TOP0309": {
+      "icon": "code",
+      "label": "Semantic analysis, scopes and type checking"
+    },
+    "TOP0310": {
+      "icon": "code",
+      "label": "Interpreters, intermediate representation and code generation"
+    },
+    "TOP0311": {
+      "icon": "shield",
+      "label": "Distributed ledgers, hashes and digital signatures"
+    },
+    "TOP0312": {
+      "icon": "shield",
+      "label": "Consensus, transactions and blockchain architecture"
+    },
+    "TOP0313": {
+      "icon": "shield",
+      "label": "Smart contracts, Solidity and EVM basics"
+    },
+    "TOP0314": {
+      "icon": "shield",
+      "label": "Smart-contract security and responsible deployment"
+    },
+    "TOP0315": {
+      "icon": "network",
+      "label": "Neural networks, tensors and forward propagation"
+    },
+    "TOP0316": {
+      "icon": "network",
+      "label": "Loss functions, backpropagation and optimizers"
+    },
+    "TOP0317": {
+      "icon": "network",
+      "label": "CNNs, sequence models and attention overview"
+    },
+    "TOP0318": {
+      "icon": "network",
+      "label": "Training pipelines, evaluation and deployment risks"
     }
   }
 }
