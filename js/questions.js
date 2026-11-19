@@ -120,7 +120,13 @@
     else { box.insertBefore(h('p', { class: 'muted small', text: U.num(total) + ' questions' }), box.firstChild); }
   }
   function fromRoute() { var r = U.route('questions'); if (!r || !r[0]) { return; } var p = C.question(decodeURIComponent(r[0])); if (!p) { return; } q = p.id; open[p.id] = true; browse = true; render(); }
-  window.addEventListener('hashchange', fromRoute);
-  Promise.all([C.ready, A.ready]).then(function () { render(); fromRoute(); }).catch(function (e) { root.textContent = 'Could not load: ' + e.message; });
-  window.addEventListener('cur-changed', function () { if (U.route('questions') !== null && !document.activeElement.matches('textarea,input')) { render(); } });
+  var initialized = false, loading = false;
+  function initQuestions() {
+    if (initialized || loading || U.route('questions') === null) { return; }
+    loading = true;
+    Promise.all([C.ready, A.ready, C.loadQuestions()]).then(function () { initialized = true; groups = null; render(); fromRoute(); }).catch(function (e) { root.textContent = 'Could not load questions: ' + e.message + '. Check your connection and reopen this tab.'; }).then(function () { loading = false; });
+  }
+  window.addEventListener('hashchange', function () { initQuestions(); if (initialized) { fromRoute(); } });
+  initQuestions();
+  window.addEventListener('cur-changed', function () { if (initialized && U.route('questions') !== null && !document.activeElement.matches('textarea,input')) { render(); } });
 })();

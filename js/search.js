@@ -34,7 +34,8 @@
   function setCat(k) { cat = k; [].slice.call(chips.children).forEach(function (b, i) { b.setAttribute('aria-pressed', CATS[i][0] === k ? 'true' : 'false'); }); input.placeholder = k === 'all' ? 'Search sessions, modules, questions…' : 'Search ' + k + ' only…'; paint(); }
   function build() {
     input = h('input', { type: 'search', class: 'hs-input', 'aria-label': 'Search Home', autocomplete: 'off' });
-    input.addEventListener('input', function () { q = input.value; paint(); });
+    var questionLoadStarted = false;
+    input.addEventListener('input', function () { q = input.value; paint(); if (!questionLoadStarted && q.trim().length >= 2) { questionLoadStarted = true; C.loadQuestions().then(paint).catch(function () {}); } });
     CATS.forEach(function (c) { chips.appendChild(h('button', { type: 'button', class: 'hs-chip', text: c[1], onclick: function () { setCat(c[0]); } })); });
     out = h('div', { class: 'hs-out', 'aria-live': 'polite' });
     host.appendChild(input); host.appendChild(chips); host.appendChild(out); setCat('all');

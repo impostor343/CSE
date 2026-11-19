@@ -293,7 +293,7 @@
     prev.disabled = d === 1;
     prev.addEventListener('click', function () { if (d > 1) { enterDir = 'left'; U.go('#today/' + (d - 1)); } });
     var info = h('button', { class: 'home-btn info', type: 'button', text: 'ⓘ  Info' });
-    info.addEventListener('click', function () { var dlg = infoDialog(d); dlg.showModal(); });
+    info.addEventListener('click', function () { C.loadQuestions().catch(function () {}).then(function () { var dlg = infoDialog(d); dlg.showModal(); }); });
     var next = h('button', { class: 'home-btn secondary', type: 'button', text: 'Next  ›' });
     next.disabled = d === C.total;
     next.addEventListener('click', function () { if (d < C.total) { enterDir = 'right'; U.go('#today/' + (d + 1)); } });
