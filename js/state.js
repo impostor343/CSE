@@ -40,7 +40,8 @@
   A.saveSession = function (d, patch) {
     var cur = A.sessionState(d), rec = { day: d, status: cur.status, notes: cur.notes || '', whatDid: cur.whatDid || '', review: cur.review || '', remarks: cur.remarks || '', startedAt: cur.startedAt || null, updatedAt: now() };
     Object.keys(patch).forEach(function (k) { rec[k] = patch[k]; });
-    if (rec.status === 'not-started' && !rec.notes && !rec.whatDid && !rec.review && !rec.remarks) {
+    if (rec.status === 'not-started' && !rec.notes && !rec.whatDid && !rec.review && !rec.remarks &&
+        !rec.checkStatus && !(rec.checkItems && rec.checkItems.length)) {
       delete st.ss[d]; return S.del('sessionState', d);
     }
     st.ss[d] = rec; return S.put('sessionState', rec);

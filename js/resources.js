@@ -8,7 +8,7 @@
   var SCRIBBLES = ['M18 150 L78 34 L108 138 L176 20 L204 126 L278 8', 'M14 120 C70 20 96 170 150 70 S230 130 286 24', 'M20 160 L96 60 L60 56 L150 12 L128 100 L246 28 L226 120 L292 70'];
   var TONES = ['a', 'b', 'c'];
   var AREA_ICON = { 'Git/GitHub': 'branch', Java: 'cup', DSA: 'sitemap', SQL: 'database', JDBC: 'database', DBMS: 'database', Spring: 'link', Testing: 'task', Web: 'globe', JavaScript: 'code', React: 'monitor', TypeScript: 'code',
-    C: 'cpu', Python: 'code', OS: 'cpu', Networks: 'network', 'Software Engineering': 'layers', 'Design Patterns': 'layers', Security: 'shield', DevOps: 'server', Cloud: 'cloud', 'System Design': 'sitemap', 'Distributed Systems': 'network', 'Data/ML': 'chart', Android: 'phone' };
+    C: 'cpu', Python: 'code', OS: 'cpu', Networks: 'network', 'Software Engineering': 'layers', 'Design Patterns': 'layers', Security: 'shield', DevOps: 'server', Cloud: 'cloud', 'System Design': 'sitemap', 'Distributed Systems': 'network', 'Data/ML': 'chart', Android: 'phone', Graphics: 'monitor', Embedded: 'cpu', Compilers: 'code', Blockchain: 'shield', 'Deep Learning': 'network' };
   var KIND = { book: 'Book', docs: 'Official docs', course: 'Course', guide: 'Guide' };
 
   function ic(n) { return window.Icons.make(n); }

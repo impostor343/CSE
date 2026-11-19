@@ -3,7 +3,7 @@
   'use strict';
   var C = window.Curriculum, A = window.State, V = window.SessionView, h = U.h;
   var root = document.getElementById('today-card');
-  var selectedDay = null, enterDir = null;   // enterDir: which side the next card slides in from
+  var selectedDay = null, enterDir = null, lastAutoDone = null;   // lastAutoDone supports an immediate undo after automatic advance
 
   function currentDay() {
     var r = U.route('today');
@@ -104,6 +104,44 @@
     projectRows.push(['Checkpoint', s.checkpoint], ['Project action', s.projectAction], ['Folder / file', s.folder], ['GitHub action', s.github]);
     inner.appendChild(infoSection('▰', project ? 'Project' : 'Practice and workflow', projectRows));
     inner.appendChild(infoSection('▱', 'Revision and mastery', [['Revision instruction', s.revision], ['Mastery check', s.mastery]]));
+    // CHECK lives inside this day's Info sheet; it is not a separate tab or screen.
+    var checkSection = h('section', { class: 'home-info-section home-check-section' });
+    checkSection.appendChild(h('h3', { class: 'home-info-heading' }, h('span', { class: 'home-info-icon' }, '✓'), 'Check session'));
+    checkSection.appendChild(h('p', { class: 'home-check-intro', text: 'Use this quick check to decide whether you can move on or need another pass.' }));
+    var savedCheck = A.sessionState(d), checked = Array.isArray(savedCheck.checkItems) ? savedCheck.checkItems.slice() : [];
+    var checkItems = [
+      { id: 'explain', label: 'I can explain ' + (s.topic || s.title) + ' in my own words.' },
+      { id: 'apply', label: 'I can trace or apply the example without copying it.' },
+      { id: 'test', label: 'I can complete the practice and test an edge case.' }
+    ];
+    var checkList = h('div', { class: 'home-check-list' });
+    checkItems.forEach(function (item) {
+      var label = h('label', { class: 'home-check-item' });
+      var input = h('input', { type: 'checkbox', checked: checked.indexOf(item.id) !== -1 });
+      input.addEventListener('change', function () {
+        var next = checked.filter(function (id) { return id !== item.id; });
+        if (input.checked) { next.push(item.id); }
+        checked = next;
+        A.saveSession(d, { checkItems: checked }).catch(function (e) { alert('Could not save check: ' + ((e && e.message) || e)); });
+      });
+      label.appendChild(input); label.appendChild(h('span', { text: item.label })); checkList.appendChild(label);
+    });
+    checkSection.appendChild(checkList);
+    if (s.mastery) { checkSection.appendChild(h('p', { class: 'home-check-evidence' }, h('strong', { text: 'Exit evidence: ' }), s.mastery)); }
+    var checkStatus = h('p', { class: 'home-check-status', 'aria-live': 'polite', text: savedCheck.checkStatus === 'ready' ? 'Self-check: Ready to move on' : savedCheck.checkStatus === 'review' ? 'Self-check: Needs another review' : 'Self-check: Not rated yet' });
+    var checkActions = h('div', { class: 'home-check-actions' });
+    var readyBtn = h('button', { type: 'button', class: 'btn primary', text: 'Ready to move on' });
+    readyBtn.addEventListener('click', function () { A.saveSession(d, { checkStatus: 'ready' }).then(function () { checkStatus.textContent = 'Self-check: Ready to move on'; }); });
+    var reviewBtn = h('button', { type: 'button', class: 'btn ghost', text: 'Needs revision' });
+    reviewBtn.addEventListener('click', function () { A.saveSession(d, { checkStatus: 'review' }).then(function () { checkStatus.textContent = 'Self-check: Needs another review'; }); });
+    checkActions.appendChild(readyBtn); checkActions.appendChild(reviewBtn);
+    checkSection.appendChild(checkActions); checkSection.appendChild(checkStatus);
+    var checkQuestions = (s.questionIds || []).map(function (id) { var q = C.question(id); return q ? h('a', { class: 'home-check-question', href: '#questions/' + encodeURIComponent(id), text: q.title }) : null; }).filter(Boolean);
+    if (checkQuestions.length) {
+      checkSection.appendChild(h('p', { class: 'home-check-label', text: 'Questions linked to this session' }));
+      checkQuestions.forEach(function (a) { checkSection.appendChild(a); });
+    }
+    inner.appendChild(checkSection);
     if (s.workbookStatus || s.workbookRemarks) {
       inner.appendChild(infoSection('ⓘ', 'Workbook notes', [['Workbook status', s.workbookStatus], ['Workbook remarks', s.workbookRemarks]]));
     }
@@ -182,6 +220,14 @@
     selectedDay = d;
 
     var page = h('div', { class: 'home-page' });
+    if (lastAutoDone && d === lastAutoDone + 1 && A.isDone(lastAutoDone)) {
+      var notice = h('section', { class: 'home-resume home-auto-advance', 'aria-label': 'Previous session completed' });
+      notice.appendChild(h('span', { class: 'home-resume-tag', text: 'Session completed' }));
+      notice.appendChild(h('strong', { class: 'home-resume-title', text: 'Day ' + lastAutoDone + ' saved. You are now on the next session.' }));
+      var undoLast = h('button', { class: 'home-resume-book', type: 'button', text: 'Undo previous completion' });
+      undoLast.addEventListener('click', function () { undoLast.disabled = true; A.reopen(lastAutoDone).then(function () { lastAutoDone = null; render(); V.refresh(); }).catch(function (e) { undoLast.disabled = false; alert('Could not undo: ' + ((e && e.message) || e)); }); });
+      notice.appendChild(undoLast); page.appendChild(notice);
+    }
     var rc = resumeCard(d); if (rc) { page.appendChild(rc); }
     var card = h('section', { class: 'home-day-card' });
     card.appendChild(h('p', { class: 'home-date-label' }, s.phase));
@@ -211,8 +257,15 @@
     done.disabled = A.status(d) === 'completed';
     done.addEventListener('click', function () {
       done.disabled = true;
-      // Stay on this session after Done so the Undo button stays within reach (use Next to continue).
-      A.markDone(d).then(function () { U.go('#today/' + d); V.refresh(); }, function (e) {
+      // Complete this session, then move to the next eligible session. Previous/Info still lets you reopen it.
+      A.markDone(d).then(function () {
+        lastAutoDone = d;
+        var nextDay = A.nextIncomplete(d);
+        if (!nextDay) { nextDay = A.nextIncomplete(); }
+        if (nextDay && nextDay !== d) { enterDir = 'right'; U.go('#today/' + nextDay); }
+        else { render(); }
+        V.refresh();
+      }, function (e) {
         done.disabled = false; alert('Could not save: ' + ((e && e.message) || e));
       });
     });
