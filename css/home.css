@@ -79,3 +79,14 @@
 .sheet-handle { width: 44px; height: 5px; margin: -6px auto 10px; border-radius: 99px; background: var(--line); }
 .home-info-top { touch-action: none; }
 @media (prefers-reduced-motion: reduce) { .home-day-card.enter-right, .home-day-card.enter-left { animation: none; } }
+
+
+/* CHECK is intentionally embedded in the existing day Info sheet, not a new tab. */
+.home-check-intro,.home-check-evidence,.home-check-status,.home-check-label{font-size:.88rem;line-height:1.5;color:var(--muted,#858b9b);margin:.55rem 0}
+.home-check-list{display:grid;gap:.55rem;margin:.7rem 0}
+.home-check-item{display:flex;align-items:flex-start;gap:.65rem;padding:.7rem .75rem;border:1px solid var(--line,rgba(128,140,170,.2));border-radius:13px;background:var(--surface-2,rgba(128,140,170,.06));font-size:.9rem;line-height:1.4}
+.home-check-item input{width:18px;height:18px;flex:0 0 18px;margin:.05rem 0 0;accent-color:var(--accent,#3985ff)}
+.home-check-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin:.7rem 0}
+.home-check-actions .btn{flex:1 1 130px;min-height:40px}
+.home-check-question{display:block;padding:.65rem .75rem;margin:.4rem 0;border-radius:11px;background:var(--surface-2,rgba(128,140,170,.06));color:var(--accent,#3985ff);font-size:.88rem;text-decoration:none}
+.home-auto-advance{border-color:var(--accent,#3985ff)}
