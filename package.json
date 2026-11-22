@@ -4,6 +4,10 @@
   "private": true,
   "description": "Android wrapper (Capacitor) for the CSE Roadmap web app. Built by GitHub Actions.",
   "scripts": {
+    "dev": "node dev-server.js",
+    "start": "node dev-server.js",
+    "build": "npm run prepare-web",
+    "lint": "node --check dev-server.js && node --check android-build/prepare-web.js && node --check js/store.js && node --check js/state.js && node --check js/settings.js && node --check js/luma-sync.js && python3 -m py_compile android-build/add_widgets.py android-build/add_luma_sync.py android-build/configure_signing.py",
     "prepare-web": "node android-build/prepare-web.js"
   },
   "dependencies": {

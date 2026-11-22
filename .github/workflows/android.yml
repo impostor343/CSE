@@ -1,10 +1,20 @@
 name: Build Android APK
 
-# How to run it (works from your phone):
-# GitHub repo > Actions > "Build Android APK" > Run workflow > Run workflow.
-# When it turns green (about 6-10 minutes), open the repo's Releases page and download CSE-Roadmap.apk.
+# How to run it:
+# GitHub repo > Actions > "Build Android APK" > Run workflow.
+# - build_type = debug   : builds Bytewise-debug.apk signed with android-build/debug.keystore
+# - build_type = release : builds Bytewise-release.apk signed with your shared Bytewise/Luma release keystore from GitHub Secrets
 on:
   workflow_dispatch:
+    inputs:
+      build_type:
+        description: "APK build type (debug or release)"
+        required: true
+        default: "debug"
+        type: choice
+        options:
+          - debug
+          - release
 
 permissions:
   contents: write
@@ -39,34 +49,76 @@ jobs:
       - name: Add home-screen widgets and the Back-button/widget bridge
         run: python3 android-build/add_widgets.py
 
+      - name: Add offline Bytewise -> Luma sync bridge and read-only ContentProvider
+        run: python3 android-build/add_luma_sync.py
+
+      - name: Configure shared release signing hook
+        run: python3 android-build/configure_signing.py
+
       - name: Set version number and app icon
         run: |
           sed -i "s/versionCode 1/versionCode ${{ github.run_number }}/; s/versionName \"1.0\"/versionName \"1.${{ github.run_number }}\"/" android/app/build.gradle
           pip install pillow
           python3 android-build/make_icons.py
 
-      - name: Use the fixed signing key (so updates install over the old app)
+      - name: Use the fixed debug signing key (for debug builds)
+        if: ${{ inputs.build_type != 'release' }}
         run: |
           mkdir -p ~/.android
           cp android-build/debug.keystore ~/.android/debug.keystore
 
-      - name: Build APK
+      - name: Build Debug APK
+        if: ${{ inputs.build_type != 'release' }}
         working-directory: android
         run: ./gradlew assembleDebug --no-daemon
 
-      - name: Name the file
-        run: cp android/app/build/outputs/apk/debug/app-debug.apk CSE-Roadmap.apk
+      - name: Decode shared release keystore into temporary runner directory
+        if: ${{ inputs.build_type == 'release' }}
+        env:
+          SHARED_RELEASE_KEYSTORE_B64: ${{ secrets.SHARED_RELEASE_KEYSTORE_B64 }}
+        run: |
+          if [ -z "$SHARED_RELEASE_KEYSTORE_B64" ]; then
+            echo "Missing GitHub Secret SHARED_RELEASE_KEYSTORE_B64" >&2
+            exit 1
+          fi
+          printf '%s' "$SHARED_RELEASE_KEYSTORE_B64" | base64 --decode > "$RUNNER_TEMP/shared-release.keystore"
+          chmod 600 "$RUNNER_TEMP/shared-release.keystore"
+
+      - name: Build Release APK (shared Bytewise + Luma signing key)
+        if: ${{ inputs.build_type == 'release' }}
+        working-directory: android
+        env:
+          SHARED_RELEASE_KEYSTORE_PATH: ${{ runner.temp }}/shared-release.keystore
+          SHARED_RELEASE_KEYSTORE_PASSWORD: ${{ secrets.SHARED_RELEASE_KEYSTORE_PASSWORD }}
+          SHARED_RELEASE_KEY_ALIAS: ${{ secrets.SHARED_RELEASE_KEY_ALIAS }}
+          SHARED_RELEASE_KEY_PASSWORD: ${{ secrets.SHARED_RELEASE_KEY_PASSWORD }}
+        run: ./gradlew assembleRelease --no-daemon
+
+      - name: Wipe temporary release keystore
+        if: always()
+        run: rm -f "$RUNNER_TEMP/shared-release.keystore"
+
+      - name: Name the APK file
+        run: |
+          if [ "${{ inputs.build_type }}" = "release" ]; then
+            cp android/app/build/outputs/apk/release/app-release.apk Bytewise-release.apk
+            echo "APK_FILE=Bytewise-release.apk" >> "$GITHUB_ENV"
+          else
+            cp android/app/build/outputs/apk/debug/app-debug.apk Bytewise-debug.apk
+            echo "APK_FILE=Bytewise-debug.apk" >> "$GITHUB_ENV"
+          fi
 
       - name: Keep a copy as a workflow download
         uses: actions/upload-artifact@v4
         with:
-          name: CSE-Roadmap-apk
-          path: CSE-Roadmap.apk
+          name: Bytewise-${{ inputs.build_type }}-apk
+          path: ${{ env.APK_FILE }}
 
       - name: Publish to Releases
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "apk-${{ github.run_number }}" CSE-Roadmap.apk \
-            --title "CSE Roadmap APK #${{ github.run_number }}" \
-            --notes "Android app build ${{ github.run_number }}. Download CSE-Roadmap.apk and install it."
+          gh release create "apk-${{ inputs.build_type }}-${{ github.run_number }}" "${{ env.APK_FILE }}" \
+            --title "Bytewise ${{ inputs.build_type }} APK #${{ github.run_number }}" \
+            --notes "Android ${{ inputs.build_type }} build ${{ github.run_number }} (offline Luma sync ready)."
+

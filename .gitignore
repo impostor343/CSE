@@ -1,0 +1,20 @@
+# Dependencies & generated build folders
+node_modules/
+www/
+android/
+dist/
+*.apk
+*.aab
+*.zip
+
+# Never commit private signing keys, keystores, or local signing properties
+*.jks
+*.p12
+*.pem
+*.key
+*.keystore
+!android-build/debug.keystore
+signing.properties
+android/signing.properties
+.env
+.env.local

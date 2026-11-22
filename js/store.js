@@ -50,23 +50,26 @@
     del: function (n, key) { return run(n, 'readwrite', function (s) { return s.delete(key); }); },
     add: function (n, rec) { return run(n, 'readwrite', function (s) { return s.add(rec); }).then(function (id) { rec.id = id; return rec; }); },
     // One active completion per session day, checked inside a single transaction so repeated taps cannot create duplicates.
-    complete: function (day, rec) {
+    completeWithMeta: function (day, rec) {
       return open().then(function (db) { return new Promise(function (resolve, reject) {
-        var t = db.transaction('completions', 'readwrite'), st = t.objectStore('completions'), out = null;
+        var t = db.transaction('completions', 'readwrite'), st = t.objectStore('completions'), out = null, created = false;
         var q = st.index('day').getAll(day);
         q.onsuccess = function () {
           var act = (q.result || []).filter(function (r) { return !r.reopenedAt; });
           if (act.length) { out = act[0]; return; }
-          var a = st.add(rec); a.onsuccess = function () { rec.id = a.result; out = rec; };
+          var a = st.add(rec); a.onsuccess = function () { rec.id = a.result; out = rec; created = true; };
         };
-        t.oncomplete = function () { resolve(out); }; t.onerror = t.onabort = function () { reject(t.error); }; }); });
+        t.oncomplete = function () { resolve({ record: out, created: created }); }; t.onerror = t.onabort = function () { reject(t.error); }; }); });
+    },
+    complete: function (day, rec) {
+      return Store.completeWithMeta(day, rec).then(function (res) { return res.record; });
     },
     reopen: function (day, at) {
       return open().then(function (db) { return new Promise(function (resolve, reject) {
-        var t = db.transaction('completions', 'readwrite'), st = t.objectStore('completions');
+        var t = db.transaction('completions', 'readwrite'), st = t.objectStore('completions'), reopened = [];
         var q = st.index('day').getAll(day);
-        q.onsuccess = function () { (q.result || []).forEach(function (r) { if (!r.reopenedAt) { r.reopenedAt = at; st.put(r); } }); };
-        t.oncomplete = function () { resolve(); }; t.onerror = t.onabort = function () { reject(t.error); }; }); });
+        q.onsuccess = function () { (q.result || []).forEach(function (r) { if (!r.reopenedAt) { r.reopenedAt = at; st.put(r); reopened.push(Object.assign({}, r)); } }); };
+        t.oncomplete = function () { resolve(reopened); }; t.onerror = t.onabort = function () { reject(t.error); }; }); });
     },
     names: function () { return open().then(function (db) { return LEGACY.concat(NEW).filter(function (n) { return db.objectStoreNames.contains(n); }); }); },
     dump: function () { var out = {}; return Store.names().then(function (ns) { return Promise.all(ns.map(function (n) {

@@ -23,7 +23,9 @@
       if (!names.length) { say('The backup contains no usable data.', true); return; }
       var summary = names.map(function (n) { return n + ': ' + j.stores[n].length; }).join(', ');
       if (!confirm('Replace the data on this device with this backup (' + (j.exportedAt || 'unknown date') + ')?\n\n' + summary + '\n\nTip: export a backup of the current data first.')) { return; }
-      S.names().then(function (have) { return Promise.all(names.filter(function (n) { return have.indexOf(n) !== -1; }).map(function (n) { return S.replace(n, j.stores[n]); })); }).then(function () { say('Backup restored. Reloading…'); setTimeout(function () { location.reload(); }, 800); }).catch(function (e) { say('Restore failed: ' + e.message, true); });
+      S.names().then(function (have) { return Promise.all(names.filter(function (n) { return have.indexOf(n) !== -1; }).map(function (n) { return S.replace(n, j.stores[n]); })); }).then(function () {
+        if (window.LumaSync && typeof window.LumaSync.markRestored === 'function') { return window.LumaSync.markRestored().catch(function () {}); }
+      }).then(function () { say('Backup restored. Reloading…'); setTimeout(function () { location.reload(); }, 800); }).catch(function (e) { say('Restore failed: ' + e.message, true); });
     };
     r.readAsText(file);
   }

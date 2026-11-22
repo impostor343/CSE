@@ -54,14 +54,24 @@
     if (st.done[d]) { return Promise.resolve(st.done[d]); }
     var t = new Date(), iso = t.toISOString();
     var rec = { day: d, kind: 'session', completedAt: iso, localDate: U.key(iso), localTime: U.time(iso), reopenedAt: null };
-    busy[d] = S.complete(d, rec).then(function (r) { st.done[d] = r; if (!st.completions.some(function (c) { return c.id === r.id; })) { st.completions.push(r); }
-      var s = st.ss[d]; if (s && (s.status === 'in-progress' || s.status === 'skipped')) { return A.saveSession(d, { status: 'not-started' }); } })
-      .then(function () { delete busy[d]; }, function (e) { delete busy[d]; throw e; });
+    busy[d] = S.completeWithMeta(d, rec).then(function (res) {
+      var r = res.record, created = res.created;
+      st.done[d] = r;
+      if (!st.completions.some(function (c) { return c.id === r.id; })) { st.completions.push(r); }
+      if (created && window.LumaSync && typeof window.LumaSync.onCompleted === 'function') {
+        try { window.LumaSync.onCompleted(r); } catch (syncErr) {}
+      }
+      var s = st.ss[d]; if (s && (s.status === 'in-progress' || s.status === 'skipped')) { return A.saveSession(d, { status: 'not-started' }); }
+    }).then(function () { delete busy[d]; }, function (e) { delete busy[d]; throw e; });
     return busy[d];
   };
   A.reopen = function (d) {
-    var at = now(); return S.reopen(d, at).then(function () {
-      st.completions.forEach(function (c) { if (c.day === d && !c.reopenedAt) { c.reopenedAt = at; } }); delete st.done[d]; });
+    var at = now(); return S.reopen(d, at).then(function (reopened) {
+      st.completions.forEach(function (c) { if (c.day === d && !c.reopenedAt) { c.reopenedAt = at; } }); delete st.done[d];
+      if (reopened && reopened.length && window.LumaSync && typeof window.LumaSync.onReopened === 'function') {
+        try { window.LumaSync.onReopened(reopened, at); } catch (syncErr) {}
+      }
+    });
   };
   A.completionsByDate = function () {   // local date key -> active completion records, oldest first
     var m = {}; Object.keys(st.done).forEach(function (d) { var c = st.done[d], k = U.key(c.completedAt); (m[k] = m[k] || []).push(c); });
@@ -152,6 +162,7 @@
     st.events.forEach(function (e) { items.push({ at: e.at, kind: e.kind, text: e.label, projectId: e.projectId, refId: e.refId }); });
     items.sort(function (a, b) { return a.at < b.at ? 1 : -1; }); return items.slice(0, n);
   };
+  A.allCompletions = function () { return st.completions.map(function (c) { return Object.assign({}, c); }); };
   A.raw = function () { return st; };
   window.State = A;
 })();
